@@ -9,14 +9,14 @@ PODS:
   - MetalPetal (1.10.5):
     - MetalPetal/Core (= 1.10.5)
   - MetalPetal/Core (1.10.5)
-  - MMBeautyKit (1.2.0):
+  - MMBeautyKit (1.2.2):
     - CosmosEncrypt
     - MCCSecret
-    - MMBeautyMedia
+    - MMBeautyMedia (~> 1.2.2)
     - MMCV
     - MMDevice
     - MMFileService
-    - MMXEngine
+    - MMXEngine (= 4.4.4-20200827.1913)
   - MMBeautyMedia (1.2.2):
     - Mantle
     - MetalPetal
@@ -35,14 +35,14 @@ PODS:
     - PLMediaStreamingKit/iphoneos (= 3.0.1)
   - PLMediaStreamingKit/iphoneos (3.0.1)
   - protobuf-lib (3.6.1)
+  - TXLiteAVSDK_Professional (7.6.9360)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
   - MetalPetal (= 1.10.5)
-  - MMBeautyKit (= 1.2.0)
-  - MMBeautyMedia (= 1.2.2)
-  - MMXEngine (= 4.4.4-20200827.1913)
+  - MMBeautyKit (= 1.2.2)
   - PLMediaStreamingKit
+  - TXLiteAVSDK_Professional
 
 SPEC REPOS:
   https://github.com/cosmos33/MMSpecs.git:
@@ -61,6 +61,7 @@ SPEC REPOS:
     - Mantle
     - MetalPetal
     - PLMediaStreamingKit
+    - TXLiteAVSDK_Professional
     - ZipArchive
 
 SPEC CHECKSUMS:
@@ -68,7 +69,7 @@ SPEC CHECKSUMS:
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
   MetalPetal: e709c2cd4116c0eb09f9b9f1822353ebe769b824
-  MMBeautyKit: 2b2e99047bf21de6b14c434427f2d05a3f34c360
+  MMBeautyKit: cac9bda5138492a9c662fc78c6a9fe23246ee56e
   MMBeautyMedia: 96fee25c8220a0083d5ad75db08427d1326adfb2
   MMCV: 45c9f6a33419f8c3661615832f14dfb4f0ff6043
   MMDevice: 8fdf446c7aedc2243918eabcf66f1c84f362931e
@@ -78,8 +79,9 @@ SPEC CHECKSUMS:
   PhotonHTTPDNS: f2d67b2f6008451c5dce51e15171e2be50f58554
   PLMediaStreamingKit: e458493ea7eff3ad7f1c0476fa4a4c9e43d99afd
   protobuf-lib: 72e5ad47507bf0457298db2ae4c34a935f2eab73
+  TXLiteAVSDK_Professional: 0993da88b243cba8250f027903f8b5f0c08be1fa
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 460fd0c90fb828c82d7dca96fdf20d48fbc792fa
+PODFILE CHECKSUM: 5cce13eb54f2a35fe4b7293d666d4302e888164c
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

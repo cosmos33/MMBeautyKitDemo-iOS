@@ -10,6 +10,7 @@
 #import "MMCameraViewController.h"
 #import "MMVideoAssetsCollectionViewController.h"
 #import "MMQiNiuViewController.h"
+#import "MMTXViewController.h"
 @import Photos;
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -25,7 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.items = @[@"相机", @"七牛"];
+    self.items = @[@"相机", @"七牛", @"腾讯推流"];
+    self.view.backgroundColor = UIColor.whiteColor;
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -52,47 +54,17 @@
         [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 1: {
+        MMQiNiuViewController *qiniuVC = [MMQiNiuViewController new];
+        [self.navigationController pushViewController:qiniuVC animated:true];
+        }
+            break;
         case 2:
         {
-        
-        void (^pushVC)(void) = ^{
-            UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-            layout.minimumLineSpacing = 1;
-            layout.minimumInteritemSpacing = 1;
-            layout.itemSize = CGSizeMake(80, 80);
-            MMVideoAssetsCollectionViewController *vc = [[MMVideoAssetsCollectionViewController alloc] initWithCollectionViewLayout:layout];
-            [self.navigationController pushViewController:vc animated:YES];
-        };
-        
-        void (^showAlert)(void) = ^{
-            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"申请相册权限" message:@"请在setting页面打开相册权限" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-            [alertVC addAction:okAction];
-            [self presentViewController:alertVC animated:YES completion:nil];
-        };
-        
-        if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusNotDetermined) {
-            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    if (status == PHAuthorizationStatusAuthorized) {
-                        pushVC();
-                    } else {
-                        showAlert();
-                    }
-                });
-            }];
-        } else if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
-            pushVC();
-        } else {
-            showAlert();
-        }
+        MMTXViewController *vc = [[MMTXViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-        case 1: {
-            MMQiNiuViewController *qiniuVC = [MMQiNiuViewController new];
-            [self.navigationController pushViewController:qiniuVC animated:true];
-            break;
-        }
             
         default:
             break;

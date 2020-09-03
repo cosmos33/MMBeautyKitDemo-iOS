@@ -22,13 +22,14 @@
 		765BFD2C23B309DB0017239F /* MMVideoAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */; };
 		7661056E24EAC21500B89BF5 /* Lookup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056C24EAC20F00B89BF5 /* Lookup.bundle */; };
 		7661056F24EAC21500B89BF5 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056D24EAC21500B89BF5 /* Resources.bundle */; };
-		D88E78DB864817D116B18BD4 /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3480AA742BEB22E878E4E652 /* libPods-MMBeautyKitDemo.a */; };
+		766CDFE424FF7BCD0069EDF8 /* MMTXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766CDFE324FF7BCD0069EDF8 /* MMTXViewController.m */; };
+		83F40896EF39543EADD84E2E /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC067FA32AAD50E40FECAD5 /* libPods-MMBeautyKitDemo.a */; };
 		FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
 		FAFB40B824FF71C800EBCEC4 /* MMQiNiuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3480AA742BEB22E878E4E652 /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC067FA32AAD50E40FECAD5 /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CB81A941EA8A6FDBB7CF28 /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7631138624F8A9F5009DB2FE /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		7631138724F8A9F5009DB2FE /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
@@ -61,6 +62,8 @@
 		765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVideoAssetsCollectionViewController.m; sourceTree = "<group>"; };
 		7661056C24EAC20F00B89BF5 /* Lookup.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Lookup.bundle; sourceTree = "<group>"; };
 		7661056D24EAC21500B89BF5 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		766CDFE224FF7BCD0069EDF8 /* MMTXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTXViewController.h; sourceTree = "<group>"; };
+		766CDFE324FF7BCD0069EDF8 /* MMTXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTXViewController.m; sourceTree = "<group>"; };
 		C03C1CD256D70EA26DE162CC /* Pods-MMBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FAADCF0224C84118001D83BC /* MMCameraTabSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCameraTabSegmentView.h; sourceTree = "<group>"; };
 		FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCameraTabSegmentView.m; sourceTree = "<group>"; };
@@ -73,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88E78DB864817D116B18BD4 /* libPods-MMBeautyKitDemo.a in Frameworks */,
+				83F40896EF39543EADD84E2E /* libPods-MMBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +95,7 @@
 		74E3D74F6B22E4B55CF7D486 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3480AA742BEB22E878E4E652 /* libPods-MMBeautyKitDemo.a */,
+				1CC067FA32AAD50E40FECAD5 /* libPods-MMBeautyKitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +141,6 @@
 				765BFCEC23B3095B0017239F /* SceneDelegate.m */,
 				765BFCEE23B3095B0017239F /* ViewController.h */,
 				765BFCEF23B3095B0017239F /* ViewController.m */,
-				FAFB40B724FF71C800EBCEC4 /* MMQiNiuViewController.h */,
-				FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */,
 				765BFCF123B3095B0017239F /* Main.storyboard */,
 				765BFCF423B3095E0017239F /* Assets.xcassets */,
 				765BFCF623B3095E0017239F /* LaunchScreen.storyboard */,
@@ -168,6 +169,10 @@
 				765BFD1C23B309C40017239F /* MMBeautyRender.m */,
 				765BFD1623B309B30017239F /* MMCamera.h */,
 				765BFD1523B309B30017239F /* MMCamera.m */,
+				766CDFE224FF7BCD0069EDF8 /* MMTXViewController.h */,
+				766CDFE324FF7BCD0069EDF8 /* MMTXViewController.m */,
+				FAFB40B724FF71C800EBCEC4 /* MMQiNiuViewController.h */,
+				FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */,
 			);
 			path = BeautyKitUI;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				765BFCFB23B3095E0017239F /* main.m in Sources */,
 				765BFD2B23B309DB0017239F /* MMDeviceMotionObserver.m in Sources */,
 				FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */,
+				766CDFE424FF7BCD0069EDF8 /* MMTXViewController.m in Sources */,
 				765BFCED23B3095B0017239F /* SceneDelegate.m in Sources */,
 				765BFD1923B309B30017239F /* MMCamera.m in Sources */,
 				FAFB40B824FF71C800EBCEC4 /* MMQiNiuViewController.m in Sources */,
@@ -460,8 +466,9 @@
 			baseConfigurationReference = 40CB81A941EA8A6FDBB7CF28 /* Pods-MMBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57YUJ9BYGN;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,8 +479,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuefei.rifleTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momoappdemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MomoChatDevelopmentProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
