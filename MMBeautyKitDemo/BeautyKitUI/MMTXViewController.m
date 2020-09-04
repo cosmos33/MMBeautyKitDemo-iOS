@@ -21,7 +21,6 @@
     
     UIView *_localView;
     
-    CVOpenGLESTextureRef _texture;
     GLuint _fbo;
 }
 

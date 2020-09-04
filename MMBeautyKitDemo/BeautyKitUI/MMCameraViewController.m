@@ -104,12 +104,16 @@
         [segmentView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
     }
     
+    __weak typeof(self) weakself = self;
+    
     segmentView.clickedHander = ^(MMSegmentItem *item) {
+        __strong typeof(self) self = weakself;
         [self.render setLookupPath:item.type];
         [self.render setLookupIntensity:item.intensity];
     };
     
     segmentView.sliderValueChanged = ^(MMSegmentItem *item, CGFloat intensity) {
+        __strong typeof(self) self = weakself;
         [self.render setLookupIntensity:intensity];
     };
     
@@ -131,10 +135,12 @@
     }
     
     segmentView2.clickedHander = ^(MMSegmentItem *item) {
+        __strong typeof(self) self = weakself;
         [self.render setBeautyFactor:item.intensity forKey:item.type];
     };
     
     segmentView2.sliderValueChanged = ^(MMSegmentItem *item, CGFloat intensity) {
+        __strong typeof(self) self = weakself;
         [self.render setBeautyFactor:intensity forKey:item.type];
     };
     
@@ -156,6 +162,7 @@
     }
     
     segmentView3.clickedHander = ^(MMSegmentItem *item) {
+        __strong typeof(self) self = weakself;
         NSString *path = item.type;
         if (path.length > 0) {
             [self.render setMaskModelPath:item.type];
