@@ -11,6 +11,9 @@ target 'MMBeautyKitDemo' do
   pod 'MetalPetal', '1.10.5', :modular_headers => true
   pod 'MMBeautyKit', '1.2.2'
   
+  # 解决HTTPDNS过大问题
+  pod 'PhotonHTTPDNS','1.0.2'
+  
   # 七牛直播推流
   pod 'PLMediaStreamingKit'
   

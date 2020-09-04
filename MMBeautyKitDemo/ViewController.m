@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "MMCameraViewController.h"
-#import "MMVideoAssetsCollectionViewController.h"
 #import "MMQiNiuViewController.h"
 #import "MMTXViewController.h"
 @import Photos;

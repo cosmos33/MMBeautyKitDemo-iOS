@@ -54,8 +54,8 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSString * const licenceURL = @"http://license.vod2.myqcloud.com/license/v1/081ecb13f801e7decb2174df1640b1d7/TXLiveSDK.licence";
-        NSString * const licenceKey = @"dbcb695c25a61db355114a4e76e900d3";
+        NSString * const licenceURL = @"http://license.vod2.myqcloud.com/license/v1/ab1c781a4e95be20e2058c279a83d138/TXLiveSDK.licence";
+        NSString * const licenceKey = @"110690b331bd72bf92281dce6989c8c3";
         
         //TXLiveBase 位于 "TXLiveBase.h" 头文件中
         [TXLiveBase setLicenceURL:licenceURL key:licenceKey];
@@ -412,6 +412,7 @@
 
 - (void)clickCamera:(UIButton *)btn {
     [self.pusher switchCamera];
+    [self.pusher setMirror:self.pusher.frontCamera];
     [btn setBackgroundColor:self.pusher.frontCamera ? UIColor.redColor : UIColor.greenColor];
 }
 
@@ -472,7 +473,7 @@
         } else if (evtID == PUSH_EVT_CONNECT_SUCC) {
             [self.pusher setMute:NO];
             [self.pusher showVideoDebugLog:NO];
-            [self.pusher setMirror:YES];
+            [self.pusher setMirror:self.pusher.frontCamera];
         } else if (evtID == PUSH_WARNING_NET_BUSY) {
             NSLog(@"您当前的网络环境不佳，请尽快更换网络保证正常直播");
         }

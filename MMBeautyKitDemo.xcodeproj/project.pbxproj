@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76513FBA250109B70070D8D5 /* MMTXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766CDFE324FF7BCD0069EDF8 /* MMTXViewController.m */; };
+		76513FBB250109B70070D8D5 /* MMQiNiuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */; };
+		76513FBC250109BA0070D8D5 /* MMBeautyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1C23B309C40017239F /* MMBeautyRender.m */; };
+		7651593B25021DEF0070D8D5 /* MMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2623B309DB0017239F /* MMCameraViewController.m */; };
 		765BFCEA23B3095B0017239F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFCE923B3095B0017239F /* AppDelegate.m */; };
 		765BFCED23B3095B0017239F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFCEC23B3095B0017239F /* SceneDelegate.m */; };
 		765BFCF023B3095B0017239F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFCEF23B3095B0017239F /* ViewController.m */; };
@@ -15,27 +19,23 @@
 		765BFCF823B3095E0017239F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765BFCF623B3095E0017239F /* LaunchScreen.storyboard */; };
 		765BFCFB23B3095E0017239F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFCFA23B3095E0017239F /* main.m */; };
 		765BFD1923B309B30017239F /* MMCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1523B309B30017239F /* MMCamera.m */; };
-		765BFD1F23B309C40017239F /* MMBeautyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1C23B309C40017239F /* MMBeautyRender.m */; };
 		765BFD2923B309DB0017239F /* MMAssetGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2223B309DB0017239F /* MMAssetGridViewCell.m */; };
-		765BFD2A23B309DB0017239F /* MMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2623B309DB0017239F /* MMCameraViewController.m */; };
 		765BFD2B23B309DB0017239F /* MMDeviceMotionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2723B309DB0017239F /* MMDeviceMotionObserver.m */; };
 		765BFD2C23B309DB0017239F /* MMVideoAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */; };
 		7661056E24EAC21500B89BF5 /* Lookup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056C24EAC20F00B89BF5 /* Lookup.bundle */; };
 		7661056F24EAC21500B89BF5 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056D24EAC21500B89BF5 /* Resources.bundle */; };
-		766CDFE424FF7BCD0069EDF8 /* MMTXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766CDFE324FF7BCD0069EDF8 /* MMTXViewController.m */; };
 		83F40896EF39543EADD84E2E /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC067FA32AAD50E40FECAD5 /* libPods-MMBeautyKitDemo.a */; };
 		FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
-		FAFB40B824FF71C800EBCEC4 /* MMQiNiuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CC067FA32AAD50E40FECAD5 /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CB81A941EA8A6FDBB7CF28 /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7631138624F8A9F5009DB2FE /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
-		7631138724F8A9F5009DB2FE /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
-		7631138824F8A9F5009DB2FE /* package_upload.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = package_upload.py; sourceTree = "<group>"; };
-		7631138924F8A9F5009DB2FE /* sendMail.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sendMail.py; sourceTree = "<group>"; };
-		7631138A24F8AF46009DB2FE /* MMBeautyKitDemo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MMBeautyKitDemo.plist; sourceTree = "<group>"; };
+		76513FB4250103210070D8D5 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
+		76513FB5250103210070D8D5 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		76513FB6250103210070D8D5 /* package_upload.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = package_upload.py; sourceTree = "<group>"; };
+		76513FB7250103210070D8D5 /* sendMail.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sendMail.py; sourceTree = "<group>"; };
+		76513FB8250103440070D8D5 /* MMBeautyKitDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MMBeautyKitDemo.plist; sourceTree = "<group>"; };
 		765BFCE523B3095B0017239F /* MMBeautyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMBeautyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BFCE823B3095B0017239F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		765BFCE923B3095B0017239F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,22 +100,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7631138424F8A9F5009DB2FE /* Script */ = {
+		76513FB2250103210070D8D5 /* Script */ = {
 			isa = PBXGroup;
 			children = (
-				7631138A24F8AF46009DB2FE /* MMBeautyKitDemo.plist */,
-				7631138624F8A9F5009DB2FE /* ExportOptions.plist */,
-				7631138724F8A9F5009DB2FE /* build.sh */,
-				7631138824F8A9F5009DB2FE /* package_upload.py */,
-				7631138924F8A9F5009DB2FE /* sendMail.py */,
+				76513FB8250103440070D8D5 /* MMBeautyKitDemo.plist */,
+				76513FB4250103210070D8D5 /* ExportOptions.plist */,
+				76513FB5250103210070D8D5 /* build.sh */,
+				76513FB6250103210070D8D5 /* package_upload.py */,
+				76513FB7250103210070D8D5 /* sendMail.py */,
 			);
 			path = Script;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		765BFCDC23B3095B0017239F = {
 			isa = PBXGroup;
 			children = (
-				7631138424F8A9F5009DB2FE /* Script */,
 				765BFCE723B3095B0017239F /* MMBeautyKitDemo */,
 				765BFCE623B3095B0017239F /* Products */,
 				2A389913EC9EBE83CA3602C4 /* Pods */,
@@ -134,6 +133,7 @@
 		765BFCE723B3095B0017239F /* MMBeautyKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				76513FB2250103210070D8D5 /* Script */,
 				765BFD1423B309A80017239F /* BeautyKitUI */,
 				765BFCE823B3095B0017239F /* AppDelegate.h */,
 				765BFCE923B3095B0017239F /* AppDelegate.m */,
@@ -188,8 +188,8 @@
 				765BFCE123B3095B0017239F /* Sources */,
 				765BFCE223B3095B0017239F /* Frameworks */,
 				765BFCE323B3095B0017239F /* Resources */,
-				16D8A3AB3EE722013193A40E /* [CP] Copy Pods Resources */,
-				14336DF353E888BE43DC738B /* [CP] Embed Pods Frameworks */,
+				733FBB7D938391A35E69C220 /* [CP] Embed Pods Frameworks */,
+				B8F4A381B98A05E4884B4429 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,40 +248,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14336DF353E888BE43DC738B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		16D8A3AB3EE722013193A40E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		18C31CB655B06548B6554C19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +270,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		733FBB7D938391A35E69C220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F4A381B98A05E4884B4429 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,17 +313,17 @@
 			files = (
 				765BFD2923B309DB0017239F /* MMAssetGridViewCell.m in Sources */,
 				765BFD2C23B309DB0017239F /* MMVideoAssetsCollectionViewController.m in Sources */,
-				765BFD1F23B309C40017239F /* MMBeautyRender.m in Sources */,
+				76513FBB250109B70070D8D5 /* MMQiNiuViewController.m in Sources */,
+				76513FBC250109BA0070D8D5 /* MMBeautyRender.m in Sources */,
 				765BFCF023B3095B0017239F /* ViewController.m in Sources */,
 				765BFCEA23B3095B0017239F /* AppDelegate.m in Sources */,
 				765BFCFB23B3095E0017239F /* main.m in Sources */,
 				765BFD2B23B309DB0017239F /* MMDeviceMotionObserver.m in Sources */,
+				7651593B25021DEF0070D8D5 /* MMCameraViewController.m in Sources */,
+				76513FBA250109B70070D8D5 /* MMTXViewController.m in Sources */,
 				FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */,
-				766CDFE424FF7BCD0069EDF8 /* MMTXViewController.m in Sources */,
 				765BFCED23B3095B0017239F /* SceneDelegate.m in Sources */,
 				765BFD1923B309B30017239F /* MMCamera.m in Sources */,
-				FAFB40B824FF71C800EBCEC4 /* MMQiNiuViewController.m in Sources */,
-				765BFD2A23B309DB0017239F /* MMCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,22 +466,23 @@
 			baseConfigurationReference = 40CB81A941EA8A6FDBB7CF28 /* Pods-MMBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 36WT396TPZ;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57YUJ9BYGN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MMBeautyKitDemo/BeautyKit",
 				);
 				INFOPLIST_FILE = MMBeautyKitDemo/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momoappdemo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunfei.sb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = MomoChatDevelopmentProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -500,6 +501,7 @@
 					"$(PROJECT_DIR)/MMBeautyKitDemo/BeautyKit",
 				);
 				INFOPLIST_FILE = MMBeautyKitDemo/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

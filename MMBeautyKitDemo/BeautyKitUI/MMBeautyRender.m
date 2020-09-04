@@ -28,7 +28,7 @@
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
 #if DEBUG
-            [CosmosBeautySDK initSDKWithAppId:@"d1ce43f8b5327994e01c4ba74777a5ab" delegate:self];
+            [CosmosBeautySDK initSDKWithAppId:@"f88de7fa5d5f3734629f8551461772b3" delegate:self];
 #else
             [CosmosBeautySDK initSDKWithAppId:@"6b38bc8e6afdbd040b8f6386b65c0aac" delegate:self];
 #endif
@@ -46,8 +46,6 @@
         
         _stickerDescriptor = [[MMRenderFilterStickerModule alloc] init];
         [render registerModule:_stickerDescriptor];
-        
-        [_stickerDescriptor setMaskModelPath:[[NSBundle.mainBundle pathForResource:@"Resources" ofType:@"bundle"] stringByAppendingPathComponent:@"666"]];
     }
     return self;
 }
