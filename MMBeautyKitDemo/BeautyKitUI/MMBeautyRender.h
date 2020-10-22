@@ -8,15 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import <MMBeautyKit/MMRenderModuleManager.h>
-#import <MMBeautyKit/MMRenderFilterBeautyModule.h>
-#import <MMBeautyKit/MMRenderFilterLookupModule.h>
-#import <MMBeautyKit/MMRenderFilterStickerModule.h>
-#import <MMBeautyKit/MMRenderFilterBigHeadEffectModule.h>
+#import <MMBeautyKit/MMBeautyKit-umbrella.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MMBeautyRender : NSObject
+
+- (void)addBeauty;
+- (void)removeBeauty;
+
+- (void)addLookup;
+- (void)removeLookup;
+
+- (void)addSticker;
+- (void)removeSticker;
 
 // 如果是相机，需要传入前置/后置位置, 该参数仅在相机模式下设置
 @property (nonatomic, assign) AVCaptureDevicePosition devicePosition;
@@ -34,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setLookupPath:(NSString *)lookupPath;
 // 设置lookup滤镜浓度
 - (void)setLookupIntensity:(CGFloat)intensity;
+// 清除滤镜效果
+- (void)clearLookup;
 
 // 设置贴纸资源路径
 - (void)setMaskModelPath:(NSString *)path;

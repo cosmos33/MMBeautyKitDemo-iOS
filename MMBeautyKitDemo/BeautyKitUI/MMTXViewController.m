@@ -274,7 +274,7 @@
         @{@"name":@"下巴",@"type":CHIN_LENGTH,@"begin":@-1, @"end":@1},
         @{@"name":@"额头",@"type":FOREHEAD,@"begin":@-1, @"end":@1},
         @{@"name":@"短脸",@"type":SHORTEN_FACE,@"begin":@0, @"end":@1},
-        @{@"name":@"祛法令纹",@"tpe":NASOLABIALFOLDSAREA,@"begin":@0, @"end":@1},
+        @{@"name":@"祛法令纹",@"type":NASOLABIALFOLDSAREA,@"begin":@0, @"end":@1},
         @{@"name":@"眼睛角度",@"type":EYE_TILT,@"begin":@-1, @"end":@1},
         @{@"name":@"眼距",@"type":EYE_DISTANCE,@"begin":@-1, @"end":@1},
         @{@"name":@"眼袋",@"type":EYESAREA,@"begin":@0, @"end":@1},

@@ -7,19 +7,30 @@
 //
 
 #import "MMBeautyRender.h"
-#import <MMBeautyKit/CosmosBeautySDK.h>
+
+#define LOOKUP 1
+#define STICKER 1
 
 @interface MMBeautyRender () <CosmosBeautySDKDelegate>
 
 @property (nonatomic, strong) MMRenderModuleManager *render;
 @property (nonatomic, strong) MMRenderFilterBeautyModule *beautyDescriptor;
+
+#if LOOKUP == 1
 @property (nonatomic, strong) MMRenderFilterLookupModule *lookupDescriptor;
+#endif
+
+#if STICKER == 1
 @property (nonatomic, strong) MMRenderFilterStickerModule *stickerDescriptor;
-@property (nonatomic, strong) MMRenderFilterBigHeadEffectModule *bigHeadDescriptor;
+#endif
 
 @end
 
 @implementation MMBeautyRender
+
+- (void)dealloc {
+    
+}
 
 - (instancetype)init {
     self = [super init];
@@ -36,18 +47,62 @@
         
         MMRenderModuleManager *render = [[MMRenderModuleManager alloc] init];
         render.devicePosition = AVCaptureDevicePositionFront;
+        render.inputType = MMRenderInputTypeStream;
         self.render = render;
         
         _beautyDescriptor = [[MMRenderFilterBeautyModule alloc] init];
         [render registerModule:_beautyDescriptor];
-
+        
+#if LOOKUP == 1
         _lookupDescriptor = [[MMRenderFilterLookupModule alloc] init];
         [render registerModule:_lookupDescriptor];
+#endif
         
+#if STICKER == 1
         _stickerDescriptor = [[MMRenderFilterStickerModule alloc] init];
         [render registerModule:_stickerDescriptor];
+#endif
+        NSLog(@"level = %d", [CosmosBeautySDK performSelector:NSSelectorFromString(@"__level__")]);
     }
     return self;
+}
+
+- (void)addBeauty {
+    _beautyDescriptor = [[MMRenderFilterBeautyModule alloc] init];
+    [_render registerModule:_beautyDescriptor];
+}
+
+- (void)removeBeauty {
+    [_render unregisterModule:_beautyDescriptor];
+    _beautyDescriptor = nil;
+}
+
+- (void)addLookup {
+#if LOOKUP == 1
+    _lookupDescriptor = [[MMRenderFilterLookupModule alloc] init];
+    [_render registerModule:_lookupDescriptor];
+#endif
+}
+
+- (void)removeLookup {
+#if LOOKUP == 1
+    [_render unregisterModule:_lookupDescriptor];
+    _lookupDescriptor = nil;
+#endif
+}
+
+- (void)addSticker {
+#if STICKER == 1
+    _stickerDescriptor = [[MMRenderFilterStickerModule alloc] init];
+    [_render registerModule:_stickerDescriptor];
+#endif
+}
+
+- (void)removeSticker {
+#if STICKER == 1
+    [_render unregisterModule:_stickerDescriptor];
+    _stickerDescriptor = nil;
+#endif
 }
 
 - (CVPixelBufferRef _Nullable)renderPixelBuffer:(CVPixelBufferRef)pixelBuffer
@@ -84,23 +139,37 @@
 }
 
 - (void)setLookupPath:(NSString *)lookupPath {
+#if LOOKUP == 1
     [self.lookupDescriptor setLookupResourcePath:lookupPath];
     [self.lookupDescriptor setIntensity:1.0];
+#endif
 }
 
 - (void)setLookupIntensity:(CGFloat)intensity {
+#if LOOKUP == 1
     [self.lookupDescriptor setIntensity:intensity];
+#endif
+}
+
+- (void)clearLookup {
+#if LOOKUP == 1
+    [self.lookupDescriptor clear];
+#endif
 }
 
 - (void)setMaskModelPath:(NSString *)path {
+#if STICKER == 1
     [self.stickerDescriptor setMaskModelPath:path];
+#endif
 }
 
 - (void)clearSticker {
+#if STICKER == 1
     [self.stickerDescriptor clear];
+#endif
 }
 
-#pragma mark - delegate
+#pragma mark - CosmosBeautySDKDelegate delegate
 
 // 发生错误时，不可直接发起 `+[CosmosBeautySDK prepareBeautyResource]` 重新请求，否则会造成循环递归
 - (void)context:(CosmosBeautySDK *)context result:(BOOL)result detectorConfigFailedToLoad:(NSError * _Nullable)error {
@@ -115,3 +184,4 @@ requestFailedToAuthorization:(NSError * _Nullable)error {
 }
 
 @end
+

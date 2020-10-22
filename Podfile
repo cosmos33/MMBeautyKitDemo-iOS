@@ -8,12 +8,23 @@ platform :ios, '10.0'
 
 target 'MMBeautyKitDemo' do
 
-  pod 'MetalPetal', '1.10.5', :modular_headers => true
-  pod 'MMBeautyKit', '1.2.2'
-  
-  # 解决HTTPDNS过大问题
-  pod 'PhotonHTTPDNS','1.0.2'
-  
+  pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
+
+# 版本5
+pod 'MMBeautyKit', '2.0.0-Interact'
+
+# 版本4
+#pod 'MMBeautyKit', '2.0.0-Micro-surgery'
+
+# 版本3
+#pod 'MMBeautyKit', '2.0.0-Sticker'
+
+# 版本2
+#pod 'MMBeautyKit', '2.0.0-Filter'
+
+# 版本1
+#pod 'MMBeautyKit', '2.0.0-Basic'
+
   # 七牛直播推流
   pod 'PLMediaStreamingKit'
   
