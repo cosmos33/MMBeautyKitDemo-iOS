@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  MMBeautyKitDemo
+//  MMTXBeautyKitDemo
 //
-//  Created by sunfei on 2019/12/25.
-//  Copyright © 2019 sunfei. All rights reserved.
+//  Created by sunfei on 2020/10/28.
+//  Copyright © 2020 sunfei. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "MMCameraViewController.h"
+#import "MMTXViewController.h"
 @import Photos;
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.items = @[@"相机"];
+    self.items = @[@"腾讯推流"];
     self.view.backgroundColor = UIColor.whiteColor;
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -47,11 +47,11 @@
     switch (indexPath.row) {
         case 0:
         {
-        MMCameraViewController *vc = [[MMCameraViewController alloc] init];
+        MMTXViewController *vc = [[MMTXViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-
+            
         default:
             break;
     }
@@ -68,5 +68,6 @@
     cell.textLabel.text = self.items[indexPath.row];
     return cell;
 }
+
 
 @end
