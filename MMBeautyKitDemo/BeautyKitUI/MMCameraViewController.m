@@ -227,6 +227,8 @@
         @{@"name" : @"rainbow", @"path" : @"rainbow"},
         @{@"name" : @"手控樱花雨", @"path" : @"shoukongyinghua"},
         @{@"name" : @"微笑", @"path" : @"weixiao"},
+        @{@"name" : @"抱拳", @"path" : @"baoquan"},
+        @{@"name" : @"摇滚", @"path" : @"rock"},
         @{@"name" : @"比八", @"path" : @"biba"},
         @{@"name" : @"拜年", @"path" : @"bainian"},
         @{@"name" : @"点赞", @"path" : @"dianzan"},
