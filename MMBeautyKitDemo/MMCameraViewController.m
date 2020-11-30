@@ -394,6 +394,12 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.previewView.image = image;
             });
+        } else {
+            CVPixelBufferRetain(pixelBuffer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.previewView.image = [[MTIImage alloc] initWithCVPixelBuffer:pixelBuffer alphaType:MTIAlphaTypeAlphaIsOne];
+                CVPixelBufferRelease(pixelBuffer);
+            });
         }
         
     }
