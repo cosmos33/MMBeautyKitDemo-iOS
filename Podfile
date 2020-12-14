@@ -23,8 +23,7 @@ def beautyInstall
 #  pod 'MMBeautyKit', '2.2.0-Basic'
   
   pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
-  pod 'MMCV', :git => 'https://github.com/ybhjx1314/MMCV.git', :branch => 'MMVC-MMVideoSDK'
-  
+
 end
 
 target 'MMBeautyKitDemo' do
