@@ -10,12 +10,12 @@ PODS:
   - MetalPetal/Core (1.13.0)
   - MetalPetal/Static (1.13.0):
     - MetalPetal/Core
-  - MMBeautyKit (2.1.2):
+  - MMBeautyKit (2.2.0):
     - CosmosEncrypt
     - MCCSecret
     - MetalPetal/Static
     - MMBeautyMedia
-    - MMCV (= 2.1.0-MMVideoSDK)
+    - MMCV
     - MMDevice
     - MMFileService
     - MMXEngine (= 4.4.4-20200827.1913)
@@ -37,7 +37,7 @@ PODS:
     - MetalPetal/Static
     - MMCV
     - MMXEngine
-  - MMCV (2.1.0-MMVideoSDK):
+  - MMCV (2.1.2-MMVideoSDK):
     - MCCSecret
     - MMFileService
     - PhotonHTTPDNS
@@ -57,7 +57,8 @@ PODS:
 DEPENDENCIES:
   - AgoraRtcEngine_iOS
   - MetalPetal/Static (= 1.13.0)
-  - MMBeautyKit (= 2.1.2-Interact)
+  - MMBeautyKit (= 2.2.0-Interact)
+  - MMCV (from `https://github.com/ybhjx1314/MMCV.git`, branch `MMVC-MMVideoSDK`)
   - PLMediaStreamingKit
   - TXLiteAVSDK_Professional
 
@@ -67,7 +68,6 @@ SPEC REPOS:
     - MCCSecret
     - MMBeautyKit
     - MMBeautyMedia
-    - MMCV
     - MMDevice
     - MMFileService
     - MMXEngine
@@ -82,15 +82,25 @@ SPEC REPOS:
     - TXLiteAVSDK_Professional
     - ZipArchive
 
+EXTERNAL SOURCES:
+  MMCV:
+    :branch: MMVC-MMVideoSDK
+    :git: https://github.com/ybhjx1314/MMCV.git
+
+CHECKOUT OPTIONS:
+  MMCV:
+    :commit: d28eacc5c031be17f7088927eeeedeb1cd69c79f
+    :git: https://github.com/ybhjx1314/MMCV.git
+
 SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
   CosmosEncrypt: cf630ded96fc16c4968296dc438644e9173a248b
   Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
   MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
   MetalPetal: 985e14c41cea0086264799fae4de02602c51d794
-  MMBeautyKit: a12522eebe1f1340d3e9aa05cb301618ab21b68b
+  MMBeautyKit: ab73cd0c6842b161ad4b8cf238cf6cb1919a0d57
   MMBeautyMedia: 397eafdf7b91c767cfbe59581badd3edd8016ee9
-  MMCV: dd788552e527dc96c9642bb22da49d7e0c2dcc7c
+  MMCV: c080f21a7795939312e09fd159951de824e10a1e
   MMDevice: 8fdf446c7aedc2243918eabcf66f1c84f362931e
   MMFileService: 58ebb00e5278f26f997d85163dc11f4941d3c1b7
   MMXEngine: 731cdfc6220054e5829a21bacc0895b34cc6b494
@@ -101,6 +111,6 @@ SPEC CHECKSUMS:
   TXLiteAVSDK_Professional: 0993da88b243cba8250f027903f8b5f0c08be1fa
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 6fa2aa5f22d5bad3c39e1e0587ca7040412fbb86
+PODFILE CHECKSUM: 7e0fb8954c29c839b2c05f61d2e78c0ff3c0ddf3
 
 COCOAPODS: 1.9.3

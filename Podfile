@@ -8,21 +8,22 @@ platform :ios, '10.0'
 
 def beautyInstall
   # 版本5
-  pod 'MMBeautyKit', '2.1.2-Interact'
+  pod 'MMBeautyKit', '2.2.0-Interact'
   
   # 版本4
-#  pod 'MMBeautyKit', '2.1.2-Micro-surgery'
+#  pod 'MMBeautyKit', '2.2.0-Micro-surgery'
   
   # 版本3
-#  pod 'MMBeautyKit', '2.1.2-Sticker'
+#  pod 'MMBeautyKit', '2.2.0-Sticker'
   
   # 版本2
-#  pod 'MMBeautyKit', '2.1.2-Filter'
+#  pod 'MMBeautyKit', '2.2.0-Filter'
   
   # 版本1
-#  pod 'MMBeautyKit', '2.1.2-Basic'
+#  pod 'MMBeautyKit', '2.2.0-Basic'
   
   pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
+  pod 'MMCV', :git => 'https://github.com/ybhjx1314/MMCV.git', :branch => 'MMVC-MMVideoSDK'
   
 end
 
