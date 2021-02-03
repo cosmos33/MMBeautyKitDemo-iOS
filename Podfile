@@ -56,6 +56,14 @@ target 'MMArgoraBeautyKitDemo' do
   
 end
 
+target 'MMZegoBeautyKitDemo' do
+    
+    beautyInstall
+    
+    pod 'ZegoLiveRoom'
+    
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
 
