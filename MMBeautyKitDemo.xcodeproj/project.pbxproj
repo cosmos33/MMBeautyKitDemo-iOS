@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */; };
+		3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */; };
 		76160661256BA7A700F9C194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160660256BA7A700F9C194 /* AppDelegate.m */; };
 		76160664256BA7A700F9C194 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160663256BA7A700F9C194 /* SceneDelegate.m */; };
 		76160667256BA7A700F9C194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160666256BA7A700F9C194 /* ViewController.m */; };
@@ -92,10 +94,22 @@
 		76F98CB7254986D00020F4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB6254986D00020F4F6 /* Assets.xcassets */; };
 		76F98CBA254986D00020F4F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB8254986D00020F4F6 /* LaunchScreen.storyboard */; };
 		76F98CBD254986D00020F4F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F98CBC254986D00020F4F6 /* main.m */; };
+		9A37D089227A5EF608F85CEB /* libPods-MMZegoBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */; };
+		B38AEBC428BBC9726E17499C /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */; };
+		C4B906783CC9D2D882BB70C7 /* libPods-MMQNBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */; };
 		FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTXBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		32E399175ED589DD1BFE3CC6 /* Pods-MMArgoraBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMZegoBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMTXBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDDA52885C3561D6A782D16 /* Pods-MMZegoBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		75C6A210323AC64822CC93EA /* Pods-MMArgoraBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7616065D256BA7A700F9C194 /* MMArgoraBeautyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMArgoraBeautyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7616065F256BA7A700F9C194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76160660256BA7A700F9C194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -201,10 +215,16 @@
 		76F98CB9254986D00020F4F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F98CBB254986D00020F4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F98CBC254986D00020F4F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMArgoraBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAADCF0224C84118001D83BC /* MMCameraTabSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCameraTabSegmentView.h; sourceTree = "<group>"; };
 		FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCameraTabSegmentView.m; sourceTree = "<group>"; };
 		FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMQiNiuViewController.m; sourceTree = "<group>"; };
 		FAFB40B724FF71C800EBCEC4 /* MMQiNiuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMQiNiuViewController.h; sourceTree = "<group>"; };
+		FC71C6ECC42E8B97F4C56C7E /* Pods-MMTXBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTXBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38AEBC428BBC9726E17499C /* libPods-MMBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A37D089227A5EF608F85CEB /* libPods-MMZegoBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B906783CC9D2D882BB70C7 /* libPods-MMQNBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +274,16 @@
 		2A389913EC9EBE83CA3602C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				32E399175ED589DD1BFE3CC6 /* Pods-MMArgoraBeautyKitDemo.debug.xcconfig */,
+				75C6A210323AC64822CC93EA /* Pods-MMArgoraBeautyKitDemo.release.xcconfig */,
+				BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */,
+				01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */,
+				C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */,
+				116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */,
+				FC71C6ECC42E8B97F4C56C7E /* Pods-MMTXBeautyKitDemo.debug.xcconfig */,
+				1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */,
+				C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */,
+				6CDDA52885C3561D6A782D16 /* Pods-MMZegoBeautyKitDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -319,6 +354,7 @@
 				767D49A325CAAE3200ADC8C5 /* MMZegoBeautyKitDemo */,
 				765BFCE623B3095B0017239F /* Products */,
 				2A389913EC9EBE83CA3602C4 /* Pods */,
+				DD9AD957C4283CA4B3304ABF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -465,6 +501,18 @@
 			path = MMTXBeautyKitDemo;
 			sourceTree = "<group>";
 		};
+		DD9AD957C4283CA4B3304ABF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */,
+				E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */,
+				0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */,
+				5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */,
+				46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,9 +520,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76160675256BA7A900F9C194 /* Build configuration list for PBXNativeTarget "MMArgoraBeautyKitDemo" */;
 			buildPhases = (
+				9F13096B8D957F1809EF53F7 /* [CP] Check Pods Manifest.lock */,
 				76160659256BA7A700F9C194 /* Sources */,
 				7616065A256BA7A700F9C194 /* Frameworks */,
 				7616065B256BA7A700F9C194 /* Resources */,
+				054D3C5C8080F908B5D17F48 /* [CP] Embed Pods Frameworks */,
+				723EB35FD7B26C318901E94D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -489,9 +540,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 765BFCFE23B3095E0017239F /* Build configuration list for PBXNativeTarget "MMBeautyKitDemo" */;
 			buildPhases = (
+				B4DDE68727974E533EC5CAF1 /* [CP] Check Pods Manifest.lock */,
 				765BFCE123B3095B0017239F /* Sources */,
 				765BFCE223B3095B0017239F /* Frameworks */,
 				765BFCE323B3095B0017239F /* Resources */,
+				E01E3BC99C21F70F422A12EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -506,9 +559,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767D49BA25CAAE3300ADC8C5 /* Build configuration list for PBXNativeTarget "MMZegoBeautyKitDemo" */;
 			buildPhases = (
+				C25C942D3315488ABB2B2277 /* [CP] Check Pods Manifest.lock */,
 				767D499E25CAAE3200ADC8C5 /* Sources */,
 				767D499F25CAAE3200ADC8C5 /* Frameworks */,
 				767D49A025CAAE3200ADC8C5 /* Resources */,
+				3D91316075FA6E276CC031CB /* [CP] Embed Pods Frameworks */,
+				67E6D51F136261B1A22E16C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -523,9 +579,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7680438F25498C40006B4C34 /* Build configuration list for PBXNativeTarget "MMQNBeautyKitDemo" */;
 			buildPhases = (
+				D999D98AAC8BCD788BE59914 /* [CP] Check Pods Manifest.lock */,
 				7680437525498C3F006B4C34 /* Sources */,
 				7680437625498C3F006B4C34 /* Frameworks */,
 				7680437725498C3F006B4C34 /* Resources */,
+				FFB97DCE799AE6D6B0D0F82A /* [CP] Embed Pods Frameworks */,
+				D9FE02874811DDC93B1C02E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -540,9 +599,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F98CC0254986D00020F4F6 /* Build configuration list for PBXNativeTarget "MMTXBeautyKitDemo" */;
 			buildPhases = (
+				44A00828514BD5B97DD1B12D /* [CP] Check Pods Manifest.lock */,
 				76F98CA4254986CF0020F4F6 /* Sources */,
 				76F98CA5254986CF0020F4F6 /* Frameworks */,
 				76F98CA6254986CF0020F4F6 /* Resources */,
+				1A52B8E41E1F1460DE39BFFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -663,6 +724,255 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		054D3C5C8080F908B5D17F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A52B8E41E1F1460DE39BFFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D91316075FA6E276CC031CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44A00828514BD5B97DD1B12D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMTXBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E6D51F136261B1A22E16C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		723EB35FD7B26C318901E94D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F13096B8D957F1809EF53F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMArgoraBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4DDE68727974E533EC5CAF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C25C942D3315488ABB2B2277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMZegoBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D999D98AAC8BCD788BE59914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMQNBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FE02874811DDC93B1C02E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E01E3BC99C21F70F422A12EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB97DCE799AE6D6B0D0F82A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76160659256BA7A700F9C194 /* Sources */ = {
@@ -849,6 +1159,7 @@
 /* Begin XCBuildConfiguration section */
 		76160673256BA7A900F9C194 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E399175ED589DD1BFE3CC6 /* Pods-MMArgoraBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -871,6 +1182,7 @@
 		};
 		76160674256BA7A900F9C194 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C6A210323AC64822CC93EA /* Pods-MMArgoraBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1005,6 +1317,7 @@
 		};
 		765BFCFF23B3095E0017239F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1030,6 +1343,7 @@
 		};
 		765BFD0023B3095E0017239F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -1055,6 +1369,7 @@
 		};
 		767D49B825CAAE3300ADC8C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1077,6 +1392,7 @@
 		};
 		767D49B925CAAE3300ADC8C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDDA52885C3561D6A782D16 /* Pods-MMZegoBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1099,6 +1415,7 @@
 		};
 		7680439025498C40006B4C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1117,6 +1434,7 @@
 		};
 		7680439125498C40006B4C34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1135,6 +1453,7 @@
 		};
 		76F98CBE254986D00020F4F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC71C6ECC42E8B97F4C56C7E /* Pods-MMTXBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1153,6 +1472,7 @@
 		};
 		76F98CBF254986D00020F4F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

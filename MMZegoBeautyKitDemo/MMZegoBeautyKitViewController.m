@@ -41,11 +41,11 @@
     [self.demo initFilterFactoryType:self.bufferType];
     
     // 然后初始化 ZegoLiveRoom SDK
-    [self.demo initSDKWithRoomID:@"123" streamID:@"123" isAnchor:YES];
+    [self.demo initSDKWithRoomID:@"123" streamID:@"456" isAnchor:YES];
     
     [self.demo loginRoom];
     [self.demo startPreview];
-    [self.demo enablePreviewMirror:NO];
+    [self.demo enablePreviewMirror:YES];
     [self.demo startPublish];
     
     [self setupViews];

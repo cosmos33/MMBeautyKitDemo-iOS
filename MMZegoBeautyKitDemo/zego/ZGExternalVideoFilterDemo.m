@@ -174,13 +174,16 @@
 }
 
 - (void)enablePreviewMirror:(BOOL)enable {
-    [self.zegoApi setVideoMirrorMode:enable ? ZegoVideoMirrorModePreviewMirrorPublishNoMirror : ZegoVideoMirrorModePreviewCaptureBothNoMirror];
+//    [self.zegoApi setVideoMirrorMode:enable ? ZegoVideoMirrorModePreviewMirrorPublishNoMirror : ZegoVideoMirrorModePreviewCaptureBothNoMirror];
+//    [self.zegoApi enablePreviewMirror:enable];
+    [self.zegoApi enableCaptureMirror:enable];
+    [self.zegoApi enablePreviewMirror:!enable];
 }
 
 - (void)flip {
     self.isFront = !self.isFront;
     [self.zegoApi setFrontCam:self.isFront];
-    [self.zegoApi enableCaptureMirror:self.isFront];
+    [self enablePreviewMirror:self.isFront];
 }
 
 #pragma mark - Publisher Delegate
