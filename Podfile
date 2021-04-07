@@ -8,19 +8,10 @@ platform :ios, '10.0'
 
 def beautyInstall
   # 版本5
-  pod 'MMBeautyKit', '2.2.0-Interact'
-  
-  # 版本4
-#  pod 'MMBeautyKit', '2.2.0-Micro-surgery'
-  
-  # 版本3
-#  pod 'MMBeautyKit', '2.2.0-Sticker'
-  
-  # 版本2
-#  pod 'MMBeautyKit', '2.2.0-Filter'
+  pod 'MMBeautyKit', '2.5.4-interact'
   
   # 版本1
-#  pod 'MMBeautyKit', '2.2.0-Basic'
+#  pod 'MMBeautyKit', '2.5.4-basic'
   
   pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
 
