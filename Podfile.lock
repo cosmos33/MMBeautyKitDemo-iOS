@@ -71,8 +71,17 @@ DEPENDENCIES:
   - ZegoLiveRoom
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://cdn.cocoapods.org/:
+    - AgoraRtcEngine_iOS
+    - AliLiveSDK_iOS
+    - Mantle
+    - Masonry
     - MetalPetal
+    - PLMediaStreamingKit
+    - RtsSDK
+    - TXLiteAVSDK_Professional
+    - ZegoLiveRoom
+    - ZipArchive
   https://github.com/cosmos33/MMSpecs.git:
     - CosmosEncrypt
     - MCCSecret
@@ -85,16 +94,6 @@ SPEC REPOS:
     - openssl-lib
     - PhotonHTTPDNS
     - protobuf-lib
-  trunk:
-    - AgoraRtcEngine_iOS
-    - AliLiveSDK_iOS
-    - Mantle
-    - Masonry
-    - PLMediaStreamingKit
-    - RtsSDK
-    - TXLiteAVSDK_Professional
-    - ZegoLiveRoom
-    - ZipArchive
 
 SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
@@ -121,4 +120,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f2d6ef67b1997d8ee3059e79db746a58e2e364f3
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0

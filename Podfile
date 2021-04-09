@@ -13,7 +13,7 @@ def beautyInstall
   # 版本1
 #  pod 'MMBeautyKit', '2.5.4-basic'
   
-  pod 'MetalPetal/Static', '1.17.0', :modular_headers => true
+  pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
 
 end
 
