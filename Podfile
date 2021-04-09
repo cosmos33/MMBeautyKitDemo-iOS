@@ -55,6 +55,16 @@ target 'MMZegoBeautyKitDemo' do
     
 end
 
+target 'MMAliBeautyKitDemo' do
+    
+    beautyInstall
+    
+    pod 'AliLiveSDK_iOS', '4.0.2'
+    pod 'RtsSDK','1.5.0'
+    pod 'Masonry'
+    
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
 

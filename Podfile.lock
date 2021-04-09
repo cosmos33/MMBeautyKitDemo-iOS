@@ -1,49 +1,50 @@
 PODS:
   - AgoraRtcEngine_iOS (3.1.2)
+  - AliLiveSDK_iOS (4.0.2)
   - CosmosEncrypt (1.0.0):
     - openssl-lib
     - protobuf-lib
   - Mantle (2.1.6):
     - Mantle/extobjc (= 2.1.6)
   - Mantle/extobjc (2.1.6)
+  - Masonry (1.1.0)
   - MCCSecret (1.0.0)
   - MetalPetal/Core (1.13.0)
   - MetalPetal/Static (1.13.0):
     - MetalPetal/Core
-  - MMBeautyKit (2.2.0):
+  - MMBeautyKit (2.5.4-interact):
     - CosmosEncrypt
     - MCCSecret
-    - MetalPetal/Static
     - MMBeautyMedia
-    - MMCV (= 2.1.2-MMVideoSDK)
+    - MMCV
     - MMDevice
     - MMFileService
     - MMXEngine (= 4.4.4-20200827.1913)
-  - MMBeautyMedia (2.0.0):
+  - MMBeautyMedia (2.5.4):
     - Mantle
     - MetalPetal/Static
-    - MMBeautyMedia/Beauty (= 2.0.0)
-    - MMBeautyMedia/Filter (= 2.0.0)
-    - MMBeautyMedia/Sticker (= 2.0.0)
-  - MMBeautyMedia/Beauty (2.0.0):
+    - MMBeautyMedia/Beauty (= 2.5.4)
+    - MMBeautyMedia/Filter (= 2.5.4)
+    - MMBeautyMedia/Sticker (= 2.5.4)
+  - MMBeautyMedia/Beauty (2.5.4):
     - Mantle
     - MetalPetal/Static
     - MMCV
-  - MMBeautyMedia/Filter (2.0.0):
+  - MMBeautyMedia/Filter (2.5.4):
     - Mantle
     - MetalPetal/Static
-  - MMBeautyMedia/Sticker (2.0.0):
+  - MMBeautyMedia/Sticker (2.5.4):
     - Mantle
     - MetalPetal/Static
     - MMCV
     - MMXEngine
-  - MMCV (2.1.2-MMVideoSDK):
+  - MMCV (2.1.3.5):
     - MCCSecret
     - MMFileService
     - PhotonHTTPDNS
     - ZipArchive
-  - MMDevice (1.0.0)
-  - MMFileService (1.3.3)
+  - MMDevice (1.0.1)
+  - MMFileService (1.3.4)
   - MMXEngine (4.4.4-20200827.1913)
   - openssl-lib (1.0.1)
   - PhotonHTTPDNS (1.0.3)
@@ -51,6 +52,7 @@ PODS:
     - PLMediaStreamingKit/iphoneos (= 3.0.1)
   - PLMediaStreamingKit/iphoneos (3.0.1)
   - protobuf-lib (3.6.1)
+  - RtsSDK (1.5.0)
   - TXLiteAVSDK_Professional (7.6.9360)
   - ZegoLiveRoom (1.21.1.28):
     - ZegoLiveRoom/Basic (= 1.21.1.28)
@@ -59,13 +61,28 @@ PODS:
 
 DEPENDENCIES:
   - AgoraRtcEngine_iOS
+  - AliLiveSDK_iOS (= 4.0.2)
+  - Masonry
   - MetalPetal/Static (= 1.13.0)
-  - MMBeautyKit (= 2.2.0-Interact)
+  - MMBeautyKit (= 2.5.4-interact)
   - PLMediaStreamingKit
+  - RtsSDK (= 1.5.0)
   - TXLiteAVSDK_Professional
   - ZegoLiveRoom
 
 SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - AgoraRtcEngine_iOS
+    - AliLiveSDK_iOS
+    - Mantle
+    - Masonry
+    - PLMediaStreamingKit
+    - RtsSDK
+    - TXLiteAVSDK_Professional
+    - ZegoLiveRoom
+    - ZipArchive
+  https://github.com/CocoaPods/Specs.git:
+    - MetalPetal
   https://github.com/cosmos33/MMSpecs.git:
     - CosmosEncrypt
     - MCCSecret
@@ -78,35 +95,30 @@ SPEC REPOS:
     - openssl-lib
     - PhotonHTTPDNS
     - protobuf-lib
-  trunk:
-    - AgoraRtcEngine_iOS
-    - Mantle
-    - MetalPetal
-    - PLMediaStreamingKit
-    - TXLiteAVSDK_Professional
-    - ZegoLiveRoom
-    - ZipArchive
 
 SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
+  AliLiveSDK_iOS: e4f44cffb860086fd75b662da0cf9994275172d6
   CosmosEncrypt: cf630ded96fc16c4968296dc438644e9173a248b
   Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
   MetalPetal: 985e14c41cea0086264799fae4de02602c51d794
-  MMBeautyKit: 70ecadf5d784bd47b6157252cca4382e41bb0d27
-  MMBeautyMedia: 397eafdf7b91c767cfbe59581badd3edd8016ee9
-  MMCV: 0d6de0d21b2d3c056e9c4891e16826b2847e8150
-  MMDevice: 8fdf446c7aedc2243918eabcf66f1c84f362931e
-  MMFileService: 58ebb00e5278f26f997d85163dc11f4941d3c1b7
+  MMBeautyKit: a6e7a50267d9792d49a2a827e4552e71db93fed8
+  MMBeautyMedia: fc59959196d257d360281fe283fc39e5dc444cc0
+  MMCV: 5ddb5b2b1d39f7ed3133d9df9405d5e4524de0f1
+  MMDevice: ea2f783f769331e40c558ef894541e31ced9aa13
+  MMFileService: d84f399c18250a3afa451da2c9fbe4fdbab1331a
   MMXEngine: 731cdfc6220054e5829a21bacc0895b34cc6b494
   openssl-lib: e3f61a10280caf261c0e4c6b3e720aa94825f07a
   PhotonHTTPDNS: e05d8ce4f99ba7fd0beed0b71b7406f6eff2c1ba
   PLMediaStreamingKit: e458493ea7eff3ad7f1c0476fa4a4c9e43d99afd
   protobuf-lib: 72e5ad47507bf0457298db2ae4c34a935f2eab73
+  RtsSDK: c2ec9dc1a75306a93143773b40bc5e65c0be23b6
   TXLiteAVSDK_Professional: 0993da88b243cba8250f027903f8b5f0c08be1fa
   ZegoLiveRoom: b109073e5f21dc66761e7b0d29d101a546ede01b
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 1bc789d89ebfd71fbecaabc9429173b44ba808df
+PODFILE CHECKSUM: f2d6ef67b1997d8ee3059e79db746a58e2e364f3
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
