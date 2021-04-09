@@ -40,9 +40,11 @@ UITextFieldDelegate>
 @property (nonatomic, strong) MMCameraTabSegmentView *stickerView;
 
 @property (nonatomic, strong) MTICVPixelBufferPool *pixelBufferPool;
+@property (nonatomic, strong) MTICVPixelBufferPool *pixelBufferPool2;
 //@property (nonatomic, strong) CIContext *ciContext;
 
 @property (nonatomic, strong) MTIContext *renderContext;
+@property (nonatomic, strong) CIContext *ciContext;
 
 @end
 
@@ -702,58 +704,72 @@ UITextFieldDelegate>
 - (CVPixelBufferRef)onVideoPixelBuffer:(CVPixelBufferRef)pixelBuffer{
     [self showMessage:@"AliLiveVidePreProcessDelegate -> onVideoPixelBuffer"];
     
-    CVPixelBufferLockBaseAddress(pixelBuffer, 0);
-    int bufferWidth = (int)CVPixelBufferGetWidth(pixelBuffer);
-    int bufferHeight = (int)CVPixelBufferGetHeight(pixelBuffer);
-    OSType pixelFormat = CVPixelBufferGetPixelFormatType(pixelBuffer);
-
-    size_t width = CVPixelBufferGetWidth(pixelBuffer);
-    size_t height = CVPixelBufferGetHeight(pixelBuffer);
-    if (!self.pixelBufferPool || self.pixelBufferPool.pixelBufferWidth != width || self.pixelBufferPool.pixelBufferHeight != height) {
-            self.pixelBufferPool = [[MTICVPixelBufferPool alloc] initWithPixelBufferWidth:width pixelBufferHeight:height pixelFormatType:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange minimumBufferCount:10 error:nil];
-        }
-
-    CVPixelBufferRef beautyPixelBuffer = [self.pixelBufferPool newPixelBufferWithAllocationThreshold:0 error:nil];
-
-    if (beautyPixelBuffer == NULL) {
-        CVReturn status = CVPixelBufferCreate(kCFAllocatorDefault, bufferWidth, bufferHeight, pixelFormat, (__bridge CFDictionaryRef)@{(id)kCVPixelBufferIOSurfacePropertiesKey: @{}, (id)kCVPixelBufferCGImageCompatibilityKey: @YES}, &beautyPixelBuffer);
-        if (status != kCVReturnSuccess) {
-            NSLog(@"AliLiveVidePreProcessDelegate YUVBufferCopyWithPixelBuffer :: failed");
-        }
+    if (pixelBuffer == NULL) {
+        return NULL;
     }
-
-
-//    CVPixelBufferLockBaseAddress(beautyPixelBuffer, 0);
-//    //YUV
-//    int bytesPerRow = (int)CVPixelBufferGetBytesPerRowOfPlane(pixelBuffer,0);
-//    bufferHeight = (int)CVPixelBufferGetHeightOfPlane(pixelBuffer, 0);
-//    uint8_t *yDestPlane = CVPixelBufferGetBaseAddressOfPlane(beautyPixelBuffer, 0);
-//    uint8_t *yPlane = CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 0);
-//    memcpy(yDestPlane, yPlane, bufferHeight * bytesPerRow);
-//
-//    bytesPerRow = (int)CVPixelBufferGetBytesPerRowOfPlane(pixelBuffer,1);
-//    bufferHeight = (int)CVPixelBufferGetHeightOfPlane(pixelBuffer, 1);
-//    uint8_t *uvDestPlane = CVPixelBufferGetBaseAddressOfPlane(beautyPixelBuffer, 1);
-//    uint8_t *uvPlane = CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 1);
-//    memcpy(uvDestPlane, uvPlane, bufferHeight * bytesPerRow);
-//
-//    CVPixelBufferUnlockBaseAddress(beautyPixelBuffer, 0);
-//    CVPixelBufferUnlockBaseAddress(pixelBuffer, 0);
     
     NSError *error;
-//    pixelBuffer = [self.render renderPixelBuffer:pixelBuffer error:&error];
-    MTIImage *image = [self.render renderToImage:pixelBuffer error:&error];
     
     if (!self.renderContext) {
         id<MTLDevice> device = MTLCreateSystemDefaultDevice();
-        self.renderContext = [[MTIContext alloc] initWithDevice:device error:nil];
+        self.renderContext = [[MTIContext alloc] initWithDevice:device error:&error];
+        
     }
-
-    [self.renderContext renderImage:image toCVPixelBuffer:beautyPixelBuffer error:nil];
-    CVPixelBufferRelease(pixelBuffer);
-    CFAutorelease(beautyPixelBuffer);
     
-    return beautyPixelBuffer;
+    if (!self.ciContext) {
+        self.ciContext = [CIContext contextWithEAGLContext:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3]];
+    }
+    
+    int bufferWidth = (int)CVPixelBufferGetWidth(pixelBuffer);
+    int bufferHeight = (int)CVPixelBufferGetHeight(pixelBuffer);
+    OSType pixelFormat = CVPixelBufferGetPixelFormatType(pixelBuffer);
+    
+    if (!self.pixelBufferPool2 || self.pixelBufferPool2.pixelBufferWidth != bufferWidth || self.pixelBufferPool2.pixelBufferHeight != bufferHeight) {
+        self.pixelBufferPool2 = [[MTICVPixelBufferPool alloc] initWithPixelBufferWidth:bufferWidth pixelBufferHeight:bufferHeight pixelFormatType:pixelFormat minimumBufferCount:30 error:nil];
+    }
+    CVPixelBufferRef outputPixelBuffer = NULL;
+    
+    @autoreleasepool {
+        CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+        
+        if (!self.pixelBufferPool || self.pixelBufferPool.pixelBufferWidth != bufferWidth || self.pixelBufferPool.pixelBufferHeight != bufferHeight) {
+            self.pixelBufferPool = [[MTICVPixelBufferPool alloc] initWithPixelBufferWidth:bufferWidth pixelBufferHeight:bufferHeight pixelFormatType:kCVPixelFormatType_32BGRA minimumBufferCount:30 error:nil];
+        }
+        
+        CVPixelBufferRef beautyPixelBuffer = [self.pixelBufferPool newPixelBufferWithAllocationThreshold:0 error:&error];
+        //
+        if (beautyPixelBuffer == NULL) {
+            return pixelBuffer;
+        }
+        
+        CIImage *ciImage = [[CIImage alloc] initWithCVPixelBuffer:pixelBuffer];
+        [self.ciContext render:ciImage toCVPixelBuffer:beautyPixelBuffer];
+        
+        CFAbsoluteTime startRender = CFAbsoluteTimeGetCurrent();
+        
+        //      CVPixelBufferRef pixelBufferRef = [self.render renderPixelBuffer:beautyPixelBuffer error:&error];
+        MTIImage *image = [self.render renderToImage:beautyPixelBuffer error:&error];
+        //    MTIImage *image = [[MTIImage alloc] initWithCVPixelBuffer:pixelBufferRef alphaType:MTIAlphaTypeAlphaIsOne];
+        CVPixelBufferRelease(beautyPixelBuffer);
+        
+        if (!image) {
+            return pixelBuffer;
+        }
+        
+        outputPixelBuffer = [self.pixelBufferPool2 newPixelBufferWithAllocationThreshold:0 error:&error];
+        
+        if (outputPixelBuffer == NULL) {
+            return pixelBuffer;
+        }
+        
+        [self.renderContext renderImage:image toCVPixelBuffer:outputPixelBuffer error:&error];
+        
+        CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+        NSLog(@"[render] tansform = %.1lf, all = %.1lf", (end - startRender) * 1000, (end - start) * 1000.0);
+    }
+    
+    CFAutorelease(outputPixelBuffer);
+    return outputPixelBuffer;
 }
 
 
