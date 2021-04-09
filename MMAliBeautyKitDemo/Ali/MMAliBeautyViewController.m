@@ -737,9 +737,9 @@ UITextFieldDelegate>
         }
         
         CVPixelBufferRef beautyPixelBuffer = [self.pixelBufferPool newPixelBufferWithAllocationThreshold:0 error:&error];
-        //
+        
         if (beautyPixelBuffer == NULL) {
-            return pixelBuffer;
+            return nil;
         }
         
         CIImage *ciImage = [[CIImage alloc] initWithCVPixelBuffer:pixelBuffer];
@@ -747,25 +747,27 @@ UITextFieldDelegate>
         
         CFAbsoluteTime startRender = CFAbsoluteTimeGetCurrent();
         
-        //      CVPixelBufferRef pixelBufferRef = [self.render renderPixelBuffer:beautyPixelBuffer error:&error];
         MTIImage *image = [self.render renderToImage:beautyPixelBuffer error:&error];
-        //    MTIImage *image = [[MTIImage alloc] initWithCVPixelBuffer:pixelBufferRef alphaType:MTIAlphaTypeAlphaIsOne];
         CVPixelBufferRelease(beautyPixelBuffer);
         
         if (!image) {
-            return pixelBuffer;
+            return nil;
         }
         
         outputPixelBuffer = [self.pixelBufferPool2 newPixelBufferWithAllocationThreshold:0 error:&error];
         
         if (outputPixelBuffer == NULL) {
-            return pixelBuffer;
+            return nil;
         }
         
         [self.renderContext renderImage:image toCVPixelBuffer:outputPixelBuffer error:&error];
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"[render] tansform = %.1lf, all = %.1lf", (end - startRender) * 1000, (end - start) * 1000.0);
+    }
+    
+    if (outputPixelBuffer == NULL) {
+        return pixelBuffer;
     }
     
     CFAutorelease(outputPixelBuffer);
