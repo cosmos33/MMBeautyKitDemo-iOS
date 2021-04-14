@@ -55,6 +55,15 @@ target 'MMZegoBeautyKitDemo' do
     
 end
 
+target 'MMZegoExpressBeautyDemo' do
+    
+    beautyInstall
+    
+    pod 'ZegoExpressEngine/Video'
+    
+end
+
+
 target 'MMAliBeautyKitDemo' do
     
     beautyInstall

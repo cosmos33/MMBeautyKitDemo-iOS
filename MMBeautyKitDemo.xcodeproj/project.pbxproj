@@ -8,7 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */; };
+		2E5A64E3F27C2316F8D7FCE5 /* libPods-MMZegoExpressBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */; };
 		3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */; };
+		4667F64B26269ECC003811A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64A26269ECC003811A0 /* AppDelegate.m */; };
+		4667F64E26269ECC003811A0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64D26269ECC003811A0 /* SceneDelegate.m */; };
+		4667F65126269ECC003811A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F65026269ECC003811A0 /* ViewController.m */; };
+		4667F65426269ECC003811A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4667F65226269ECC003811A0 /* Main.storyboard */; };
+		4667F65626269ECC003811A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4667F65526269ECC003811A0 /* Assets.xcassets */; };
+		4667F65926269ECD003811A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4667F65726269ECC003811A0 /* LaunchScreen.storyboard */; };
+		4667F65C26269ECD003811A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F65B26269ECD003811A0 /* main.m */; };
+		4667F6A62626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F69F2626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m */; };
+		4667F6A72626A1FC003811A0 /* ZGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6A12626A1FC003811A0 /* ZGLoginViewController.m */; };
+		4667F6A82626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6A42626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m */; };
+		4667F6B22626A23D003811A0 /* MMZGBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */; };
+		4667F6C12626A2E0003811A0 /* MMVideoAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */; };
+		4667F6C22626A2E0003811A0 /* MMAssetGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2223B309DB0017239F /* MMAssetGridViewCell.m */; };
+		4667F6C32626A2E0003811A0 /* MMBeautyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1C23B309C40017239F /* MMBeautyRender.m */; };
+		4667F6C42626A2E0003811A0 /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
+		4667F6C52626A2E0003811A0 /* MMDeviceMotionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2723B309DB0017239F /* MMDeviceMotionObserver.m */; };
+		4667F6D12626A3A4003811A0 /* ZGCaptureDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6CE2626A3A4003811A0 /* ZGCaptureDeviceCamera.m */; };
+		4667F6DB2626A430003811A0 /* ZGUserIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6DA2626A430003811A0 /* ZGUserIDHelper.m */; };
+		4667F7112626A570003811A0 /* NSObject+Persistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F7102626A570003811A0 /* NSObject+Persistence.m */; };
 		46A2CCB2261EE7D100C60C69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CCB1261EE7D100C60C69 /* AppDelegate.m */; };
 		46A2CCB5261EE7D100C60C69 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CCB4261EE7D100C60C69 /* SceneDelegate.m */; };
 		46A2CCB8261EE7D100C60C69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CCB7261EE7D100C60C69 /* ViewController.m */; };
@@ -123,7 +143,35 @@
 		0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTXBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoExpressBeautyDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		32E399175ED589DD1BFE3CC6 /* Pods-MMArgoraBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4667F64726269ECC003811A0 /* MMZegoExpressBeautyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMZegoExpressBeautyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4667F64926269ECC003811A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4667F64A26269ECC003811A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4667F64C26269ECC003811A0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4667F64D26269ECC003811A0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4667F64F26269ECC003811A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4667F65026269ECC003811A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4667F65326269ECC003811A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4667F65526269ECC003811A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4667F65826269ECD003811A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4667F65A26269ECD003811A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4667F65B26269ECD003811A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4667F69F2626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPublishStreamCustomVideoProcessViewController.m; sourceTree = "<group>"; };
+		4667F6A02626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPublishStreamCustomVideoProcessViewController.h; sourceTree = "<group>"; };
+		4667F6A12626A1FC003811A0 /* ZGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLoginViewController.m; sourceTree = "<group>"; };
+		4667F6A32626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPublishStreamCustomVideoCaptureViewController.h; sourceTree = "<group>"; };
+		4667F6A42626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPublishStreamCustomVideoCaptureViewController.m; sourceTree = "<group>"; };
+		4667F6A52626A1FC003811A0 /* ZGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLoginViewController.h; sourceTree = "<group>"; };
+		4667F6B02626A23D003811A0 /* MMZGBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMZGBeautyViewController.h; sourceTree = "<group>"; };
+		4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMZGBeautyViewController.m; sourceTree = "<group>"; };
+		4667F6CE2626A3A4003811A0 /* ZGCaptureDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCaptureDeviceCamera.m; sourceTree = "<group>"; };
+		4667F6CF2626A3A4003811A0 /* ZGCaptureDeviceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceProtocol.h; sourceTree = "<group>"; };
+		4667F6D02626A3A4003811A0 /* ZGCaptureDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceCamera.h; sourceTree = "<group>"; };
+		4667F6D92626A430003811A0 /* ZGUserIDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGUserIDHelper.h; sourceTree = "<group>"; };
+		4667F6DA2626A430003811A0 /* ZGUserIDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGUserIDHelper.m; sourceTree = "<group>"; };
+		4667F70F2626A570003811A0 /* NSObject+Persistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Persistence.h"; sourceTree = "<group>"; };
+		4667F7102626A570003811A0 /* NSObject+Persistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Persistence.m"; sourceTree = "<group>"; };
 		46A2CCAE261EE7D100C60C69 /* MMAliBeautyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMAliBeautyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A2CCB0261EE7D100C60C69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46A2CCB1261EE7D100C60C69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -254,8 +302,10 @@
 		76F98CBC254986D00020F4F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7963478B9D4F05FEC40CE475 /* Pods-MMAliBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMAliBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMAliBeautyKitDemo/Pods-MMAliBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMArgoraBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoExpressBeautyDemo.release.xcconfig"; path = "Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMAliBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMZegoExpressBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +317,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4667F64426269ECC003811A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5A64E3F27C2316F8D7FCE5 /* libPods-MMZegoExpressBeautyDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46A2CCAB261EE7D100C60C69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,8 +391,75 @@
 				6CDDA52885C3561D6A782D16 /* Pods-MMZegoBeautyKitDemo.release.xcconfig */,
 				5009197B61AC6A69219E0411 /* Pods-MMAliBeautyKitDemo.debug.xcconfig */,
 				7963478B9D4F05FEC40CE475 /* Pods-MMAliBeautyKitDemo.release.xcconfig */,
+				20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */,
+				AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4667F64826269ECC003811A0 /* MMZegoExpressBeautyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4667F68C2626A04C003811A0 /* ZegoVideo */,
+				4667F64926269ECC003811A0 /* AppDelegate.h */,
+				4667F64A26269ECC003811A0 /* AppDelegate.m */,
+				4667F64C26269ECC003811A0 /* SceneDelegate.h */,
+				4667F64D26269ECC003811A0 /* SceneDelegate.m */,
+				4667F64F26269ECC003811A0 /* ViewController.h */,
+				4667F65026269ECC003811A0 /* ViewController.m */,
+				4667F65226269ECC003811A0 /* Main.storyboard */,
+				4667F65526269ECC003811A0 /* Assets.xcassets */,
+				4667F65726269ECC003811A0 /* LaunchScreen.storyboard */,
+				4667F65A26269ECD003811A0 /* Info.plist */,
+				4667F65B26269ECD003811A0 /* main.m */,
+			);
+			path = MMZegoExpressBeautyDemo;
+			sourceTree = "<group>";
+		};
+		4667F68C2626A04C003811A0 /* ZegoVideo */ = {
+			isa = PBXGroup;
+			children = (
+				4667F70F2626A570003811A0 /* NSObject+Persistence.h */,
+				4667F7102626A570003811A0 /* NSObject+Persistence.m */,
+				4667F6D92626A430003811A0 /* ZGUserIDHelper.h */,
+				4667F6DA2626A430003811A0 /* ZGUserIDHelper.m */,
+				4667F6CD2626A3A4003811A0 /* CustomVideoCaptureDevice */,
+				4667F6A22626A1FC003811A0 /* CustomVideoCapture */,
+				4667F69E2626A1FC003811A0 /* CustomVideoProcess */,
+				4667F6A52626A1FC003811A0 /* ZGLoginViewController.h */,
+				4667F6A12626A1FC003811A0 /* ZGLoginViewController.m */,
+				4667F6B02626A23D003811A0 /* MMZGBeautyViewController.h */,
+				4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */,
+			);
+			path = ZegoVideo;
+			sourceTree = "<group>";
+		};
+		4667F69E2626A1FC003811A0 /* CustomVideoProcess */ = {
+			isa = PBXGroup;
+			children = (
+				4667F6A02626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.h */,
+				4667F69F2626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m */,
+			);
+			path = CustomVideoProcess;
+			sourceTree = "<group>";
+		};
+		4667F6A22626A1FC003811A0 /* CustomVideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				4667F6A32626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.h */,
+				4667F6A42626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m */,
+			);
+			path = CustomVideoCapture;
+			sourceTree = "<group>";
+		};
+		4667F6CD2626A3A4003811A0 /* CustomVideoCaptureDevice */ = {
+			isa = PBXGroup;
+			children = (
+				4667F6CE2626A3A4003811A0 /* ZGCaptureDeviceCamera.m */,
+				4667F6CF2626A3A4003811A0 /* ZGCaptureDeviceProtocol.h */,
+				4667F6D02626A3A4003811A0 /* ZGCaptureDeviceCamera.h */,
+			);
+			path = CustomVideoCaptureDevice;
 			sourceTree = "<group>";
 		};
 		46A2CCAF261EE7D100C60C69 /* MMAliBeautyKitDemo */ = {
@@ -442,6 +567,7 @@
 				7616065E256BA7A700F9C194 /* MMArgoraBeautyKitDemo */,
 				767D49A325CAAE3200ADC8C5 /* MMZegoBeautyKitDemo */,
 				46A2CCAF261EE7D100C60C69 /* MMAliBeautyKitDemo */,
+				4667F64826269ECC003811A0 /* MMZegoExpressBeautyDemo */,
 				765BFCE623B3095B0017239F /* Products */,
 				2A389913EC9EBE83CA3602C4 /* Pods */,
 				DD9AD957C4283CA4B3304ABF /* Frameworks */,
@@ -457,6 +583,7 @@
 				7616065D256BA7A700F9C194 /* MMArgoraBeautyKitDemo.app */,
 				767D49A225CAAE3200ADC8C5 /* MMZegoBeautyKitDemo.app */,
 				46A2CCAE261EE7D100C60C69 /* MMAliBeautyKitDemo.app */,
+				4667F64726269ECC003811A0 /* MMZegoExpressBeautyDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -601,6 +728,7 @@
 				5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */,
 				46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */,
 				B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */,
+				C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -608,6 +736,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4667F64626269ECC003811A0 /* MMZegoExpressBeautyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4667F65F26269ECD003811A0 /* Build configuration list for PBXNativeTarget "MMZegoExpressBeautyDemo" */;
+			buildPhases = (
+				5629C57842DC0EA020776DD0 /* [CP] Check Pods Manifest.lock */,
+				4667F64326269ECC003811A0 /* Sources */,
+				4667F64426269ECC003811A0 /* Frameworks */,
+				4667F64526269ECC003811A0 /* Resources */,
+				22E64335794425BEDE3D5D4E /* [CP] Embed Pods Frameworks */,
+				4614958C19CDC11AFE93F167 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMZegoExpressBeautyDemo;
+			productName = MMZegoExpressBeautyDemo;
+			productReference = 4667F64726269ECC003811A0 /* MMZegoExpressBeautyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		46A2CCAD261EE7D100C60C69 /* MMAliBeautyKitDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46A2CCE0261EE7D200C60C69 /* Build configuration list for PBXNativeTarget "MMAliBeautyKitDemo" */;
@@ -737,6 +885,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = sunfei;
 				TargetAttributes = {
+					4667F64626269ECC003811A0 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					46A2CCAD261EE7D100C60C69 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -776,11 +927,22 @@
 				7616065C256BA7A700F9C194 /* MMArgoraBeautyKitDemo */,
 				767D49A125CAAE3200ADC8C5 /* MMZegoBeautyKitDemo */,
 				46A2CCAD261EE7D100C60C69 /* MMAliBeautyKitDemo */,
+				4667F64626269ECC003811A0 /* MMZegoExpressBeautyDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4667F64526269ECC003811A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4667F65926269ECD003811A0 /* LaunchScreen.storyboard in Resources */,
+				4667F65626269ECC003811A0 /* Assets.xcassets in Resources */,
+				4667F65426269ECC003811A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46A2CCAC261EE7D100C60C69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -907,6 +1069,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		22E64335794425BEDE3D5D4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D91316075FA6E276CC031CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -962,6 +1141,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MMTXBeautyKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4614958C19CDC11AFE93F167 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5629C57842DC0EA020776DD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMZegoExpressBeautyDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1195,6 +1413,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4667F64326269ECC003811A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4667F65126269ECC003811A0 /* ViewController.m in Sources */,
+				4667F6C12626A2E0003811A0 /* MMVideoAssetsCollectionViewController.m in Sources */,
+				4667F6C52626A2E0003811A0 /* MMDeviceMotionObserver.m in Sources */,
+				4667F6B22626A23D003811A0 /* MMZGBeautyViewController.m in Sources */,
+				4667F6C32626A2E0003811A0 /* MMBeautyRender.m in Sources */,
+				4667F6DB2626A430003811A0 /* ZGUserIDHelper.m in Sources */,
+				4667F64B26269ECC003811A0 /* AppDelegate.m in Sources */,
+				4667F6A62626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m in Sources */,
+				4667F6A72626A1FC003811A0 /* ZGLoginViewController.m in Sources */,
+				4667F7112626A570003811A0 /* NSObject+Persistence.m in Sources */,
+				4667F6C42626A2E0003811A0 /* MMCameraTabSegmentView.m in Sources */,
+				4667F6A82626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m in Sources */,
+				4667F65C26269ECD003811A0 /* main.m in Sources */,
+				4667F64E26269ECC003811A0 /* SceneDelegate.m in Sources */,
+				4667F6D12626A3A4003811A0 /* ZGCaptureDeviceCamera.m in Sources */,
+				4667F6C22626A2E0003811A0 /* MMAssetGridViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46A2CCAA261EE7D100C60C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1313,6 +1554,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4667F65226269ECC003811A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4667F65326269ECC003811A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4667F65726269ECC003811A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4667F65826269ECD003811A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		46A2CCB9261EE7D100C60C69 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1412,6 +1669,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4667F65D26269ECD003811A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
+				INFOPLIST_FILE = MMZegoExpressBeautyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode iOS Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4667F65E26269ECD003811A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
+				INFOPLIST_FILE = MMZegoExpressBeautyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode iOS Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		46A2CCDA261EE7D200C60C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5009197B61AC6A69219E0411 /* Pods-MMAliBeautyKitDemo.debug.xcconfig */;
@@ -1793,6 +2096,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4667F65F26269ECD003811A0 /* Build configuration list for PBXNativeTarget "MMZegoExpressBeautyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4667F65D26269ECD003811A0 /* Debug */,
+				4667F65E26269ECD003811A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46A2CCE0261EE7D200C60C69 /* Build configuration list for PBXNativeTarget "MMAliBeautyKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
