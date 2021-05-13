@@ -39,6 +39,24 @@ target 'MMQNBeautyKitDemo' do
 
 end
 
+target 'MMQNSortVideoBeautyDemo' do
+
+  beautyInstall
+  
+  #七牛短视频SDK
+#  pod "PLShortVideoKit"
+  pod 'PLShortVideoKit/ex-libMuseProcessor'
+  
+  pod "TZImagePickerController"
+
+  pod 'Masonry'
+  pod 'MMMaterialDesignSpinner'
+  pod 'JGProgressHUD', '2.0'
+  pod 'SDWebImage'
+  pod 'SDCycleScrollView','>= 1.80'
+
+end
+
 target 'MMArgoraBeautyKitDemo' do
     
   beautyInstall

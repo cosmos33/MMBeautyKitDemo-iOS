@@ -4,6 +4,8 @@ PODS:
   - CosmosEncrypt (1.0.0):
     - openssl-lib
     - protobuf-lib
+  - HappyDNS (0.3.17)
+  - JGProgressHUD (2.0)
   - Mantle (2.1.6):
     - Mantle/extobjc (= 2.1.6)
   - Mantle/extobjc (2.1.6)
@@ -45,15 +47,26 @@ PODS:
     - ZipArchive
   - MMDevice (1.0.1)
   - MMFileService (1.3.4)
+  - MMMaterialDesignSpinner (0.2.5)
   - MMXEngine (4.4.4-20200827.1913)
   - openssl-lib (1.0.1)
   - PhotonHTTPDNS (1.0.3)
   - PLMediaStreamingKit (3.0.1):
     - PLMediaStreamingKit/iphoneos (= 3.0.1)
   - PLMediaStreamingKit/iphoneos (3.0.1)
+  - PLShortVideoKit/ex-libMuseProcessor (3.2.4):
+    - Qiniu (= 8.2.0)
   - protobuf-lib (3.6.1)
+  - Qiniu (8.2.0):
+    - HappyDNS (~> 0.3.17)
   - RtsSDK (1.5.0)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - TXLiteAVSDK_Professional (7.6.9360)
+  - TZImagePickerController (3.6.0)
   - ZegoExpressEngine/Video (2.5.0)
   - ZegoLiveRoom (1.21.1.28):
     - ZegoLiveRoom/Basic (= 1.21.1.28)
@@ -63,12 +76,18 @@ PODS:
 DEPENDENCIES:
   - AgoraRtcEngine_iOS
   - AliLiveSDK_iOS (= 4.0.2)
+  - JGProgressHUD (= 2.0)
   - Masonry
   - MetalPetal/Static (= 1.13.0)
   - MMBeautyKit (= 2.5.4-interact)
+  - MMMaterialDesignSpinner
   - PLMediaStreamingKit
+  - PLShortVideoKit/ex-libMuseProcessor
   - RtsSDK (= 1.5.0)
+  - SDCycleScrollView (>= 1.80)
+  - SDWebImage
   - TXLiteAVSDK_Professional
+  - TZImagePickerController
   - ZegoExpressEngine/Video
   - ZegoLiveRoom
 
@@ -76,12 +95,20 @@ SPEC REPOS:
   https://cdn.cocoapods.org/:
     - AgoraRtcEngine_iOS
     - AliLiveSDK_iOS
+    - HappyDNS
+    - JGProgressHUD
     - Mantle
     - Masonry
     - MetalPetal
+    - MMMaterialDesignSpinner
     - PLMediaStreamingKit
+    - PLShortVideoKit
+    - Qiniu
     - RtsSDK
+    - SDCycleScrollView
+    - SDWebImage
     - TXLiteAVSDK_Professional
+    - TZImagePickerController
     - ZegoExpressEngine
     - ZegoLiveRoom
     - ZipArchive
@@ -102,6 +129,8 @@ SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
   AliLiveSDK_iOS: e4f44cffb860086fd75b662da0cf9994275172d6
   CosmosEncrypt: cf630ded96fc16c4968296dc438644e9173a248b
+  HappyDNS: 848ef73e24f2b0e2752064223ce2dc0dd88900ea
+  JGProgressHUD: c402c0f41fc291ca7e33bba2f999118d9682dd9c
   Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
@@ -111,17 +140,23 @@ SPEC CHECKSUMS:
   MMCV: 5ddb5b2b1d39f7ed3133d9df9405d5e4524de0f1
   MMDevice: ea2f783f769331e40c558ef894541e31ced9aa13
   MMFileService: d84f399c18250a3afa451da2c9fbe4fdbab1331a
+  MMMaterialDesignSpinner: a548042720c2e5f04212048483085d7942ac3e81
   MMXEngine: 731cdfc6220054e5829a21bacc0895b34cc6b494
   openssl-lib: e3f61a10280caf261c0e4c6b3e720aa94825f07a
   PhotonHTTPDNS: e05d8ce4f99ba7fd0beed0b71b7406f6eff2c1ba
   PLMediaStreamingKit: e458493ea7eff3ad7f1c0476fa4a4c9e43d99afd
+  PLShortVideoKit: 9ec2dd9129f1a0d7184ccc3eda6be1def58d35a9
   protobuf-lib: 72e5ad47507bf0457298db2ae4c34a935f2eab73
+  Qiniu: 95e913e7ab91f6c4dff643164e8d66a7f79c5c5e
   RtsSDK: c2ec9dc1a75306a93143773b40bc5e65c0be23b6
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   TXLiteAVSDK_Professional: 0993da88b243cba8250f027903f8b5f0c08be1fa
+  TZImagePickerController: a37d7eec87c54436e896a67947033ad2178d498b
   ZegoExpressEngine: a6c9b45e27cb01ae2b18b9dee19ad911a24e2cdc
   ZegoLiveRoom: b109073e5f21dc66761e7b0d29d101a546ede01b
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 5ec49dd4fbdd40fe7451e4080d0266772b2335c9
+PODFILE CHECKSUM: c4e62a44b6f556ce6d6039cab18ad28e7d0bb97d
 
 COCOAPODS: 1.10.0

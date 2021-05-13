@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MMZGBeautyViewController.h"
+#import "MMBeautyViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZGPublishStreamCustomVideoCaptureViewController : MMZGBeautyViewController
+@interface ZGPublishStreamCustomVideoCaptureViewController : MMBeautyViewController
 
 @property (nonatomic, copy) NSString *roomID;
 @property (nonatomic, copy) NSString *streamID;

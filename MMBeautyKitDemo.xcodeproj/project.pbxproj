@@ -10,6 +10,91 @@
 		05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */; };
 		2E5A64E3F27C2316F8D7FCE5 /* libPods-MMZegoExpressBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */; };
 		3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */; };
+		46462BDE264D1E6A0082EB17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BDD264D1E6A0082EB17 /* AppDelegate.m */; };
+		46462BE1264D1E6A0082EB17 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BE0264D1E6A0082EB17 /* SceneDelegate.m */; };
+		46462BE7264D1E6A0082EB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46462BE5264D1E6A0082EB17 /* Main.storyboard */; };
+		46462BE9264D1E6C0082EB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46462BE8264D1E6C0082EB17 /* Assets.xcassets */; };
+		46462BEC264D1E6C0082EB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46462BEA264D1E6C0082EB17 /* LaunchScreen.storyboard */; };
+		46462BEF264D1E6C0082EB17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BEE264D1E6C0082EB17 /* main.m */; };
+		46462C94264D20150082EB17 /* QNPuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BFD264D20150082EB17 /* QNPuzzleViewController.m */; };
+		46462C95264D20150082EB17 /* QNPlayPuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BFE264D20150082EB17 /* QNPlayPuzzleViewController.m */; };
+		46462C96264D20150082EB17 /* UIView+QNLightFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C01264D20150082EB17 /* UIView+QNLightFrame.m */; };
+		46462C97264D20150082EB17 /* UIView+QNCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C04264D20150082EB17 /* UIView+QNCore.m */; };
+		46462C98264D20150082EB17 /* UIView+QNAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C06264D20150082EB17 /* UIView+QNAnimation.m */; };
+		46462C99264D20150082EB17 /* PHAsset+QNCoverPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C07264D20150082EB17 /* PHAsset+QNCoverPicker.m */; };
+		46462C9A264D20150082EB17 /* UIView+QNAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C08264D20150082EB17 /* UIView+QNAlert.m */; };
+		46462C9B264D20150082EB17 /* NSObject+QNAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C0A264D20150082EB17 /* NSObject+QNAuth.m */; };
+		46462C9C264D20150082EB17 /* QNDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C0C264D20150082EB17 /* QNDocumentViewController.m */; };
+		46462C9D264D20150082EB17 /* QNRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C0F264D20150082EB17 /* QNRecordingViewController.m */; };
+		46462C9E264D20150082EB17 /* QNRecordingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C10264D20150082EB17 /* QNRecordingProgress.m */; };
+		46462CA2264D20150082EB17 /* QNMixRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C1B264D20150082EB17 /* QNMixRecordingViewController.m */; };
+		46462CA3264D20150082EB17 /* gifSticker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46462C1D264D20150082EB17 /* gifSticker.bundle */; };
+		46462CA4264D20150082EB17 /* mv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46462C1E264D20150082EB17 /* mv.bundle */; };
+		46462CA5264D20150082EB17 /* PLShortVideoKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46462C1F264D20150082EB17 /* PLShortVideoKit.bundle */; };
+		46462CA6264D20150082EB17 /* audio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46462C20264D20150082EB17 /* audio.bundle */; };
+		46462CA7264D20150082EB17 /* Directions.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 46462C21264D20150082EB17 /* Directions.geojson */; };
+		46462CA8264D20150082EB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46462C22264D20150082EB17 /* Assets.xcassets */; };
+		46462CA9264D20150082EB17 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 46462C26264D20150082EB17 /* LICENSE */; };
+		46462CAA264D20150082EB17 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46462C27264D20150082EB17 /* README.md */; };
+		46462CAB264D20150082EB17 /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46462C29264D20150082EB17 /* QBImagePicker.strings */; };
+		46462CAC264D20150082EB17 /* QBVideoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C30264D20150082EB17 /* QBVideoIconView.m */; };
+		46462CAD264D20150082EB17 /* QBVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C31264D20150082EB17 /* QBVideoIndicatorView.m */; };
+		46462CAE264D20150082EB17 /* QBAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C37264D20150082EB17 /* QBAlbumCell.m */; };
+		46462CAF264D20150082EB17 /* QBImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46462C38264D20150082EB17 /* QBImagePicker.storyboard */; };
+		46462CB0264D20150082EB17 /* QBAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C3A264D20150082EB17 /* QBAlbumsViewController.m */; };
+		46462CB1264D20150082EB17 /* QBAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C3C264D20150082EB17 /* QBAssetsViewController.m */; };
+		46462CB2264D20150082EB17 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C3D264D20150082EB17 /* QBImagePickerController.m */; };
+		46462CB3264D20150082EB17 /* QBCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C3E264D20150082EB17 /* QBCheckmarkView.m */; };
+		46462CB4264D20150082EB17 /* QBSlomoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C40264D20150082EB17 /* QBSlomoIconView.m */; };
+		46462CB5264D20150082EB17 /* QBAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C41264D20150082EB17 /* QBAssetCell.m */; };
+		46462CB6264D20150082EB17 /* QNFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C44264D20150082EB17 /* QNFunctionViewController.m */; };
+		46462CB7264D20150082EB17 /* QNVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C49264D20150082EB17 /* QNVerticalButton.m */; };
+		46462CB8264D20150082EB17 /* QNGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C4B264D20150082EB17 /* QNGradientView.m */; };
+		46462CB9264D20150082EB17 /* QNSampleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C4C264D20150082EB17 /* QNSampleScrollView.m */; };
+		46462CBA264D20150082EB17 /* QNPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C4D264D20150082EB17 /* QNPlayerView.m */; };
+		46462CBB264D20150082EB17 /* QNSelectButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C4E264D20150082EB17 /* QNSelectButtonView.m */; };
+		46462CBC264D20150082EB17 /* QNTextPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C53264D20150082EB17 /* QNTextPageControl.m */; };
+		46462CBD264D20150082EB17 /* QNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C55264D20150082EB17 /* QNBaseViewController.m */; };
+		46462CBE264D20150082EB17 /* QNPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C56264D20150082EB17 /* QNPhotoCollectionViewController.m */; };
+		46462CBF264D20150082EB17 /* QNAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C5B264D20150082EB17 /* QNAssetCollectionViewCell.m */; };
+		46462CC0264D20150082EB17 /* QNAssetRangeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C5C264D20150082EB17 /* QNAssetRangeBar.m */; };
+		46462CC1264D20150082EB17 /* QNMusicPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C5D264D20150082EB17 /* QNMusicPickerView.m */; };
+		46462CC2264D20150082EB17 /* QNPanImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C5F264D20150082EB17 /* QNPanImageView.m */; };
+		46462CC3264D20150082EB17 /* QNMusicDecibelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C60264D20150082EB17 /* QNMusicDecibelView.m */; };
+		46462CC4264D20150082EB17 /* QNScopeCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C62264D20150082EB17 /* QNScopeCutView.m */; };
+		46462CC5264D20150082EB17 /* QNTranscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C63264D20150082EB17 /* QNTranscodeViewController.m */; };
+		46462CC6264D20150082EB17 /* QNProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C66264D20150082EB17 /* QNProductViewController.m */; };
+		46462CC7264D20150082EB17 /* QNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C67264D20150082EB17 /* QNMainViewController.m */; };
+		46462CC8264D20150082EB17 /* QNSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C6A264D20150082EB17 /* QNSettingsViewController.m */; };
+		46462CC9264D20150082EB17 /* QNEditorMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C6D264D20150082EB17 /* QNEditorMusicView.m */; };
+		46462CCA264D20150082EB17 /* QNAudioVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C6F264D20150082EB17 /* QNAudioVolumeView.m */; };
+		46462CCB264D20150082EB17 /* QNMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C71264D20150082EB17 /* QNMusicModel.m */; };
+		46462CCC264D20150082EB17 /* QNFilterGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C73264D20150082EB17 /* QNFilterGroup.m */; };
+		46462CCD264D20150082EB17 /* QNEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C74264D20150082EB17 /* QNEditorViewController.m */; };
+		46462CCE264D20150082EB17 /* QNStickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C76264D20150082EB17 /* QNStickerModel.m */; };
+		46462CCF264D20150082EB17 /* QNGIFStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C78264D20150082EB17 /* QNGIFStickerView.m */; };
+		46462CD0264D20150082EB17 /* QNFilterPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C79264D20150082EB17 /* QNFilterPickerView.m */; };
+		46462CD1264D20150082EB17 /* QNEditorDrawStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C7B264D20150082EB17 /* QNEditorDrawStickerView.m */; };
+		46462CD2264D20150082EB17 /* QNTextStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C7C264D20150082EB17 /* QNTextStickerView.m */; };
+		46462CD3264D20150082EB17 /* QNEditorTextStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C7D264D20150082EB17 /* QNEditorTextStickerView.m */; };
+		46462CD4264D20150082EB17 /* QNTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C7F264D20150082EB17 /* QNTextInputView.m */; };
+		46462CD5264D20150082EB17 /* QNEditorGIFStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C82264D20150082EB17 /* QNEditorGIFStickerView.m */; };
+		46462CD6264D20150082EB17 /* QNDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C84264D20150082EB17 /* QNDrawView.m */; };
+		46462CD7264D20150082EB17 /* QNStickerOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C88264D20150082EB17 /* QNStickerOverlayView.m */; };
+		46462CD8264D20150082EB17 /* QNMVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C8B264D20150082EB17 /* QNMVModel.m */; };
+		46462CD9264D20150082EB17 /* QNMVPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C8E264D20150082EB17 /* QNMVPickerView.m */; };
+		46462CDA264D20150082EB17 /* QNUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462C93264D20150082EB17 /* QNUploadViewController.m */; };
+		46462D5B264D235C0082EB17 /* Lookup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056C24EAC20F00B89BF5 /* Lookup.bundle */; };
+		46462D64264D235C0082EB17 /* Lookup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056C24EAC20F00B89BF5 /* Lookup.bundle */; };
+		46462D6D264D235F0082EB17 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056D24EAC21500B89BF5 /* Resources.bundle */; };
+		46462D76264D23600082EB17 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7661056D24EAC21500B89BF5 /* Resources.bundle */; };
+		46462D7F264D236B0082EB17 /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
+		46462D80264D236B0082EB17 /* MMVideoAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */; };
+		46462D81264D236B0082EB17 /* MMBeautyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1C23B309C40017239F /* MMBeautyRender.m */; };
+		46462D82264D236B0082EB17 /* MMAssetGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2223B309DB0017239F /* MMAssetGridViewCell.m */; };
+		46462D83264D236B0082EB17 /* MMDeviceMotionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2723B309DB0017239F /* MMDeviceMotionObserver.m */; };
+		46462DA4264D29130082EB17 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		46462DAF264D2CD60082EB17 /* QNBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462DAE264D2CD60082EB17 /* QNBeautyViewController.m */; };
 		4667F64B26269ECC003811A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64A26269ECC003811A0 /* AppDelegate.m */; };
 		4667F64E26269ECC003811A0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64D26269ECC003811A0 /* SceneDelegate.m */; };
 		4667F65126269ECC003811A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F65026269ECC003811A0 /* ViewController.m */; };
@@ -20,7 +105,7 @@
 		4667F6A62626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F69F2626A1FC003811A0 /* ZGPublishStreamCustomVideoProcessViewController.m */; };
 		4667F6A72626A1FC003811A0 /* ZGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6A12626A1FC003811A0 /* ZGLoginViewController.m */; };
 		4667F6A82626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6A42626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m */; };
-		4667F6B22626A23D003811A0 /* MMZGBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */; };
+		4667F6B22626A23D003811A0 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
 		4667F6C12626A2E0003811A0 /* MMVideoAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */; };
 		4667F6C22626A2E0003811A0 /* MMAssetGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2223B309DB0017239F /* MMAssetGridViewCell.m */; };
 		4667F6C32626A2E0003811A0 /* MMBeautyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD1C23B309C40017239F /* MMBeautyRender.m */; };
@@ -131,6 +216,7 @@
 		76F98CB7254986D00020F4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB6254986D00020F4F6 /* Assets.xcassets */; };
 		76F98CBA254986D00020F4F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB8254986D00020F4F6 /* LaunchScreen.storyboard */; };
 		76F98CBD254986D00020F4F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F98CBC254986D00020F4F6 /* main.m */; };
+		87959404164A4DEFA4AA0E98 /* libPods-MMQNSortVideoBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */; };
 		9A37D089227A5EF608F85CEB /* libPods-MMZegoBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */; };
 		B38AEBC428BBC9726E17499C /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */; };
 		C08E9983038E94C93C1C4B48 /* libPods-MMAliBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */; };
@@ -143,8 +229,152 @@
 		0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTXBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		17527C2D4BC5DB78AAC285E0 /* Pods-MMQNSortVideoBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNSortVideoBeautyDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoExpressBeautyDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		32E399175ED589DD1BFE3CC6 /* Pods-MMArgoraBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		46462BDA264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMQNSortVideoBeautyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46462BDC264D1E6A0082EB17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46462BDD264D1E6A0082EB17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46462BDF264D1E6A0082EB17 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		46462BE0264D1E6A0082EB17 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		46462BE6264D1E6A0082EB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46462BE8264D1E6C0082EB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46462BEB264D1E6C0082EB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46462BED264D1E6C0082EB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46462BEE264D1E6C0082EB17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46462BFC264D20150082EB17 /* QNProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNProductViewController.h; sourceTree = "<group>"; };
+		46462BFD264D20150082EB17 /* QNPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPuzzleViewController.m; sourceTree = "<group>"; };
+		46462BFE264D20150082EB17 /* QNPlayPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPlayPuzzleViewController.m; sourceTree = "<group>"; };
+		46462C00264D20150082EB17 /* UIView+QNAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QNAnimation.h"; sourceTree = "<group>"; };
+		46462C01264D20150082EB17 /* UIView+QNLightFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QNLightFrame.m"; sourceTree = "<group>"; };
+		46462C02264D20150082EB17 /* UIView+QNAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QNAlert.h"; sourceTree = "<group>"; };
+		46462C03264D20150082EB17 /* PHAsset+QNCoverPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+QNCoverPicker.h"; sourceTree = "<group>"; };
+		46462C04264D20150082EB17 /* UIView+QNCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QNCore.m"; sourceTree = "<group>"; };
+		46462C05264D20150082EB17 /* NSObject+QNAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QNAuth.h"; sourceTree = "<group>"; };
+		46462C06264D20150082EB17 /* UIView+QNAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QNAnimation.m"; sourceTree = "<group>"; };
+		46462C07264D20150082EB17 /* PHAsset+QNCoverPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+QNCoverPicker.m"; sourceTree = "<group>"; };
+		46462C08264D20150082EB17 /* UIView+QNAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QNAlert.m"; sourceTree = "<group>"; };
+		46462C09264D20150082EB17 /* UIView+QNLightFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QNLightFrame.h"; sourceTree = "<group>"; };
+		46462C0A264D20150082EB17 /* NSObject+QNAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QNAuth.m"; sourceTree = "<group>"; };
+		46462C0B264D20150082EB17 /* UIView+QNCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QNCore.h"; sourceTree = "<group>"; };
+		46462C0C264D20150082EB17 /* QNDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDocumentViewController.m; sourceTree = "<group>"; };
+		46462C0D264D20150082EB17 /* QNMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMainViewController.h; sourceTree = "<group>"; };
+		46462C0F264D20150082EB17 /* QNRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRecordingViewController.m; sourceTree = "<group>"; };
+		46462C10264D20150082EB17 /* QNRecordingProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRecordingProgress.m; sourceTree = "<group>"; };
+		46462C11264D20150082EB17 /* QNMixRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMixRecordingViewController.h; sourceTree = "<group>"; };
+		46462C12264D20150082EB17 /* QNRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRecordingViewController.h; sourceTree = "<group>"; };
+		46462C13264D20150082EB17 /* QNRecordingProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRecordingProgress.h; sourceTree = "<group>"; };
+		46462C1B264D20150082EB17 /* QNMixRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMixRecordingViewController.m; sourceTree = "<group>"; };
+		46462C1D264D20150082EB17 /* gifSticker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gifSticker.bundle; sourceTree = "<group>"; };
+		46462C1E264D20150082EB17 /* mv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mv.bundle; sourceTree = "<group>"; };
+		46462C1F264D20150082EB17 /* PLShortVideoKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PLShortVideoKit.bundle; sourceTree = "<group>"; };
+		46462C20264D20150082EB17 /* audio.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = audio.bundle; sourceTree = "<group>"; };
+		46462C21264D20150082EB17 /* Directions.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+		46462C22264D20150082EB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46462C23264D20150082EB17 /* QNSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSettingsViewController.h; sourceTree = "<group>"; };
+		46462C26264D20150082EB17 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46462C27264D20150082EB17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46462C2A264D20150082EB17 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
+		46462C2B264D20150082EB17 /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		46462C2C264D20150082EB17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/QBImagePicker.strings"; sourceTree = "<group>"; };
+		46462C2D264D20150082EB17 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
+		46462C2E264D20150082EB17 /* QBAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsViewController.h; sourceTree = "<group>"; };
+		46462C2F264D20150082EB17 /* QBAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAlbumsViewController.h; sourceTree = "<group>"; };
+		46462C30264D20150082EB17 /* QBVideoIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBVideoIconView.m; sourceTree = "<group>"; };
+		46462C31264D20150082EB17 /* QBVideoIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBVideoIndicatorView.m; sourceTree = "<group>"; };
+		46462C32264D20150082EB17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
+		46462C33264D20150082EB17 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
+		46462C34264D20150082EB17 /* QBCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBCheckmarkView.h; sourceTree = "<group>"; };
+		46462C35264D20150082EB17 /* QBAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCell.h; sourceTree = "<group>"; };
+		46462C36264D20150082EB17 /* QBSlomoIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBSlomoIconView.h; sourceTree = "<group>"; };
+		46462C37264D20150082EB17 /* QBAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAlbumCell.m; sourceTree = "<group>"; };
+		46462C38264D20150082EB17 /* QBImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QBImagePicker.storyboard; sourceTree = "<group>"; };
+		46462C39264D20150082EB17 /* QBVideoIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBVideoIndicatorView.h; sourceTree = "<group>"; };
+		46462C3A264D20150082EB17 /* QBAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAlbumsViewController.m; sourceTree = "<group>"; };
+		46462C3B264D20150082EB17 /* QBVideoIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBVideoIconView.h; sourceTree = "<group>"; };
+		46462C3C264D20150082EB17 /* QBAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsViewController.m; sourceTree = "<group>"; };
+		46462C3D264D20150082EB17 /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		46462C3E264D20150082EB17 /* QBCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBCheckmarkView.m; sourceTree = "<group>"; };
+		46462C3F264D20150082EB17 /* QBAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAlbumCell.h; sourceTree = "<group>"; };
+		46462C40264D20150082EB17 /* QBSlomoIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBSlomoIconView.m; sourceTree = "<group>"; };
+		46462C41264D20150082EB17 /* QBAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetCell.m; sourceTree = "<group>"; };
+		46462C43264D20150082EB17 /* QNFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFunctionViewController.h; sourceTree = "<group>"; };
+		46462C44264D20150082EB17 /* QNFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFunctionViewController.m; sourceTree = "<group>"; };
+		46462C45264D20150082EB17 /* QNPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPuzzleViewController.h; sourceTree = "<group>"; };
+		46462C47264D20150082EB17 /* QNPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		46462C48264D20150082EB17 /* QNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNBaseViewController.h; sourceTree = "<group>"; };
+		46462C49264D20150082EB17 /* QNVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNVerticalButton.m; sourceTree = "<group>"; };
+		46462C4A264D20150082EB17 /* QNAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		46462C4B264D20150082EB17 /* QNGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNGradientView.m; sourceTree = "<group>"; };
+		46462C4C264D20150082EB17 /* QNSampleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSampleScrollView.m; sourceTree = "<group>"; };
+		46462C4D264D20150082EB17 /* QNPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPlayerView.m; sourceTree = "<group>"; };
+		46462C4E264D20150082EB17 /* QNSelectButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSelectButtonView.m; sourceTree = "<group>"; };
+		46462C4F264D20150082EB17 /* QNMusicPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMusicPickerView.h; sourceTree = "<group>"; };
+		46462C50264D20150082EB17 /* QNAssetRangeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNAssetRangeBar.h; sourceTree = "<group>"; };
+		46462C51264D20150082EB17 /* QNMusicDecibelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMusicDecibelView.h; sourceTree = "<group>"; };
+		46462C52264D20150082EB17 /* QNPanImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPanImageView.h; sourceTree = "<group>"; };
+		46462C53264D20150082EB17 /* QNTextPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTextPageControl.m; sourceTree = "<group>"; };
+		46462C54264D20150082EB17 /* QNVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNVerticalButton.h; sourceTree = "<group>"; };
+		46462C55264D20150082EB17 /* QNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNBaseViewController.m; sourceTree = "<group>"; };
+		46462C56264D20150082EB17 /* QNPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		46462C57264D20150082EB17 /* QNSelectButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSelectButtonView.h; sourceTree = "<group>"; };
+		46462C58264D20150082EB17 /* QNPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPlayerView.h; sourceTree = "<group>"; };
+		46462C59264D20150082EB17 /* QNSampleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSampleScrollView.h; sourceTree = "<group>"; };
+		46462C5A264D20150082EB17 /* QNGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNGradientView.h; sourceTree = "<group>"; };
+		46462C5B264D20150082EB17 /* QNAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		46462C5C264D20150082EB17 /* QNAssetRangeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNAssetRangeBar.m; sourceTree = "<group>"; };
+		46462C5D264D20150082EB17 /* QNMusicPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMusicPickerView.m; sourceTree = "<group>"; };
+		46462C5E264D20150082EB17 /* QNTextPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTextPageControl.h; sourceTree = "<group>"; };
+		46462C5F264D20150082EB17 /* QNPanImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPanImageView.m; sourceTree = "<group>"; };
+		46462C60264D20150082EB17 /* QNMusicDecibelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMusicDecibelView.m; sourceTree = "<group>"; };
+		46462C62264D20150082EB17 /* QNScopeCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNScopeCutView.m; sourceTree = "<group>"; };
+		46462C63264D20150082EB17 /* QNTranscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTranscodeViewController.m; sourceTree = "<group>"; };
+		46462C64264D20150082EB17 /* QNScopeCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNScopeCutView.h; sourceTree = "<group>"; };
+		46462C65264D20150082EB17 /* QNTranscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTranscodeViewController.h; sourceTree = "<group>"; };
+		46462C66264D20150082EB17 /* QNProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNProductViewController.m; sourceTree = "<group>"; };
+		46462C67264D20150082EB17 /* QNMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMainViewController.m; sourceTree = "<group>"; };
+		46462C68264D20150082EB17 /* QNDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDocumentViewController.h; sourceTree = "<group>"; };
+		46462C69264D20150082EB17 /* QNPlayPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPlayPuzzleViewController.h; sourceTree = "<group>"; };
+		46462C6A264D20150082EB17 /* QNSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSettingsViewController.m; sourceTree = "<group>"; };
+		46462C6D264D20150082EB17 /* QNEditorMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEditorMusicView.m; sourceTree = "<group>"; };
+		46462C6E264D20150082EB17 /* QNMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMusicModel.h; sourceTree = "<group>"; };
+		46462C6F264D20150082EB17 /* QNAudioVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNAudioVolumeView.m; sourceTree = "<group>"; };
+		46462C70264D20150082EB17 /* QNAudioVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNAudioVolumeView.h; sourceTree = "<group>"; };
+		46462C71264D20150082EB17 /* QNMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMusicModel.m; sourceTree = "<group>"; };
+		46462C72264D20150082EB17 /* QNEditorMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEditorMusicView.h; sourceTree = "<group>"; };
+		46462C73264D20150082EB17 /* QNFilterGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFilterGroup.m; sourceTree = "<group>"; };
+		46462C74264D20150082EB17 /* QNEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEditorViewController.m; sourceTree = "<group>"; };
+		46462C76264D20150082EB17 /* QNStickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNStickerModel.m; sourceTree = "<group>"; };
+		46462C77264D20150082EB17 /* QNEditorGIFStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEditorGIFStickerView.h; sourceTree = "<group>"; };
+		46462C78264D20150082EB17 /* QNGIFStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNGIFStickerView.m; sourceTree = "<group>"; };
+		46462C79264D20150082EB17 /* QNFilterPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFilterPickerView.m; sourceTree = "<group>"; };
+		46462C7A264D20150082EB17 /* QNDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDrawView.h; sourceTree = "<group>"; };
+		46462C7B264D20150082EB17 /* QNEditorDrawStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEditorDrawStickerView.m; sourceTree = "<group>"; };
+		46462C7C264D20150082EB17 /* QNTextStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTextStickerView.m; sourceTree = "<group>"; };
+		46462C7D264D20150082EB17 /* QNEditorTextStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEditorTextStickerView.m; sourceTree = "<group>"; };
+		46462C7E264D20150082EB17 /* QNStickerOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNStickerOverlayView.h; sourceTree = "<group>"; };
+		46462C7F264D20150082EB17 /* QNTextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTextInputView.m; sourceTree = "<group>"; };
+		46462C80264D20150082EB17 /* QNGIFStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNGIFStickerView.h; sourceTree = "<group>"; };
+		46462C81264D20150082EB17 /* QNStickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNStickerModel.h; sourceTree = "<group>"; };
+		46462C82264D20150082EB17 /* QNEditorGIFStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEditorGIFStickerView.m; sourceTree = "<group>"; };
+		46462C83264D20150082EB17 /* QNEditorDrawStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEditorDrawStickerView.h; sourceTree = "<group>"; };
+		46462C84264D20150082EB17 /* QNDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDrawView.m; sourceTree = "<group>"; };
+		46462C85264D20150082EB17 /* QNFilterPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFilterPickerView.h; sourceTree = "<group>"; };
+		46462C86264D20150082EB17 /* QNTextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTextInputView.h; sourceTree = "<group>"; };
+		46462C87264D20150082EB17 /* QNEditorTextStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEditorTextStickerView.h; sourceTree = "<group>"; };
+		46462C88264D20150082EB17 /* QNStickerOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNStickerOverlayView.m; sourceTree = "<group>"; };
+		46462C89264D20150082EB17 /* QNTextStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTextStickerView.h; sourceTree = "<group>"; };
+		46462C8B264D20150082EB17 /* QNMVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMVModel.m; sourceTree = "<group>"; };
+		46462C8C264D20150082EB17 /* QNMVPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMVPickerView.h; sourceTree = "<group>"; };
+		46462C8D264D20150082EB17 /* QNMVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMVModel.h; sourceTree = "<group>"; };
+		46462C8E264D20150082EB17 /* QNMVPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMVPickerView.m; sourceTree = "<group>"; };
+		46462C8F264D20150082EB17 /* QNEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEditorViewController.h; sourceTree = "<group>"; };
+		46462C90264D20150082EB17 /* QNFilterGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFilterGroup.h; sourceTree = "<group>"; };
+		46462C92264D20150082EB17 /* QNUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadViewController.h; sourceTree = "<group>"; };
+		46462C93264D20150082EB17 /* QNUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadViewController.m; sourceTree = "<group>"; };
+		46462D22264D21660082EB17 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		46462DAD264D2CD60082EB17 /* QNBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNBeautyViewController.h; sourceTree = "<group>"; };
+		46462DAE264D2CD60082EB17 /* QNBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNBeautyViewController.m; sourceTree = "<group>"; };
 		4667F64726269ECC003811A0 /* MMZegoExpressBeautyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMZegoExpressBeautyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4667F64926269ECC003811A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4667F64A26269ECC003811A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,8 +393,8 @@
 		4667F6A32626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPublishStreamCustomVideoCaptureViewController.h; sourceTree = "<group>"; };
 		4667F6A42626A1FC003811A0 /* ZGPublishStreamCustomVideoCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPublishStreamCustomVideoCaptureViewController.m; sourceTree = "<group>"; };
 		4667F6A52626A1FC003811A0 /* ZGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLoginViewController.h; sourceTree = "<group>"; };
-		4667F6B02626A23D003811A0 /* MMZGBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMZGBeautyViewController.h; sourceTree = "<group>"; };
-		4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMZGBeautyViewController.m; sourceTree = "<group>"; };
+		4667F6B02626A23D003811A0 /* MMBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBeautyViewController.h; sourceTree = "<group>"; };
+		4667F6B12626A23D003811A0 /* MMBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBeautyViewController.m; sourceTree = "<group>"; };
 		4667F6CE2626A3A4003811A0 /* ZGCaptureDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCaptureDeviceCamera.m; sourceTree = "<group>"; };
 		4667F6CF2626A3A4003811A0 /* ZGCaptureDeviceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceProtocol.h; sourceTree = "<group>"; };
 		4667F6D02626A3A4003811A0 /* ZGCaptureDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceCamera.h; sourceTree = "<group>"; };
@@ -302,9 +532,11 @@
 		76F98CBC254986D00020F4F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7963478B9D4F05FEC40CE475 /* Pods-MMAliBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMAliBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMAliBeautyKitDemo/Pods-MMAliBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMArgoraBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565E977996295465B39008C /* Pods-MMQNSortVideoBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNSortVideoBeautyDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoExpressBeautyDemo.release.xcconfig"; path = "Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMAliBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNSortVideoBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMZegoExpressBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +549,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46462BD7264D1E6A0082EB17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87959404164A4DEFA4AA0E98 /* libPods-MMQNSortVideoBeautyDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4667F64426269ECC003811A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,8 +633,275 @@
 				7963478B9D4F05FEC40CE475 /* Pods-MMAliBeautyKitDemo.release.xcconfig */,
 				20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */,
 				AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */,
+				8565E977996295465B39008C /* Pods-MMQNSortVideoBeautyDemo.debug.xcconfig */,
+				17527C2D4BC5DB78AAC285E0 /* Pods-MMQNSortVideoBeautyDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		46462BDB264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				46462BFB264D20150082EB17 /* SortVideo */,
+				46462BDC264D1E6A0082EB17 /* AppDelegate.h */,
+				46462BDD264D1E6A0082EB17 /* AppDelegate.m */,
+				46462BDF264D1E6A0082EB17 /* SceneDelegate.h */,
+				46462BE0264D1E6A0082EB17 /* SceneDelegate.m */,
+				46462BE5264D1E6A0082EB17 /* Main.storyboard */,
+				46462BE8264D1E6C0082EB17 /* Assets.xcassets */,
+				46462BEA264D1E6C0082EB17 /* LaunchScreen.storyboard */,
+				46462BED264D1E6C0082EB17 /* Info.plist */,
+				46462BEE264D1E6C0082EB17 /* main.m */,
+			);
+			path = MMQNSortVideoBeautyDemo;
+			sourceTree = "<group>";
+		};
+		46462BFB264D20150082EB17 /* SortVideo */ = {
+			isa = PBXGroup;
+			children = (
+				46462D22264D21660082EB17 /* PrefixHeader.pch */,
+				46462BFF264D20150082EB17 /* Catrgory */,
+				46462C0E264D20150082EB17 /* Recording */,
+				46462C1C264D20150082EB17 /* Resources */,
+				46462C21264D20150082EB17 /* Directions.geojson */,
+				46462C22264D20150082EB17 /* Assets.xcassets */,
+				46462C23264D20150082EB17 /* QNSettingsViewController.h */,
+				46462C24264D20150082EB17 /* ThirdPart */,
+				46462C42264D20150082EB17 /* Function */,
+				46462C46264D20150082EB17 /* Common */,
+				46462C61264D20150082EB17 /* Transcode */,
+				46462C0D264D20150082EB17 /* QNMainViewController.h */,
+				46462C67264D20150082EB17 /* QNMainViewController.m */,
+				46462C68264D20150082EB17 /* QNDocumentViewController.h */,
+				46462C0C264D20150082EB17 /* QNDocumentViewController.m */,
+				46462C45264D20150082EB17 /* QNPuzzleViewController.h */,
+				46462BFD264D20150082EB17 /* QNPuzzleViewController.m */,
+				46462C69264D20150082EB17 /* QNPlayPuzzleViewController.h */,
+				46462BFE264D20150082EB17 /* QNPlayPuzzleViewController.m */,
+				46462C66264D20150082EB17 /* QNProductViewController.m */,
+				46462BFC264D20150082EB17 /* QNProductViewController.h */,
+				46462C6A264D20150082EB17 /* QNSettingsViewController.m */,
+				46462C6B264D20150082EB17 /* Editor */,
+				46462C91264D20150082EB17 /* Upload */,
+			);
+			path = SortVideo;
+			sourceTree = "<group>";
+		};
+		46462BFF264D20150082EB17 /* Catrgory */ = {
+			isa = PBXGroup;
+			children = (
+				46462C00264D20150082EB17 /* UIView+QNAnimation.h */,
+				46462C01264D20150082EB17 /* UIView+QNLightFrame.m */,
+				46462C02264D20150082EB17 /* UIView+QNAlert.h */,
+				46462C03264D20150082EB17 /* PHAsset+QNCoverPicker.h */,
+				46462C04264D20150082EB17 /* UIView+QNCore.m */,
+				46462C05264D20150082EB17 /* NSObject+QNAuth.h */,
+				46462C06264D20150082EB17 /* UIView+QNAnimation.m */,
+				46462C07264D20150082EB17 /* PHAsset+QNCoverPicker.m */,
+				46462C08264D20150082EB17 /* UIView+QNAlert.m */,
+				46462C09264D20150082EB17 /* UIView+QNLightFrame.h */,
+				46462C0A264D20150082EB17 /* NSObject+QNAuth.m */,
+				46462C0B264D20150082EB17 /* UIView+QNCore.h */,
+			);
+			path = Catrgory;
+			sourceTree = "<group>";
+		};
+		46462C0E264D20150082EB17 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				46462C11264D20150082EB17 /* QNMixRecordingViewController.h */,
+				46462C1B264D20150082EB17 /* QNMixRecordingViewController.m */,
+				46462C12264D20150082EB17 /* QNRecordingViewController.h */,
+				46462C0F264D20150082EB17 /* QNRecordingViewController.m */,
+				46462C10264D20150082EB17 /* QNRecordingProgress.m */,
+				46462C13264D20150082EB17 /* QNRecordingProgress.h */,
+				46462DAD264D2CD60082EB17 /* QNBeautyViewController.h */,
+				46462DAE264D2CD60082EB17 /* QNBeautyViewController.m */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		46462C1C264D20150082EB17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46462C1D264D20150082EB17 /* gifSticker.bundle */,
+				46462C1E264D20150082EB17 /* mv.bundle */,
+				46462C1F264D20150082EB17 /* PLShortVideoKit.bundle */,
+				46462C20264D20150082EB17 /* audio.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46462C24264D20150082EB17 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				46462C25264D20150082EB17 /* QBImagePickerController */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		46462C25264D20150082EB17 /* QBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				46462C26264D20150082EB17 /* LICENSE */,
+				46462C27264D20150082EB17 /* README.md */,
+				46462C28264D20150082EB17 /* QBImagePicker */,
+			);
+			path = QBImagePickerController;
+			sourceTree = "<group>";
+		};
+		46462C28264D20150082EB17 /* QBImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				46462C29264D20150082EB17 /* QBImagePicker.strings */,
+				46462C2B264D20150082EB17 /* QBImagePickerController.h */,
+				46462C2E264D20150082EB17 /* QBAssetsViewController.h */,
+				46462C2F264D20150082EB17 /* QBAlbumsViewController.h */,
+				46462C30264D20150082EB17 /* QBVideoIconView.m */,
+				46462C31264D20150082EB17 /* QBVideoIndicatorView.m */,
+				46462C34264D20150082EB17 /* QBCheckmarkView.h */,
+				46462C35264D20150082EB17 /* QBAssetCell.h */,
+				46462C36264D20150082EB17 /* QBSlomoIconView.h */,
+				46462C37264D20150082EB17 /* QBAlbumCell.m */,
+				46462C38264D20150082EB17 /* QBImagePicker.storyboard */,
+				46462C39264D20150082EB17 /* QBVideoIndicatorView.h */,
+				46462C3A264D20150082EB17 /* QBAlbumsViewController.m */,
+				46462C3B264D20150082EB17 /* QBVideoIconView.h */,
+				46462C3C264D20150082EB17 /* QBAssetsViewController.m */,
+				46462C3D264D20150082EB17 /* QBImagePickerController.m */,
+				46462C3E264D20150082EB17 /* QBCheckmarkView.m */,
+				46462C3F264D20150082EB17 /* QBAlbumCell.h */,
+				46462C40264D20150082EB17 /* QBSlomoIconView.m */,
+				46462C41264D20150082EB17 /* QBAssetCell.m */,
+			);
+			path = QBImagePicker;
+			sourceTree = "<group>";
+		};
+		46462C42264D20150082EB17 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				46462C43264D20150082EB17 /* QNFunctionViewController.h */,
+				46462C44264D20150082EB17 /* QNFunctionViewController.m */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		46462C46264D20150082EB17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				46462C47264D20150082EB17 /* QNPhotoCollectionViewController.h */,
+				46462C56264D20150082EB17 /* QNPhotoCollectionViewController.m */,
+				46462C49264D20150082EB17 /* QNVerticalButton.m */,
+				46462C4A264D20150082EB17 /* QNAssetCollectionViewCell.h */,
+				46462C5B264D20150082EB17 /* QNAssetCollectionViewCell.m */,
+				46462C5A264D20150082EB17 /* QNGradientView.h */,
+				46462C4B264D20150082EB17 /* QNGradientView.m */,
+				46462C59264D20150082EB17 /* QNSampleScrollView.h */,
+				46462C4C264D20150082EB17 /* QNSampleScrollView.m */,
+				46462C57264D20150082EB17 /* QNSelectButtonView.h */,
+				46462C4E264D20150082EB17 /* QNSelectButtonView.m */,
+				46462C4F264D20150082EB17 /* QNMusicPickerView.h */,
+				46462C5D264D20150082EB17 /* QNMusicPickerView.m */,
+				46462C50264D20150082EB17 /* QNAssetRangeBar.h */,
+				46462C5C264D20150082EB17 /* QNAssetRangeBar.m */,
+				46462C51264D20150082EB17 /* QNMusicDecibelView.h */,
+				46462C60264D20150082EB17 /* QNMusicDecibelView.m */,
+				46462C52264D20150082EB17 /* QNPanImageView.h */,
+				46462C5F264D20150082EB17 /* QNPanImageView.m */,
+				46462C5E264D20150082EB17 /* QNTextPageControl.h */,
+				46462C53264D20150082EB17 /* QNTextPageControl.m */,
+				46462C54264D20150082EB17 /* QNVerticalButton.h */,
+				46462C48264D20150082EB17 /* QNBaseViewController.h */,
+				46462C55264D20150082EB17 /* QNBaseViewController.m */,
+				46462C58264D20150082EB17 /* QNPlayerView.h */,
+				46462C4D264D20150082EB17 /* QNPlayerView.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		46462C61264D20150082EB17 /* Transcode */ = {
+			isa = PBXGroup;
+			children = (
+				46462C62264D20150082EB17 /* QNScopeCutView.m */,
+				46462C63264D20150082EB17 /* QNTranscodeViewController.m */,
+				46462C64264D20150082EB17 /* QNScopeCutView.h */,
+				46462C65264D20150082EB17 /* QNTranscodeViewController.h */,
+			);
+			path = Transcode;
+			sourceTree = "<group>";
+		};
+		46462C6B264D20150082EB17 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				46462C6C264D20150082EB17 /* Music */,
+				46462C90264D20150082EB17 /* QNFilterGroup.h */,
+				46462C73264D20150082EB17 /* QNFilterGroup.m */,
+				46462C8F264D20150082EB17 /* QNEditorViewController.h */,
+				46462C74264D20150082EB17 /* QNEditorViewController.m */,
+				46462C75264D20150082EB17 /* Sticker */,
+				46462C8A264D20150082EB17 /* MV */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		46462C6C264D20150082EB17 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				46462C6D264D20150082EB17 /* QNEditorMusicView.m */,
+				46462C6E264D20150082EB17 /* QNMusicModel.h */,
+				46462C6F264D20150082EB17 /* QNAudioVolumeView.m */,
+				46462C70264D20150082EB17 /* QNAudioVolumeView.h */,
+				46462C71264D20150082EB17 /* QNMusicModel.m */,
+				46462C72264D20150082EB17 /* QNEditorMusicView.h */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		46462C75264D20150082EB17 /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				46462C76264D20150082EB17 /* QNStickerModel.m */,
+				46462C77264D20150082EB17 /* QNEditorGIFStickerView.h */,
+				46462C78264D20150082EB17 /* QNGIFStickerView.m */,
+				46462C79264D20150082EB17 /* QNFilterPickerView.m */,
+				46462C7A264D20150082EB17 /* QNDrawView.h */,
+				46462C7B264D20150082EB17 /* QNEditorDrawStickerView.m */,
+				46462C7C264D20150082EB17 /* QNTextStickerView.m */,
+				46462C7D264D20150082EB17 /* QNEditorTextStickerView.m */,
+				46462C7E264D20150082EB17 /* QNStickerOverlayView.h */,
+				46462C7F264D20150082EB17 /* QNTextInputView.m */,
+				46462C80264D20150082EB17 /* QNGIFStickerView.h */,
+				46462C81264D20150082EB17 /* QNStickerModel.h */,
+				46462C82264D20150082EB17 /* QNEditorGIFStickerView.m */,
+				46462C83264D20150082EB17 /* QNEditorDrawStickerView.h */,
+				46462C84264D20150082EB17 /* QNDrawView.m */,
+				46462C85264D20150082EB17 /* QNFilterPickerView.h */,
+				46462C86264D20150082EB17 /* QNTextInputView.h */,
+				46462C87264D20150082EB17 /* QNEditorTextStickerView.h */,
+				46462C88264D20150082EB17 /* QNStickerOverlayView.m */,
+				46462C89264D20150082EB17 /* QNTextStickerView.h */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		46462C8A264D20150082EB17 /* MV */ = {
+			isa = PBXGroup;
+			children = (
+				46462C8B264D20150082EB17 /* QNMVModel.m */,
+				46462C8C264D20150082EB17 /* QNMVPickerView.h */,
+				46462C8D264D20150082EB17 /* QNMVModel.h */,
+				46462C8E264D20150082EB17 /* QNMVPickerView.m */,
+			);
+			path = MV;
+			sourceTree = "<group>";
+		};
+		46462C91264D20150082EB17 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				46462C92264D20150082EB17 /* QNUploadViewController.h */,
+				46462C93264D20150082EB17 /* QNUploadViewController.m */,
+			);
+			path = Upload;
 			sourceTree = "<group>";
 		};
 		4667F64826269ECC003811A0 /* MMZegoExpressBeautyDemo */ = {
@@ -428,8 +935,6 @@
 				4667F69E2626A1FC003811A0 /* CustomVideoProcess */,
 				4667F6A52626A1FC003811A0 /* ZGLoginViewController.h */,
 				4667F6A12626A1FC003811A0 /* ZGLoginViewController.m */,
-				4667F6B02626A23D003811A0 /* MMZGBeautyViewController.h */,
-				4667F6B12626A23D003811A0 /* MMZGBeautyViewController.m */,
 			);
 			path = ZegoVideo;
 			sourceTree = "<group>";
@@ -568,6 +1073,7 @@
 				767D49A325CAAE3200ADC8C5 /* MMZegoBeautyKitDemo */,
 				46A2CCAF261EE7D100C60C69 /* MMAliBeautyKitDemo */,
 				4667F64826269ECC003811A0 /* MMZegoExpressBeautyDemo */,
+				46462BDB264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo */,
 				765BFCE623B3095B0017239F /* Products */,
 				2A389913EC9EBE83CA3602C4 /* Pods */,
 				DD9AD957C4283CA4B3304ABF /* Frameworks */,
@@ -584,6 +1090,7 @@
 				767D49A225CAAE3200ADC8C5 /* MMZegoBeautyKitDemo.app */,
 				46A2CCAE261EE7D100C60C69 /* MMAliBeautyKitDemo.app */,
 				4667F64726269ECC003811A0 /* MMZegoExpressBeautyDemo.app */,
+				46462BDA264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,6 +1132,8 @@
 				765BFD2823B309DB0017239F /* MMVideoAssetsCollectionViewController.m */,
 				765BFD1B23B309C40017239F /* MMBeautyRender.h */,
 				765BFD1C23B309C40017239F /* MMBeautyRender.m */,
+				4667F6B02626A23D003811A0 /* MMBeautyViewController.h */,
+				4667F6B12626A23D003811A0 /* MMBeautyViewController.m */,
 			);
 			path = BeautyKitUI;
 			sourceTree = "<group>";
@@ -729,6 +1238,7 @@
 				46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */,
 				B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */,
 				C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */,
+				C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -736,6 +1246,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		46462BD9264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46462BF2264D1E6C0082EB17 /* Build configuration list for PBXNativeTarget "MMQNSortVideoBeautyDemo" */;
+			buildPhases = (
+				D7DE51D687F7E1F04B9B9909 /* [CP] Check Pods Manifest.lock */,
+				46462BD6264D1E6A0082EB17 /* Sources */,
+				46462BD7264D1E6A0082EB17 /* Frameworks */,
+				46462BD8264D1E6A0082EB17 /* Resources */,
+				CA028DC2C68D880852F9D229 /* [CP] Embed Pods Frameworks */,
+				F4102AA0ADE22FFA8DA86950 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMQNSortVideoBeautyDemo;
+			productName = MMQNSortVideoBeautyDemo;
+			productReference = 46462BDA264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4667F64626269ECC003811A0 /* MMZegoExpressBeautyDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4667F65F26269ECD003811A0 /* Build configuration list for PBXNativeTarget "MMZegoExpressBeautyDemo" */;
@@ -885,6 +1415,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = sunfei;
 				TargetAttributes = {
+					46462BD9264D1E6A0082EB17 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					4667F64626269ECC003811A0 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -915,6 +1448,10 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				"zh-Hans",
+				ja,
+				es,
 			);
 			mainGroup = 765BFCDC23B3095B0017239F;
 			productRefGroup = 765BFCE623B3095B0017239F /* Products */;
@@ -928,18 +1465,43 @@
 				767D49A125CAAE3200ADC8C5 /* MMZegoBeautyKitDemo */,
 				46A2CCAD261EE7D100C60C69 /* MMAliBeautyKitDemo */,
 				4667F64626269ECC003811A0 /* MMZegoExpressBeautyDemo */,
+				46462BD9264D1E6A0082EB17 /* MMQNSortVideoBeautyDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		46462BD8264D1E6A0082EB17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46462CA6264D20150082EB17 /* audio.bundle in Resources */,
+				46462D64264D235C0082EB17 /* Lookup.bundle in Resources */,
+				46462CA7264D20150082EB17 /* Directions.geojson in Resources */,
+				46462CAF264D20150082EB17 /* QBImagePicker.storyboard in Resources */,
+				46462CA3264D20150082EB17 /* gifSticker.bundle in Resources */,
+				46462BEC264D1E6C0082EB17 /* LaunchScreen.storyboard in Resources */,
+				46462CA9264D20150082EB17 /* LICENSE in Resources */,
+				46462CAB264D20150082EB17 /* QBImagePicker.strings in Resources */,
+				46462BE9264D1E6C0082EB17 /* Assets.xcassets in Resources */,
+				46462CA4264D20150082EB17 /* mv.bundle in Resources */,
+				46462D76264D23600082EB17 /* Resources.bundle in Resources */,
+				46462BE7264D1E6A0082EB17 /* Main.storyboard in Resources */,
+				46462CA8264D20150082EB17 /* Assets.xcassets in Resources */,
+				46462CAA264D20150082EB17 /* README.md in Resources */,
+				46462CA5264D20150082EB17 /* PLShortVideoKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4667F64526269ECC003811A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46462D6D264D235F0082EB17 /* Resources.bundle in Resources */,
 				4667F65926269ECD003811A0 /* LaunchScreen.storyboard in Resources */,
 				4667F65626269ECC003811A0 /* Assets.xcassets in Resources */,
 				4667F65426269ECC003811A0 /* Main.storyboard in Resources */,
+				46462D5B264D235C0082EB17 /* Lookup.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,6 +1882,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CA028DC2C68D880852F9D229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE6C9A43560B893D282E7A80 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1335,6 +1914,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMAliBeautyKitDemo/Pods-MMAliBeautyKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7DE51D687F7E1F04B9B9909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMQNSortVideoBeautyDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D999D98AAC8BCD788BE59914 /* [CP] Check Pods Manifest.lock */ = {
@@ -1393,6 +1994,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F4102AA0ADE22FFA8DA86950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FFB97DCE799AE6D6B0D0F82A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1413,6 +2031,81 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46462BD6264D1E6A0082EB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46462CD7264D20150082EB17 /* QNStickerOverlayView.m in Sources */,
+				46462C96264D20150082EB17 /* UIView+QNLightFrame.m in Sources */,
+				46462CD0264D20150082EB17 /* QNFilterPickerView.m in Sources */,
+				46462CB0264D20150082EB17 /* QBAlbumsViewController.m in Sources */,
+				46462CD5264D20150082EB17 /* QNEditorGIFStickerView.m in Sources */,
+				46462CBC264D20150082EB17 /* QNTextPageControl.m in Sources */,
+				46462CB7264D20150082EB17 /* QNVerticalButton.m in Sources */,
+				46462CB4264D20150082EB17 /* QBSlomoIconView.m in Sources */,
+				46462C9D264D20150082EB17 /* QNRecordingViewController.m in Sources */,
+				46462CCE264D20150082EB17 /* QNStickerModel.m in Sources */,
+				46462CD1264D20150082EB17 /* QNEditorDrawStickerView.m in Sources */,
+				46462CD6264D20150082EB17 /* QNDrawView.m in Sources */,
+				46462CAC264D20150082EB17 /* QBVideoIconView.m in Sources */,
+				46462CB8264D20150082EB17 /* QNGradientView.m in Sources */,
+				46462CCC264D20150082EB17 /* QNFilterGroup.m in Sources */,
+				46462CDA264D20150082EB17 /* QNUploadViewController.m in Sources */,
+				46462CC6264D20150082EB17 /* QNProductViewController.m in Sources */,
+				46462D80264D236B0082EB17 /* MMVideoAssetsCollectionViewController.m in Sources */,
+				46462CB3264D20150082EB17 /* QBCheckmarkView.m in Sources */,
+				46462CB5264D20150082EB17 /* QBAssetCell.m in Sources */,
+				46462D82264D236B0082EB17 /* MMAssetGridViewCell.m in Sources */,
+				46462CCA264D20150082EB17 /* QNAudioVolumeView.m in Sources */,
+				46462CBF264D20150082EB17 /* QNAssetCollectionViewCell.m in Sources */,
+				46462CB2264D20150082EB17 /* QBImagePickerController.m in Sources */,
+				46462CC3264D20150082EB17 /* QNMusicDecibelView.m in Sources */,
+				46462CC7264D20150082EB17 /* QNMainViewController.m in Sources */,
+				46462D7F264D236B0082EB17 /* MMCameraTabSegmentView.m in Sources */,
+				46462CC0264D20150082EB17 /* QNAssetRangeBar.m in Sources */,
+				46462CC2264D20150082EB17 /* QNPanImageView.m in Sources */,
+				46462CD2264D20150082EB17 /* QNTextStickerView.m in Sources */,
+				46462BDE264D1E6A0082EB17 /* AppDelegate.m in Sources */,
+				46462C94264D20150082EB17 /* QNPuzzleViewController.m in Sources */,
+				46462D81264D236B0082EB17 /* MMBeautyRender.m in Sources */,
+				46462C98264D20150082EB17 /* UIView+QNAnimation.m in Sources */,
+				46462C95264D20150082EB17 /* QNPlayPuzzleViewController.m in Sources */,
+				46462C9E264D20150082EB17 /* QNRecordingProgress.m in Sources */,
+				46462CBE264D20150082EB17 /* QNPhotoCollectionViewController.m in Sources */,
+				46462CB6264D20150082EB17 /* QNFunctionViewController.m in Sources */,
+				46462CAD264D20150082EB17 /* QBVideoIndicatorView.m in Sources */,
+				46462DAF264D2CD60082EB17 /* QNBeautyViewController.m in Sources */,
+				46462BEF264D1E6C0082EB17 /* main.m in Sources */,
+				46462C9C264D20150082EB17 /* QNDocumentViewController.m in Sources */,
+				46462CD9264D20150082EB17 /* QNMVPickerView.m in Sources */,
+				46462CCB264D20150082EB17 /* QNMusicModel.m in Sources */,
+				46462C99264D20150082EB17 /* PHAsset+QNCoverPicker.m in Sources */,
+				46462CAE264D20150082EB17 /* QBAlbumCell.m in Sources */,
+				46462CD4264D20150082EB17 /* QNTextInputView.m in Sources */,
+				46462CB1264D20150082EB17 /* QBAssetsViewController.m in Sources */,
+				46462CD8264D20150082EB17 /* QNMVModel.m in Sources */,
+				46462CC9264D20150082EB17 /* QNEditorMusicView.m in Sources */,
+				46462C9B264D20150082EB17 /* NSObject+QNAuth.m in Sources */,
+				46462CBA264D20150082EB17 /* QNPlayerView.m in Sources */,
+				46462C97264D20150082EB17 /* UIView+QNCore.m in Sources */,
+				46462D83264D236B0082EB17 /* MMDeviceMotionObserver.m in Sources */,
+				46462CC4264D20150082EB17 /* QNScopeCutView.m in Sources */,
+				46462CB9264D20150082EB17 /* QNSampleScrollView.m in Sources */,
+				46462C9A264D20150082EB17 /* UIView+QNAlert.m in Sources */,
+				46462CA2264D20150082EB17 /* QNMixRecordingViewController.m in Sources */,
+				46462CBB264D20150082EB17 /* QNSelectButtonView.m in Sources */,
+				46462CD3264D20150082EB17 /* QNEditorTextStickerView.m in Sources */,
+				46462CCF264D20150082EB17 /* QNGIFStickerView.m in Sources */,
+				46462DA4264D29130082EB17 /* MMBeautyViewController.m in Sources */,
+				46462CBD264D20150082EB17 /* QNBaseViewController.m in Sources */,
+				46462CC8264D20150082EB17 /* QNSettingsViewController.m in Sources */,
+				46462CCD264D20150082EB17 /* QNEditorViewController.m in Sources */,
+				46462BE1264D1E6A0082EB17 /* SceneDelegate.m in Sources */,
+				46462CC1264D20150082EB17 /* QNMusicPickerView.m in Sources */,
+				46462CC5264D20150082EB17 /* QNTranscodeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4667F64326269ECC003811A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1420,7 +2113,7 @@
 				4667F65126269ECC003811A0 /* ViewController.m in Sources */,
 				4667F6C12626A2E0003811A0 /* MMVideoAssetsCollectionViewController.m in Sources */,
 				4667F6C52626A2E0003811A0 /* MMDeviceMotionObserver.m in Sources */,
-				4667F6B22626A23D003811A0 /* MMZGBeautyViewController.m in Sources */,
+				4667F6B22626A23D003811A0 /* MMBeautyViewController.m in Sources */,
 				4667F6C32626A2E0003811A0 /* MMBeautyRender.m in Sources */,
 				4667F6DB2626A430003811A0 /* ZGUserIDHelper.m in Sources */,
 				4667F64B26269ECC003811A0 /* AppDelegate.m in Sources */,
@@ -1554,6 +2247,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		46462BE5264D1E6A0082EB17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46462BE6264D1E6A0082EB17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46462BEA264D1E6C0082EB17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46462BEB264D1E6C0082EB17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46462C29264D20150082EB17 /* QBImagePicker.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46462C2A264D20150082EB17 /* de */,
+				46462C2C264D20150082EB17 /* zh-Hans */,
+				46462C2D264D20150082EB17 /* ja */,
+				46462C32264D20150082EB17 /* en */,
+				46462C33264D20150082EB17 /* es */,
+			);
+			name = QBImagePicker.strings;
+			sourceTree = "<group>";
+		};
 		4667F65226269ECC003811A0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1669,6 +2390,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		46462BF0264D1E6C0082EB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8565E977996295465B39008C /* Pods-MMQNSortVideoBeautyDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
+				GCC_PREFIX_HEADER = MMQNSortVideoBeautyDemo/SortVideo/PrefixHeader.pch;
+				INFOPLIST_FILE = MMQNSortVideoBeautyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode iOS Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46462BF1264D1E6C0082EB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17527C2D4BC5DB78AAC285E0 /* Pods-MMQNSortVideoBeautyDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
+				GCC_PREFIX_HEADER = MMQNSortVideoBeautyDemo/SortVideo/PrefixHeader.pch;
+				INFOPLIST_FILE = MMQNSortVideoBeautyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode iOS Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4667F65D26269ECD003811A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20531BB3BA6B3B7B878B71A7 /* Pods-MMZegoExpressBeautyDemo.debug.xcconfig */;
@@ -2096,6 +2865,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46462BF2264D1E6C0082EB17 /* Build configuration list for PBXNativeTarget "MMQNSortVideoBeautyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46462BF0264D1E6C0082EB17 /* Debug */,
+				46462BF1264D1E6C0082EB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4667F65F26269ECD003811A0 /* Build configuration list for PBXNativeTarget "MMZegoExpressBeautyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
