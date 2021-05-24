@@ -3,6 +3,7 @@ source 'https://cdn.cocoapods.org/'
 
 
 #use_frameworks!
+use_frameworks! :linkage=>:static
 
 platform :ios, '10.0'
 
@@ -13,7 +14,9 @@ def beautyInstall
   # 版本1
 #  pod 'MMBeautyKit', '2.5.4-basic'
   
-  pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
+#  pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
+  
+  pod 'MetalPetal/Static', :source => 'https://github.com/cosmos33/MMSpecs.git'
 
 end
 

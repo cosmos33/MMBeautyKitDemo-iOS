@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */; };
-		2E5A64E3F27C2316F8D7FCE5 /* libPods-MMZegoExpressBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */; };
-		3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */; };
+		2917E5D50EBA8CD4BC28A463 /* Pods_MMTXBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F110EB33B7250F7D399398 /* Pods_MMTXBeautyKitDemo.framework */; };
 		46462BDE264D1E6A0082EB17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BDD264D1E6A0082EB17 /* AppDelegate.m */; };
 		46462BE1264D1E6A0082EB17 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462BE0264D1E6A0082EB17 /* SceneDelegate.m */; };
 		46462BE7264D1E6A0082EB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46462BE5264D1E6A0082EB17 /* Main.storyboard */; };
@@ -131,6 +129,7 @@
 		46A2CD60261EEDA000C60C69 /* MMAliBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CD5F261EEDA000C60C69 /* MMAliBeautyViewController.m */; };
 		46A2CD78261EF31800C60C69 /* ALLiveConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CD75261EF31800C60C69 /* ALLiveConfig.m */; };
 		46A2CD79261EF31800C60C69 /* AliLiveEngineMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CD76261EF31800C60C69 /* AliLiveEngineMaker.m */; };
+		495D9232B786413F7102B58C /* Pods_MMBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D60B0D7330E485B61D4D9E /* Pods_MMBeautyKitDemo.framework */; };
 		76160661256BA7A700F9C194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160660256BA7A700F9C194 /* AppDelegate.m */; };
 		76160664256BA7A700F9C194 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160663256BA7A700F9C194 /* SceneDelegate.m */; };
 		76160667256BA7A700F9C194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160666256BA7A700F9C194 /* ViewController.m */; };
@@ -216,17 +215,18 @@
 		76F98CB7254986D00020F4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB6254986D00020F4F6 /* Assets.xcassets */; };
 		76F98CBA254986D00020F4F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F98CB8254986D00020F4F6 /* LaunchScreen.storyboard */; };
 		76F98CBD254986D00020F4F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F98CBC254986D00020F4F6 /* main.m */; };
-		87959404164A4DEFA4AA0E98 /* libPods-MMQNSortVideoBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */; };
-		9A37D089227A5EF608F85CEB /* libPods-MMZegoBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */; };
-		B38AEBC428BBC9726E17499C /* libPods-MMBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */; };
-		C08E9983038E94C93C1C4B48 /* libPods-MMAliBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */; };
-		C4B906783CC9D2D882BB70C7 /* libPods-MMQNBeautyKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */; };
+		852A4D09C60100EDCD06C7EC /* Pods_MMZegoBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774969E0F18EE113E825B5A1 /* Pods_MMZegoBeautyKitDemo.framework */; };
+		99B6ECE6C5BE2B3254D796FB /* Pods_MMZegoExpressBeautyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7050D52255271C5144A7FA /* Pods_MMZegoExpressBeautyDemo.framework */; };
+		D128A6E60AD37DA523E39D07 /* Pods_MMAliBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE76F4FDE09B4CA812B3252F /* Pods_MMAliBeautyKitDemo.framework */; };
+		DDFC43144CCFE8C2967BA366 /* Pods_MMQNBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D305C9B81916AF485F5B8267 /* Pods_MMQNBeautyKitDemo.framework */; };
+		E3F70ED571C7AE1D468C3699 /* Pods_MMArgoraBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA56024C8FF1DBE0907095D1 /* Pods_MMArgoraBeautyKitDemo.framework */; };
+		ED0D9EB2F48CFC5D310DC59E /* Pods_MMQNSortVideoBeautyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D81643619FD48D3071F536 /* Pods_MMQNSortVideoBeautyDemo.framework */; };
 		FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D60B0D7330E485B61D4D9E /* Pods_MMBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1118CE2F551B13D8A4ADDD3E /* Pods-MMTXBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTXBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMTXBeautyKitDemo/Pods-MMTXBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		116AA1FF4150177DCD5BB010 /* Pods-MMQNBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		17527C2D4BC5DB78AAC285E0 /* Pods-MMQNSortVideoBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNSortVideoBeautyDemo.release.xcconfig"; path = "Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -420,10 +420,11 @@
 		46A2CD75261EF31800C60C69 /* ALLiveConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALLiveConfig.m; sourceTree = "<group>"; };
 		46A2CD76261EF31800C60C69 /* AliLiveEngineMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliLiveEngineMaker.m; sourceTree = "<group>"; };
 		46A2CD77261EF31800C60C69 /* ALLiveConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALLiveConfig.h; sourceTree = "<group>"; };
-		46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMZegoBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5009197B61AC6A69219E0411 /* Pods-MMAliBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMAliBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMAliBeautyKitDemo/Pods-MMAliBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMTXBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7050D52255271C5144A7FA /* Pods_MMZegoExpressBeautyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMZegoExpressBeautyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D81643619FD48D3071F536 /* Pods_MMQNSortVideoBeautyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMQNSortVideoBeautyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDDA52885C3561D6A782D16 /* Pods-MMZegoBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		73F110EB33B7250F7D399398 /* Pods_MMTXBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMTXBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C6A210323AC64822CC93EA /* Pods-MMArgoraBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7616065D256BA7A700F9C194 /* MMArgoraBeautyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMArgoraBeautyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7616065F256BA7A700F9C194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -530,17 +531,16 @@
 		76F98CB9254986D00020F4F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F98CBB254986D00020F4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F98CBC254986D00020F4F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		774969E0F18EE113E825B5A1 /* Pods_MMZegoBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMZegoBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7963478B9D4F05FEC40CE475 /* Pods-MMAliBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMAliBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMAliBeautyKitDemo/Pods-MMAliBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMArgoraBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8565E977996295465B39008C /* Pods-MMQNSortVideoBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNSortVideoBeautyDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNSortVideoBeautyDemo/Pods-MMQNSortVideoBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC83CAF55B06C19E69604BF4 /* Pods-MMZegoExpressBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoExpressBeautyDemo.release.xcconfig"; path = "Target Support Files/Pods-MMZegoExpressBeautyDemo/Pods-MMZegoExpressBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
-		B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMAliBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMBeautyKitDemo/Pods-MMBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMQNSortVideoBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMZegoExpressBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DD1E1AE06B2BCE075F9651 /* Pods-MMQNBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMQNBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMQNBeautyKitDemo/Pods-MMQNBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C8FB68D7BCA7185FE33DF4EC /* Pods-MMZegoBeautyKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMZegoBeautyKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMZegoBeautyKitDemo/Pods-MMZegoBeautyKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBeautyKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D305C9B81916AF485F5B8267 /* Pods_MMQNBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMQNBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA56024C8FF1DBE0907095D1 /* Pods_MMArgoraBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMArgoraBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE76F4FDE09B4CA812B3252F /* Pods_MMAliBeautyKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMAliBeautyKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAADCF0224C84118001D83BC /* MMCameraTabSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCameraTabSegmentView.h; sourceTree = "<group>"; };
 		FAADCF0324C84118001D83BC /* MMCameraTabSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCameraTabSegmentView.m; sourceTree = "<group>"; };
 		FAFB40B624FF71C700EBCEC4 /* MMQiNiuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMQiNiuViewController.m; sourceTree = "<group>"; };
@@ -553,7 +553,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87959404164A4DEFA4AA0E98 /* libPods-MMQNSortVideoBeautyDemo.a in Frameworks */,
+				ED0D9EB2F48CFC5D310DC59E /* Pods_MMQNSortVideoBeautyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +561,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5A64E3F27C2316F8D7FCE5 /* libPods-MMZegoExpressBeautyDemo.a in Frameworks */,
+				99B6ECE6C5BE2B3254D796FB /* Pods_MMZegoExpressBeautyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +569,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08E9983038E94C93C1C4B48 /* libPods-MMAliBeautyKitDemo.a in Frameworks */,
+				D128A6E60AD37DA523E39D07 /* Pods_MMAliBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +577,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D63B066CF5757B5FA90649 /* libPods-MMArgoraBeautyKitDemo.a in Frameworks */,
+				E3F70ED571C7AE1D468C3699 /* Pods_MMArgoraBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +585,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38AEBC428BBC9726E17499C /* libPods-MMBeautyKitDemo.a in Frameworks */,
+				495D9232B786413F7102B58C /* Pods_MMBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +593,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A37D089227A5EF608F85CEB /* libPods-MMZegoBeautyKitDemo.a in Frameworks */,
+				852A4D09C60100EDCD06C7EC /* Pods_MMZegoBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +601,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B906783CC9D2D882BB70C7 /* libPods-MMQNBeautyKitDemo.a in Frameworks */,
+				DDFC43144CCFE8C2967BA366 /* Pods_MMQNBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +609,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EC30CC960F1CB198C242A64 /* libPods-MMTXBeautyKitDemo.a in Frameworks */,
+				2917E5D50EBA8CD4BC28A463 /* Pods_MMTXBeautyKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,14 +1231,14 @@
 		DD9AD957C4283CA4B3304ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				796DF7D17C6FBABB042C2F6F /* libPods-MMArgoraBeautyKitDemo.a */,
-				E333031F243F3F843345128B /* libPods-MMBeautyKitDemo.a */,
-				0E5F67C6825EFDD1F9BA66F5 /* libPods-MMQNBeautyKitDemo.a */,
-				5ECB1B0880F0E63344E32511 /* libPods-MMTXBeautyKitDemo.a */,
-				46F829202C37DBFC7AF4AB11 /* libPods-MMZegoBeautyKitDemo.a */,
-				B77CA586CAC513E54BBAEF9C /* libPods-MMAliBeautyKitDemo.a */,
-				C0B5AF3292567FCD2D72BAD2 /* libPods-MMZegoExpressBeautyDemo.a */,
-				C089707FB09FFDBE92ED8FD4 /* libPods-MMQNSortVideoBeautyDemo.a */,
+				DE76F4FDE09B4CA812B3252F /* Pods_MMAliBeautyKitDemo.framework */,
+				DA56024C8FF1DBE0907095D1 /* Pods_MMArgoraBeautyKitDemo.framework */,
+				05D60B0D7330E485B61D4D9E /* Pods_MMBeautyKitDemo.framework */,
+				D305C9B81916AF485F5B8267 /* Pods_MMQNBeautyKitDemo.framework */,
+				60D81643619FD48D3071F536 /* Pods_MMQNSortVideoBeautyDemo.framework */,
+				73F110EB33B7250F7D399398 /* Pods_MMTXBeautyKitDemo.framework */,
+				774969E0F18EE113E825B5A1 /* Pods_MMZegoBeautyKitDemo.framework */,
+				5A7050D52255271C5144A7FA /* Pods_MMZegoExpressBeautyDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2402,7 +2402,7 @@
 				DEVELOPMENT_TEAM = 36WT396TPZ;
 				GCC_PREFIX_HEADER = MMQNSortVideoBeautyDemo/SortVideo/PrefixHeader.pch;
 				INFOPLIST_FILE = MMQNSortVideoBeautyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2426,7 +2426,7 @@
 				DEVELOPMENT_TEAM = 36WT396TPZ;
 				GCC_PREFIX_HEADER = MMQNSortVideoBeautyDemo/SortVideo/PrefixHeader.pch;
 				INFOPLIST_FILE = MMQNSortVideoBeautyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2692,10 +2692,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6476K9PM7W;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 36WT396TPZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2707,9 +2708,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.boztail02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode iOS Wildcard";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2718,6 +2719,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
