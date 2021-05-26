@@ -30,7 +30,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.translatesAutoresizingMaskIntoConstraints = NO;
     [button setTitle:@"翻转" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(flipButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(flipButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:@[@"美颜", @"滤镜", @"贴纸"]];
     control.selectedSegmentIndex = 0;
@@ -328,6 +328,10 @@
     [stackView.heightAnchor constraintEqualToConstant:40].active = YES;
     
     return stackView;
+}
+
+- (void)flipButtonTapped:(UIButton *)button {
+    // TODO overwrite
 }
 
 /*

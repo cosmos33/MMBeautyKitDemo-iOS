@@ -93,6 +93,12 @@
 		46462D83264D236B0082EB17 /* MMDeviceMotionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BFD2723B309DB0017239F /* MMDeviceMotionObserver.m */; };
 		46462DA4264D29130082EB17 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
 		46462DAF264D2CD60082EB17 /* QNBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46462DAE264D2CD60082EB17 /* QNBeautyViewController.m */; };
+		4651BC66265E69C900CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		4651BC6F265E69D300CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		4651BC78265E69D300CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		4651BC79265E69D400CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		4651BC8B265E69D500CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
+		4651BC94265E69D600CC2127 /* MMBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F6B12626A23D003811A0 /* MMBeautyViewController.m */; };
 		4667F64B26269ECC003811A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64A26269ECC003811A0 /* AppDelegate.m */; };
 		4667F64E26269ECC003811A0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F64D26269ECC003811A0 /* SceneDelegate.m */; };
 		4667F65126269ECC003811A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4667F65026269ECC003811A0 /* ViewController.m */; };
@@ -2139,6 +2145,7 @@
 				46A2CD48261EEB6400C60C69 /* MMBeautyRender.m in Sources */,
 				46A2CD60261EEDA000C60C69 /* MMAliBeautyViewController.m in Sources */,
 				46A2CCB2261EE7D100C60C69 /* AppDelegate.m in Sources */,
+				4651BC8B265E69D500CC2127 /* MMBeautyViewController.m in Sources */,
 				46A2CCC3261EE7D200C60C69 /* main.m in Sources */,
 				46A2CD78261EF31800C60C69 /* ALLiveConfig.m in Sources */,
 				46A2CD33261EEB5B00C60C69 /* MMAssetGridViewCell.m in Sources */,
@@ -2158,6 +2165,7 @@
 				761606A6256BB34400F9C194 /* MMVideoAssetsCollectionViewController.m in Sources */,
 				7616069F256BB33C00F9C194 /* MMCameraTabSegmentView.m in Sources */,
 				761606A4256BB34400F9C194 /* MMAssetGridViewCell.m in Sources */,
+				4651BC79265E69D400CC2127 /* MMBeautyViewController.m in Sources */,
 				761606A5256BB34400F9C194 /* MMDeviceMotionObserver.m in Sources */,
 				76160667256BA7A700F9C194 /* ViewController.m in Sources */,
 				76160661256BA7A700F9C194 /* AppDelegate.m in Sources */,
@@ -2178,6 +2186,7 @@
 				765BFCF023B3095B0017239F /* ViewController.m in Sources */,
 				765BFCEA23B3095B0017239F /* AppDelegate.m in Sources */,
 				765BFCFB23B3095E0017239F /* main.m in Sources */,
+				4651BC66265E69C900CC2127 /* MMBeautyViewController.m in Sources */,
 				765BFD2B23B309DB0017239F /* MMDeviceMotionObserver.m in Sources */,
 				7651593B25021DEF0070D8D5 /* MMCameraViewController.m in Sources */,
 				FAADCF0424C84118001D83BC /* MMCameraTabSegmentView.m in Sources */,
@@ -2202,6 +2211,7 @@
 				767D4A7D25CABD3800ADC8C5 /* ZGVideoFilterSyncDemo.m in Sources */,
 				767D4A8025CABD3800ADC8C5 /* ZGVideoFilterAsyncDemo.m in Sources */,
 				767D4A5125CAB96E00ADC8C5 /* MMCameraTabSegmentView.m in Sources */,
+				4651BC94265E69D600CC2127 /* MMBeautyViewController.m in Sources */,
 				767D4A7B25CABD3800ADC8C5 /* ZGExternalVideoFilterDemo.m in Sources */,
 				767D4A7F25CABD3800ADC8C5 /* ZGVideoFilterNV12Demo.m in Sources */,
 				767D49B725CAAE3300ADC8C5 /* main.m in Sources */,
@@ -2224,6 +2234,7 @@
 				7680438025498C3F006B4C34 /* SceneDelegate.m in Sources */,
 				7680439225498C4C006B4C34 /* MMQiNiuViewController.m in Sources */,
 				7680439C25498E1D006B4C34 /* MMDeviceMotionObserver.m in Sources */,
+				4651BC78265E69D300CC2127 /* MMBeautyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2241,6 +2252,7 @@
 				76F98CBD254986D00020F4F6 /* main.m in Sources */,
 				76F98CAF254986CF0020F4F6 /* SceneDelegate.m in Sources */,
 				7680439B25498E1C006B4C34 /* MMDeviceMotionObserver.m in Sources */,
+				4651BC6F265E69D300CC2127 /* MMBeautyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

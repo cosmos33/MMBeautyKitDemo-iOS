@@ -8,21 +8,25 @@ use_frameworks! :linkage=>:static
 platform :ios, '10.0'
 
 def beautyInstall
-  # 版本5
-  pod 'MMBeautyKit', '2.5.4-interact'
-  
-  # 版本1
+# 精简版
 #  pod 'MMBeautyKit', '2.5.4-basic'
   
-#  pod 'MetalPetal/Static', '1.13.0', :modular_headers => true
+# 完整版
+  pod 'MMBeautyKit', '2.5.4-interact'
+
+  pod 'MetalPetal/Static', '1.13.0', :source => 'https://github.com/cosmos33/MMSpecs.git'
+
   
-  pod 'MetalPetal/Static', :source => 'https://github.com/cosmos33/MMSpecs.git'
+# 无子依赖版本，整合所有framework版本, 特殊接入需要，正常不使用
+#  pod 'MMBeautyKit', '2.5.4-basic-allin'
+#  pod 'MMBeautyKit', '2.5.4-interact-allin'
 
 end
 
 target 'MMBeautyKitDemo' do
 
   beautyInstall
+  pod 'Masonry'
   
 end
 
@@ -30,6 +34,7 @@ target 'MMTXBeautyKitDemo' do
 
   beautyInstall
   # 腾讯直播推流
+  pod 'Masonry'
   pod 'TXLiteAVSDK_Professional'
 
 end
@@ -38,6 +43,7 @@ target 'MMQNBeautyKitDemo' do
 
   beautyInstall
   # 七牛直播推流
+  pod 'Masonry'
   pod 'PLMediaStreamingKit'
 
 end
@@ -63,7 +69,7 @@ end
 target 'MMArgoraBeautyKitDemo' do
     
   beautyInstall
-    
+  pod 'Masonry'
   pod 'AgoraRtcEngine_iOS'
   
 end
@@ -71,7 +77,7 @@ end
 target 'MMZegoBeautyKitDemo' do
     
     beautyInstall
-    
+    pod 'Masonry'
     pod 'ZegoLiveRoom'
     
 end
@@ -79,7 +85,7 @@ end
 target 'MMZegoExpressBeautyDemo' do
     
     beautyInstall
-    
+    pod 'Masonry'
     pod 'ZegoExpressEngine/Video'
     
 end
@@ -88,7 +94,7 @@ end
 target 'MMAliBeautyKitDemo' do
     
     beautyInstall
-    
+    pod 'Masonry'
     pod 'AliLiveSDK_iOS', '4.0.2'
     pod 'RtsSDK','1.5.0'
     pod 'Masonry'
