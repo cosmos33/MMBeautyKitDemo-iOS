@@ -379,7 +379,6 @@ UITextFieldDelegate>
         @{@"name":@"鼻尖",@"type":NOSE_TIP_SIZE,@"begin":@-1, @"end":@1},
         @{@"name":@"嘴唇厚度",@"type":LIP_THICKNESS,@"begin":@-1, @"end":@1},
         @{@"name":@"嘴唇大小",@"type":MOUTH_SIZE,@"begin":@-1, @"end":@1},
-        @{@"name":@"宽颔",@"type":JAWWIDTH, @"begin":@-1, @"end":@1},
     ];
     
     NSMutableArray<MMSegmentItem *> *items = [NSMutableArray array];
