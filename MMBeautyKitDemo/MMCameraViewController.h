@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMBeautyViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMCameraViewController : UIViewController
+@interface MMCameraViewController : MMBeautyViewController
 
 @end
 
