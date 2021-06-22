@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSDictionary *dic = [[NSBundle mainBundle]infoDictionary];
+    [dic setValue:@"com.sunfei.test2" forKey:@"CFBundleIdentifier"];
     return YES;
 }
 

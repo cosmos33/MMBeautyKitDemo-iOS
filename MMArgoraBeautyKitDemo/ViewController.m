@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.items = @[@"MediaIO", @"PUSH"];
+    self.items = @[@"PUSH"];
     self.view.backgroundColor = UIColor.whiteColor;
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -44,25 +44,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    switch (indexPath.row) {
-        case 0:
-        {
-        MMArgoraViewController *vc = [[MMArgoraViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        case 1:
-        {
-        MMAgoraPUSHViewController *vc = [[MMAgoraPUSHViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        default:
-            break;
-    }
+    MMAgoraPUSHViewController *vc = [[MMAgoraPUSHViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    switch (indexPath.row) {
+//        case 0:
+//        {
+//        MMArgoraViewController *vc = [[MMArgoraViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:YES];
+//        }
+//            break;
+//
+//        case 1:
+//        {
+//        MMAgoraPUSHViewController *vc = [[MMAgoraPUSHViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:YES];
+//        }
+//            break;
+//
+//        default:
+//            break;
+//    }
 }
 
 #pragma mark - tableView dataSource

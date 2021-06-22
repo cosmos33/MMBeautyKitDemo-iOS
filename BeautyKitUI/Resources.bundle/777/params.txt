@@ -1,0 +1,1 @@
+﻿{"name":"tuerduo","frameRate":15,"additionalInfo":{"frontTips":{"content":"露个脸吧","isFaceTrack":true},"backTips":{"content":"露个脸吧","isFaceTrack":true}},"beautyFace":{"bigEyeAmount":0.6,"thinFaceAmount":0.6},"itemList":[{"layerType":"default","triggerType":0,"pointIndexes":[17,26],"folder":"ear","frames":65,"height":494,"width":380,"type":0,"offsetX":0,"offsetY":30}]}

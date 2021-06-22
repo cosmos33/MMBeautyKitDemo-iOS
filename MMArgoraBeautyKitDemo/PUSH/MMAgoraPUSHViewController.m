@@ -98,6 +98,8 @@ static AgoraVideoRotation argoraRotation(UIInterfaceOrientation orientation) {
     NSAssert(ret == 0, @"");
     
     [self setupViews];
+    
+   
 }
 
 - (void)setupViews {
@@ -233,6 +235,7 @@ static AgoraVideoRotation argoraRotation(UIInterfaceOrientation orientation) {
     [stickerBtn.topAnchor constraintEqualToAnchor:lookupButton.bottomAnchor constant:8].active = YES;
     [stickerBtn.leadingAnchor constraintEqualToAnchor:lookupButton.leadingAnchor].active = YES;
     
+    
 }
 
 - (void)stickerButton:(UISwitch *)switchBtn {
@@ -268,6 +271,7 @@ static AgoraVideoRotation argoraRotation(UIInterfaceOrientation orientation) {
 - (NSArray<MMSegmentItem *> *)itemsForSticker {
     NSArray *names = @[
         @{@"name" : @"重置", @"path" : @""},
+        @{@"name" : @"777", @"path" : @"777"},
         @{@"name" : @"rainbow", @"path" : @"rainbow"},
         @{@"name" : @"手控樱花雨", @"path" : @"shoukongyinghua"},
         @{@"name" : @"微笑", @"path" : @"weixiao"},

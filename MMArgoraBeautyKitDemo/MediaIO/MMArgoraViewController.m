@@ -88,7 +88,7 @@ static AgoraVideoRotation argoraRotation(UIInterfaceOrientation orientation) {
     [self.agoraKit enableVideo];
     
     [self.agoraKit setVideoSource:mediaIO];
-    AgoraVideoEncoderConfiguration *configuration = [[AgoraVideoEncoderConfiguration alloc] initWithSize:AgoraVideoDimension640x480 frameRate:AgoraVideoFrameRateFps15 bitrate:AgoraVideoBitrateStandard orientationMode:AgoraVideoOutputOrientationModeFixedPortrait];
+    AgoraVideoEncoderConfiguration *configuration = [[AgoraVideoEncoderConfiguration alloc] initWithSize:AgoraVideoDimension640x480 frameRate:AgoraVideoFrameRateFps30 bitrate:AgoraVideoBitrateStandard orientationMode:AgoraVideoOutputOrientationModeFixedPortrait];
     [self.agoraKit setVideoEncoderConfiguration:configuration];
     
     AgoraRtcVideoCanvas *canvas = [[AgoraRtcVideoCanvas alloc] init];
