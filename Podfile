@@ -12,9 +12,10 @@ def beautyInstall
 #  pod 'MMBeautyKit', '2.5.4-basic'
   
 # 完整版
-  pod 'MMBeautyKit', '2.7.1.2-interact'
+  pod 'MMBeautyKit', '2.8.0.4-interact'
 #  pod 'MMCV','2.7.0-MMBeauty'
-  pod 'MMCV','2.7.1.2'
+  pod 'MMCV','2.7.1.3'
+  pod 'MMBeautyMedia','2.8.0.5'
   pod 'MetalPetal/Static', '1.13.0', :source => 'https://github.com/cosmos33/MMSpecs.git'
 
   

@@ -1,0 +1,32 @@
+MOXB<?xml version="1.0" encoding="GB2312"?>
+<Img2DSequenceFrame>
+ <Node Name="front" Type="MagicSeqFrame" FilterPath="">
+	<Img2DSequenceFrameAnimation SequenceFrameAssetType="MultTextures" TextureWidth="360" TextureHeight="640" RelativeToCurrent="0" FrameContentDir="Asset/5db7ff02e1522/front" FrameCount="0" FPS="15" Reverse="0" LoopMode="0" LoopStartIndex="0" LoopEndIndex="0" PlayCount="1">
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_000.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_001.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_002.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_003.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_004.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_005.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_006.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_007.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_008.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_009.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_010.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_011.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_012.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_013.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_014.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_015.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_016.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_017.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_018.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_019.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_020.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_021.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_022.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_023.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/front/front_024.png" Col="1" Row="1"/>
+	</Img2DSequenceFrameAnimation>
+ </Node>
+</Img2DSequenceFrame>

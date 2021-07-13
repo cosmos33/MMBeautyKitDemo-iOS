@@ -1,0 +1,9 @@
+{
+    "name": "eyeshadow",
+    "makeup": [
+        {
+            "type": "eyeshadow",
+            "folders": ["eyeshadow", "eyeshadow2"]
+        }
+    ]
+}

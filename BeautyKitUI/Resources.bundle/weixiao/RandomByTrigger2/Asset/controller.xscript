@@ -1,6 +1,0 @@
-MOXB<?xml version="1.0" encoding="GB2312"?>
-<Script>
- <Node Name="controller" Type="ContainerScript" FilterPath="" ScriptType="0" ScriptHolderType="1">
-	<Node Name="Script_1" Type="Script" FilterPath="" ScriptPath="Asset/main_1.lua" ScriptType="0" ScriptHolderType="1" Auto="1"/>
- </Node>
-</Script>

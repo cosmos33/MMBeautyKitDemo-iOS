@@ -17,7 +17,6 @@
 @property (nonatomic, copy) MMSegmentItem *currentItem;
 @property (nonatomic, strong) UILabel *contetLabel;
 @property (nonatomic, strong) UISlider *slider;
- 
 @end
 
 @implementation MMCameraTabSegmentView
@@ -107,7 +106,6 @@
         [collectionView.heightAnchor constraintEqualToConstant:100].active = YES;
         
         [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-        
     }
     return self;
 }

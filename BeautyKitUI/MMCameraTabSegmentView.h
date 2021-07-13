@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat intensity;
 @property (nonatomic, assign) CGFloat begin;
 @property (nonatomic, assign) CGFloat end;
+@property (nonatomic, assign) NSInteger version;
+
+@property (nonatomic, copy) NSString * icon;
+@property (nonatomic, copy) NSString * highlight;
+@property (nonatomic, assign) CGFloat value;
+@property (nonatomic, assign) CGFloat lut;
 
 @end
 

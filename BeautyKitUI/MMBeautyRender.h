@@ -35,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 设置美颜参数
 - (void)setBeautyFactor:(float)value forKey:(MMBeautyFilterKey)key;
 
+- (void)setBeautyWhiteVersion:(NSInteger)version;
+- (void)setBeautyreddenVersion:(NSInteger)version;
+
 // 设置lookup素材路径
 - (void)setLookupPath:(NSString *)lookupPath;
 // 设置lookup滤镜浓度
@@ -45,6 +48,11 @@ NS_ASSUME_NONNULL_BEGIN
 // 设置贴纸资源路径
 - (void)setMaskModelPath:(NSString *)path;
 - (void)clearSticker;
+
+// 美妆效果
+- (void)addMakeupPath:(NSString *)path;
+- (void)clearMakeup;
+- (void)removeMakeupLayerWithType:(MMBeautyFilterKey)type;
 
 - (CVPixelBufferRef _Nullable)renderPixelBuffer:(CVPixelBufferRef)pixelBuffer
                                           error:(NSError * __autoreleasing _Nullable *)error;

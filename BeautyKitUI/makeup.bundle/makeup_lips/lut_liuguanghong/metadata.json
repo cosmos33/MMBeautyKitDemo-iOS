@@ -1,0 +1,9 @@
+{
+    "name": "lip",
+    "makeup": [
+        {
+            "type": "lip",
+            "folder": "lip"
+        }
+    ]
+}

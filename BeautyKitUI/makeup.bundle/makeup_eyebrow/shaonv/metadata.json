@@ -1,0 +1,9 @@
+{
+    "name": "eyebrow",
+    "makeup": [
+        {
+            "type": "eyebrow",
+            "folder": "eyebrow"
+        }
+    ]
+}

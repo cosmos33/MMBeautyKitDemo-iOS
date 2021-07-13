@@ -9,7 +9,8 @@
 #import "MMBeautyViewController.h"
 
 @interface MMBeautyViewController ()
-
+@property (nonatomic , strong) UISlider *lutSlider;
+@property (nonatomic , strong) UILabel *lutLable;
 @end
 
 @implementation MMBeautyViewController
@@ -22,6 +23,29 @@
     
     self.render = [[MMBeautyRender alloc] init];
     self.render.inputType = MMRenderInputTypeStream;
+    [self.view addSubview: self.lutSlider];
+    [self.lutSlider.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor constant:-30].active = YES;
+    [self.lutSlider.widthAnchor constraintEqualToConstant:200].active = YES;
+    if (@available(iOS 11.0, *)) {
+        [self.lutSlider.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-210].active = YES;
+    } else {
+        [self.lutSlider.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-180].active = YES;
+    }
+    self.lutSlider.value = 0;
+    [self.view addSubview:self.lutLable];
+    [self.lutLable.widthAnchor constraintEqualToConstant:52].active = YES;
+    [self.lutLable.heightAnchor constraintEqualToConstant:40].active = YES;
+    if (@available(iOS 11.0, *)) {
+        [self.lutLable.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-205].active = YES;
+    } else {
+        [self.lutLable.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-170].active = YES;
+    }
+    
+    [self.lutLable.leftAnchor constraintEqualToAnchor:self.lutSlider.rightAnchor constant:10].active = YES;
+    self.lutLable.text = @"0.0";
+    
+    self.lutSlider.hidden = YES;
+    self.lutLable.hidden = YES;
 }
 
 - (void)setupBeautyView {
@@ -32,7 +56,7 @@
     [button setTitle:@"翻转" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(flipButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:@[@"美颜", @"滤镜", @"贴纸"]];
+    UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:@[@"美颜",@"美妆", @"滤镜", @"贴纸"]];
     control.selectedSegmentIndex = 0;
     control.translatesAutoresizingMaskIntoConstraints = NO;
     [control addTarget:self action:@selector(switchButtonClicked:) forControlEvents:UIControlEventValueChanged];
@@ -45,7 +69,7 @@
     hStackView.spacing = 16;
     [self.view addSubview:hStackView];
     
-    [control.widthAnchor constraintEqualToConstant:120].active = YES;
+    [control.widthAnchor constraintEqualToConstant:200].active = YES;
     
     [hStackView.heightAnchor constraintEqualToConstant:40].active = YES;
     [hStackView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:8].active = YES;
@@ -84,6 +108,45 @@
         [self.render setLookupIntensity:intensity];
     };
     
+    MMCameraTabSegmentView *segmentView4 = [[MMCameraTabSegmentView alloc] initWithFrame:CGRectZero];
+    segmentView4.items = [self itemsFormakeUp];
+    segmentView4.translatesAutoresizingMaskIntoConstraints = NO;
+    segmentView4.hidden = YES;
+    self.makeuUpView = segmentView4;
+    [self.view addSubview:segmentView4];
+    
+    [segmentView4.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
+    [segmentView4.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
+    [segmentView4.heightAnchor constraintEqualToConstant:160].active = YES;;
+    if (@available(iOS 11.0, *)) {
+        [segmentView4.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor].active = YES;
+    } else {
+        [segmentView4.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+    }
+
+    segmentView4.clickedHander = ^(MMSegmentItem *item) {
+        NSLog(@"波仔看类型 %@",item.type);
+        __strong typeof(self) self = weakself;
+        if (![item.type isEqualToString:@"makeup"]) {
+            [self.render clearMakeup];
+            [self.render clearLookup];
+            self.lutSlider.hidden = YES;
+            self.lutLable.hidden = YES;
+        } else {
+            self.lutSlider.hidden = NO;
+            self.lutLable.hidden = NO;
+            self.lutSlider.value = 0;
+            self.lutLable.text = @"0";
+        }
+        [self.render addMakeupPath:item.highlight];
+    };
+
+    segmentView4.sliderValueChanged = ^(MMSegmentItem *item, CGFloat intensity) {
+        __strong typeof(self) self = weakself;
+        [self.render setBeautyFactor:intensity forKey:item.type];
+    };
+    
+    
     MMCameraTabSegmentView *segmentView2 = [[MMCameraTabSegmentView alloc] initWithFrame:CGRectZero];
     segmentView2.items = [self itemsForBeauty];
     segmentView2.backgroundColor = UIColor.clearColor;
@@ -101,9 +164,17 @@
         [segmentView2.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
     }
     
+
     segmentView2.clickedHander = ^(MMSegmentItem *item) {
         __strong typeof(self) self = weakself;
         [self.render setBeautyFactor:item.intensity forKey:item.type];
+        if (item.version) {
+            if ([item.type isEqualToString:RUDDY]) {
+                [self.render setBeautyreddenVersion:item.version];
+            } else {
+                [self.render setBeautyWhiteVersion:item.version];
+            }
+        }
     };
     
     segmentView2.sliderValueChanged = ^(MMSegmentItem *item, CGFloat intensity) {
@@ -146,16 +217,29 @@
     [beautyBtn.topAnchor constraintEqualToAnchor:hStackView.bottomAnchor constant:8].active = YES;
     [beautyBtn.leadingAnchor constraintEqualToAnchor:hStackView.leadingAnchor].active = YES;
     
+    UIView *makeUpBtn = [self viewForSwitch:@"美妆开关" selectorName:@"makeupButton:"];
+    [self.view addSubview:makeUpBtn];
+    [makeUpBtn.topAnchor constraintEqualToAnchor:beautyBtn.bottomAnchor constant:8].active = YES;
+    [makeUpBtn.leadingAnchor constraintEqualToAnchor:beautyBtn.leadingAnchor].active = YES;
+    
     UIView *lookupButton = [self viewForSwitch:@"滤镜开关" selectorName:@"lookupButton:"];
     [self.view addSubview:lookupButton];
-    [lookupButton.topAnchor constraintEqualToAnchor:beautyBtn.bottomAnchor constant:8].active = YES;
-    [lookupButton.leadingAnchor constraintEqualToAnchor:beautyBtn.leadingAnchor].active = YES;
+    [lookupButton.topAnchor constraintEqualToAnchor:makeUpBtn.bottomAnchor constant:8].active = YES;
+    [lookupButton.leadingAnchor constraintEqualToAnchor:makeUpBtn.leadingAnchor].active = YES;
     
     UIView *stickerBtn = [self viewForSwitch:@"贴纸开关" selectorName:@"stickerButton:"];
     [self.view addSubview:stickerBtn];
     [stickerBtn.topAnchor constraintEqualToAnchor:lookupButton.bottomAnchor constant:8].active = YES;
     [stickerBtn.leadingAnchor constraintEqualToAnchor:lookupButton.leadingAnchor].active = YES;
     
+}
+
+- (void)makeupButton:(UISwitch *)switchBtn{
+    if (switchBtn.isOn) {
+        [self.render addBeauty];
+    } else {
+        [self.render removeBeauty];
+    }
 }
 
 - (void)stickerButton:(UISwitch *)switchBtn {
@@ -183,9 +267,16 @@
 }
 
 - (void)switchButtonClicked:(UISegmentedControl *)control {
+    if (control.selectedSegmentIndex != 1) {
+        [self.render clearLookup];
+        [self.render clearMakeup];
+        self.lutSlider.hidden = YES;
+        self.lutLable.hidden = YES;
+    }
     self.beautyView.hidden = control.selectedSegmentIndex != 0;
-    self.lookupView.hidden = control.selectedSegmentIndex != 1;
-    self.stickerView.hidden = control.selectedSegmentIndex != 2;
+    self.makeuUpView.hidden = control.selectedSegmentIndex != 1;
+    self.lookupView.hidden = control.selectedSegmentIndex != 2;
+    self.stickerView.hidden = control.selectedSegmentIndex != 3;
 }
 
 - (NSArray<MMSegmentItem *> *)itemsForSticker {
@@ -234,10 +325,102 @@
     return array.copy;
 }
 
+- (NSArray<MMSegmentItem *> *)itemsFormakeUp {
+    NSArray *beautys = @[
+        @{
+            @"title": @"黑童话",
+            @"icon": @"icon.png",
+            @"highlight": @"makeup_style/heitonghua",
+            @"type": @"makeup",
+            @"value": @0.9,
+            @"lut":@0.4,
+            @"begin":@0,
+            @"end":@1,
+            @"identifier": @"1"
+        },
+        @{
+            @"title": @"口红",
+            @"icon": @"icon.png",
+            @"highlight": @"makeup_lips/lut_liuguanghong",
+            @"type": @"lip",
+            @"value": @0.7,
+            @"begin":@0,
+            @"end":@1,
+            @"identifier": @"1"
+        },
+        @{
+            @"title": @"腮红",
+            @"icon": @"icon.png",
+            @"highlight": @"makeup_cheek/ziran",
+            @"type": @"blush",
+            @"value": @0.4,
+            @"begin":@0,
+            @"end":@1,
+            @"identifier": @"1"
+        },
+        @{
+            @"title": @"眼妆",
+            @"icon": @"icon.png",
+            @"highlight": @"makeup_eyeshadow/xinghe",
+            @"type": @"eyeshadow",
+            @"value": @0.6,
+            @"begin":@0,
+            @"end":@1,
+            @"identifier": @"1"
+        },
+        @{
+           @"title": @"眉毛",
+           @"icon": @"icon.png",
+           @"highlight":@"makeup_eyebrow/shaonv",
+           @"type": @"eyebrow",
+           @"value": @0.5,
+           @"begin":@0, @"end":@1,
+           @"identifier": @"1"
+       },
+        @{
+           @"title": @"美瞳",
+           @"icon": @"icon.png",
+           @"highlight": @"makeup_pupil/suizuan",
+           @"type": @"pupil",
+           @"value": @0.4,
+           @"begin":@0, @"end":@1,
+           @"identifier": @"1"
+       },
+        @{
+            @"title": @"修容",
+            @"icon": @"icon.png",
+            @"highlight": @"makeup_facial/richang",
+            @"type": @"facial",
+            @"value": @0.4,
+            @"begin":@0, @"end":@1,
+            @"identifier": @"1"
+        }
+    ];
+    NSString *root = [NSBundle.mainBundle pathForResource:@"makeup" ofType:@"bundle"];
+    NSMutableArray<MMSegmentItem *> *items = [NSMutableArray array];
+    for (int i = 0; i < beautys.count; i ++) {
+        MMSegmentItem *item = [[MMSegmentItem alloc] init];
+        item.name = beautys[i][@"title"];
+        item.type = beautys[i][@"type"];
+        item.intensity = 0.5;
+        item.begin = [beautys[i][@"begin"] floatValue];
+        item.end = [beautys[i][@"end"] floatValue];
+        item.icon = beautys[i][@"icon"];
+        item.highlight = [root stringByAppendingPathComponent:beautys[i][@"highlight"]];
+        item.value = [beautys[i][@"value"] floatValue];
+        item.lut = [beautys[i][@"lut"] floatValue];
+        [items addObject:item];
+    }
+    return items.copy;
+}
+
 - (NSArray<MMSegmentItem *> *)itemsForBeauty {
     NSArray *beautys = @[
-        @{@"name":@"红润",@"type":RUDDY,@"begin":@0, @"end":@1},
-        @{@"name":@"美白",@"type":SKIN_WHITENING,@"begin":@0, @"end":@1},
+        @{@"name":@"红润1",@"type":RUDDY,@"begin":@0, @"end":@1,@"version":@0},
+        @{@"name":@"红润2",@"type":RUDDY,@"begin":@0, @"end":@1,@"version":@1},
+        @{@"name":@"美白1",@"type":SKIN_WHITENING,@"begin":@0, @"end":@1,@"version":@0},
+        @{@"name":@"美白2",@"type":SKIN_WHITENING,@"begin":@0, @"end":@1,@"version":@1},
+        @{@"name":@"美白3",@"type":SKIN_WHITENING,@"begin":@0, @"end":@1,@"version":@2},
         @{@"name":@"磨皮",@"type":SKIN_SMOOTH,@"begin":@0, @"end":@1},
         @{@"name":@"大眼",@"type":BIG_EYE,@"begin":@0, @"end":@1},
         @{@"name":@"瘦脸",@"type":THIN_FACE,@"begin":@0, @"end":@1},
@@ -258,6 +441,10 @@
         @{@"name":@"鼻尖",@"type":NOSE_TIP_SIZE,@"begin":@-1, @"end":@1},
         @{@"name":@"嘴唇厚度",@"type":LIP_THICKNESS,@"begin":@-1, @"end":@1},
         @{@"name":@"嘴唇大小",@"type":MOUTH_SIZE,@"begin":@-1, @"end":@1},
+        @{@"name":@"颧骨",@"type":CHEEKBONE_WIDTH,@"begin":@0, @"end":@1},
+        @{@"name":@"下颌骨",@"type":JAW2_WIDTH,@"begin":@0, @"end":@1},
+        @{@"name":@"亮眼",@"type":EYEBRIGHTEN,@"begin":@0, @"end":@1},
+        @{@"name":@"白牙",@"type":TEETHWHITEN,@"begin":@0, @"end":@1},
     ];
     
     NSMutableArray<MMSegmentItem *> *items = [NSMutableArray array];
@@ -268,6 +455,7 @@
         item.intensity = 0.0;
         item.begin = [beautys[i][@"begin"] floatValue];
         item.end = [beautys[i][@"end"] floatValue];
+        item.version = [beautys[i][@"version"] intValue];
         [items addObject:item];
     }
     return items.copy;
@@ -333,14 +521,38 @@
     // TODO overwrite
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UILabel *)lutLable{
+    if (!_lutLable) {
+        UILabel *label = [[UILabel alloc] init];
+        label.tag = 35;
+        label.translatesAutoresizingMaskIntoConstraints = NO;
+        label.text = @"0.0";
+        label.textColor = UIColor.redColor;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont systemFontOfSize:18];
+        _lutLable = label;
+    }
+    return _lutLable;
 }
-*/
+
+- (UISlider *)lutSlider{
+    if (!_lutSlider) {
+        UISlider *slider = [[UISlider alloc] init];
+        slider.translatesAutoresizingMaskIntoConstraints = NO;
+        slider.tag = 33;
+        slider.continuous = YES;
+        slider.minimumValue = 0;
+        slider.maximumValue = 1.0;
+        slider.value = 1.0;
+        [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+        _lutSlider = slider;
+    }
+    return _lutSlider;
+}
+
+- (void)sliderValueChanged:(UISlider *)slider {
+    self.lutLable.text = [NSString stringWithFormat:@"%.1f", slider.value];
+    [self.render setBeautyFactor:slider.value forKey:MAKEUPLUT];
+}
 
 @end

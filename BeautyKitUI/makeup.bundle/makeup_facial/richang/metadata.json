@@ -1,0 +1,9 @@
+{
+    "name": "facial",
+    "makeup": [
+        {
+            "type": "facial",
+            "folder": "facial"
+        }
+    ]
+}

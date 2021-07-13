@@ -14,7 +14,7 @@
 @interface MMBeautyRender () <CosmosBeautySDKDelegate>
 
 @property (nonatomic, strong) MMRenderModuleManager *render;
-@property (nonatomic, strong) MMRenderFilterBeautyModule *beautyDescriptor;
+@property (nonatomic, strong) MMRenderFilterBeautyMakeupModule *beautyDescriptor;
 
 #if LOOKUP == 1
 @property (nonatomic, strong) MMRenderFilterLookupModule *lookupDescriptor;
@@ -37,20 +37,20 @@
     if (self) {
         
         static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
+//        dispatch_once(&onceToken, ^{
 #if DEBUG
-            [CosmosBeautySDK initSDKWithAppId:@"b8b858e04e411665e20cf1145544d71c" delegate:self];
+            [CosmosBeautySDK initSDKWithAppId:@"27bc38e3c99df446c299e52d75738366" delegate:self];
 #else
-            [CosmosBeautySDK initSDKWithAppId:@"6b38bc8e6afdbd040b8f6386b65c0aac" delegate:self];
+            [CosmosBeautySDK initSDKWithAppId:@"a266061c862d9a99a67e3f1cbc883499" delegate:self];
 #endif
-        });
+//        });
         
         MMRenderModuleManager *render = [[MMRenderModuleManager alloc] init];
         render.devicePosition = AVCaptureDevicePositionFront;
         render.inputType = MMRenderInputTypeStream;
         self.render = render;
         
-        _beautyDescriptor = [[MMRenderFilterBeautyModule alloc] init];
+        _beautyDescriptor = [[MMRenderFilterBeautyMakeupModule alloc] init];
         [render registerModule:_beautyDescriptor];
         
 #if LOOKUP == 1
@@ -62,13 +62,13 @@
         _stickerDescriptor = [[MMRenderFilterStickerModule alloc] init];
         [render registerModule:_stickerDescriptor];
 #endif
-        NSLog(@"level = %d", [CosmosBeautySDK performSelector:NSSelectorFromString(@"__level__")]);
+        NSLog(@"level = %@", [CosmosBeautySDK performSelector:NSSelectorFromString(@"__authKeys__")]);
     }
     return self;
 }
 
 - (void)addBeauty {
-    _beautyDescriptor = [[MMRenderFilterBeautyModule alloc] init];
+    _beautyDescriptor = [[MMRenderFilterBeautyMakeupModule alloc] init];
     [_render registerModule:_beautyDescriptor];
 }
 
@@ -140,6 +140,14 @@
 
 - (void)setBeautyFactor:(float)value forKey:(MMBeautyFilterKey)key {
     [self.beautyDescriptor setBeautyFactor:value forKey:key];
+    
+}
+
+- (void)setBeautyWhiteVersion:(NSInteger)version{
+    [self.beautyDescriptor setBeautyWhiteVersion:(MMBeautyWhittenFilterVersion)version];
+}
+- (void)setBeautyreddenVersion:(NSInteger)version{
+    [self.beautyDescriptor setBeautyRaddenVersion:(MMBeautyReddenFilterVersion)version];
 }
 
 - (void)setLookupPath:(NSString *)lookupPath {
@@ -171,6 +179,18 @@
 #if STICKER == 1
     [self.stickerDescriptor clear];
 #endif
+}
+// 美妆效果
+- (void)clearMakeup {
+    [self.beautyDescriptor clearMakeup];
+}
+
+- (void)addMakeupPath:(NSString *)path {
+    [self.beautyDescriptor addMakeupWithResourceURL:[NSURL fileURLWithPath:path]];
+}
+
+- (void)removeMakeupLayerWithType:(MMBeautyFilterKey)type {
+    [self.beautyDescriptor removeMakeupLayerWithType:type];
 }
 
 #pragma mark - CosmosBeautySDKDelegate delegate

@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) MMCameraTabSegmentView *lookupView;
 @property (nonatomic, strong) MMCameraTabSegmentView *beautyView;
+@property (nonatomic, strong) MMCameraTabSegmentView *makeuUpView;
 @property (nonatomic, strong) MMCameraTabSegmentView *stickerView;
 
 @end

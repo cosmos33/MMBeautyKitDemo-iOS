@@ -9,7 +9,7 @@ PODS:
   - Masonry (1.1.0)
   - MCCSecret (1.0.0)
   - MetalPetal/Static (1.13.0)
-  - MMBeautyKit (2.7.1.2-interact):
+  - MMBeautyKit (2.8.0.4-interact):
     - CosmosEncrypt
     - MCCSecret
     - MMBeautyMedia
@@ -17,25 +17,25 @@ PODS:
     - MMDevice
     - MMFileService
     - MMXEngine
-  - MMBeautyMedia (2.7.1.1):
+  - MMBeautyMedia (2.8.0.5):
     - Mantle
     - MetalPetal/Static
-    - MMBeautyMedia/Beauty (= 2.7.1.1)
-    - MMBeautyMedia/Filter (= 2.7.1.1)
-    - MMBeautyMedia/Sticker (= 2.7.1.1)
-  - MMBeautyMedia/Beauty (2.7.1.1):
+    - MMBeautyMedia/Beauty (= 2.8.0.5)
+    - MMBeautyMedia/Filter (= 2.8.0.5)
+    - MMBeautyMedia/Sticker (= 2.8.0.5)
+  - MMBeautyMedia/Beauty (2.8.0.5):
     - Mantle
     - MetalPetal/Static
     - MMCV
-  - MMBeautyMedia/Filter (2.7.1.1):
+  - MMBeautyMedia/Filter (2.8.0.5):
     - Mantle
     - MetalPetal/Static
-  - MMBeautyMedia/Sticker (2.7.1.1):
+  - MMBeautyMedia/Sticker (2.8.0.5):
     - Mantle
     - MetalPetal/Static
     - MMCV
     - MMXEngine
-  - MMCV (2.7.1.2):
+  - MMCV (2.7.1.3):
     - MCCSecret
     - MMFileService
     - PhotonHTTPDNS
@@ -44,7 +44,7 @@ PODS:
   - MMFileService (1.3.6)
   - MMXEngine (4.4.8.20210512.0000)
   - openssl-lib (1.0.1)
-  - PhotonHTTPDNS (1.0.3)
+  - PhotonHTTPDNS (1.0.4)
   - protobuf-lib (3.6.1.2)
   - ZipArchive (1.4.0)
 
@@ -52,8 +52,9 @@ DEPENDENCIES:
   - AgoraRtcEngine_iOS (= 3.4.2)
   - Masonry
   - MetalPetal/Static (= 1.13.0)
-  - MMBeautyKit (= 2.7.1.2-interact)
-  - MMCV (= 2.7.1.2)
+  - MMBeautyKit (= 2.8.0.4-interact)
+  - MMBeautyMedia (= 2.8.0.5)
+  - MMCV (= 2.7.1.3)
 
 SPEC REPOS:
   https://github.com/cosmos33/MMSpecs.git:
@@ -82,17 +83,17 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
   MetalPetal: 3f0fb530b09db6896bcf1fa05739fdb2f489515c
-  MMBeautyKit: 5313f58024bda027c61a64c74c8be4b9f8bb452e
-  MMBeautyMedia: 89b857732fad7914454b7258949eea05efb08319
-  MMCV: be6e80eb7e92f7c1737cbdbf9f3a87bb80b952a9
+  MMBeautyKit: fea542a7a458b20fbdabb59b389bfcef04ab839c
+  MMBeautyMedia: d624d2bd9b24852a48d142f594e91420a0e89e81
+  MMCV: 9bcc9cfd86cc98ff3195b2904a16b510d48a73e9
   MMDevice: ea2f783f769331e40c558ef894541e31ced9aa13
   MMFileService: 780cd7e63331b6cb66a78e2aa5adb682dd3ab78c
   MMXEngine: 6e59d76e19d1bf59e01ce46938bf38b29da92af0
   openssl-lib: e3f61a10280caf261c0e4c6b3e720aa94825f07a
-  PhotonHTTPDNS: e05d8ce4f99ba7fd0beed0b71b7406f6eff2c1ba
+  PhotonHTTPDNS: 1eb4881bf659a78fc304bce5830b37f1b1ec25ad
   protobuf-lib: 8c7e69bfb33e9d7f3c5f7724f6cb82aa734699d2
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 508c262e6bd674d4cf83db3559b82d5ff4d49b8d
+PODFILE CHECKSUM: 7a403a567c7f717b4d333b384e4ce846eac135b1
 
 COCOAPODS: 1.10.1

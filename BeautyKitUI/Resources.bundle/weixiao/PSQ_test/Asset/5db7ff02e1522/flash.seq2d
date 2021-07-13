@@ -1,0 +1,32 @@
+MOXB<?xml version="1.0" encoding="GB2312"?>
+<Img2DSequenceFrame>
+ <Node Name="flash" Type="MagicSeqFrame" FilterPath="">
+	<Img2DSequenceFrameAnimation SequenceFrameAssetType="MultTextures" TextureWidth="360" TextureHeight="640" RelativeToCurrent="0" FrameContentDir="Asset/5db7ff02e1522/flash" FrameCount="0" FPS="15" Reverse="0" LoopMode="1" LoopStartIndex="1" LoopEndIndex="25" PlayCount="1">
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_000.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_001.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_002.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_003.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_004.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_005.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_006.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_007.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_008.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_009.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_010.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_011.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_012.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_013.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_014.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_015.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_016.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_017.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_018.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_019.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_020.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_021.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_022.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_023.png" Col="1" Row="1"/>
+	 <TexturePathList TexturePath="Asset/5db7ff02e1522/flash/flash_024.png" Col="1" Row="1"/>
+	</Img2DSequenceFrameAnimation>
+ </Node>
+</Img2DSequenceFrame>

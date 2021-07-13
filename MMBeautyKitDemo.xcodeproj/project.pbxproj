@@ -135,6 +135,14 @@
 		46A2CD78261EF31800C60C69 /* ALLiveConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CD75261EF31800C60C69 /* ALLiveConfig.m */; };
 		46A2CD79261EF31800C60C69 /* AliLiveEngineMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2CD76261EF31800C60C69 /* AliLiveEngineMaker.m */; };
 		495D9232B786413F7102B58C /* Pods_MMBeautyKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D60B0D7330E485B61D4D9E /* Pods_MMBeautyKitDemo.framework */; };
+		5E75CD61269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD62269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD63269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD64269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD65269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD66269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD67269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
+		5E75CD68269C40C4002E5BEA /* makeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E75CD60269C40C4002E5BEA /* makeup.bundle */; };
 		76160661256BA7A700F9C194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160660256BA7A700F9C194 /* AppDelegate.m */; };
 		76160664256BA7A700F9C194 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160663256BA7A700F9C194 /* SceneDelegate.m */; };
 		76160667256BA7A700F9C194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76160666256BA7A700F9C194 /* ViewController.m */; };
@@ -416,6 +424,7 @@
 		46A2CD75261EF31800C60C69 /* ALLiveConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALLiveConfig.m; sourceTree = "<group>"; };
 		46A2CD76261EF31800C60C69 /* AliLiveEngineMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliLiveEngineMaker.m; sourceTree = "<group>"; };
 		46A2CD77261EF31800C60C69 /* ALLiveConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALLiveConfig.h; sourceTree = "<group>"; };
+		5E75CD60269C40C4002E5BEA /* makeup.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeup.bundle; sourceTree = "<group>"; };
 		75C6A210323AC64822CC93EA /* Pods-MMArgoraBeautyKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMArgoraBeautyKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MMArgoraBeautyKitDemo/Pods-MMArgoraBeautyKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7616065D256BA7A700F9C194 /* MMArgoraBeautyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMArgoraBeautyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7616065F256BA7A700F9C194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1084,6 +1093,7 @@
 		765BFD1423B309A80017239F /* BeautyKitUI */ = {
 			isa = PBXGroup;
 			children = (
+				5E75CD60269C40C4002E5BEA /* makeup.bundle */,
 				7661056C24EAC20F00B89BF5 /* Lookup.bundle */,
 				7661056D24EAC21500B89BF5 /* Resources.bundle */,
 				FAADCF0224C84118001D83BC /* MMCameraTabSegmentView.h */,
@@ -1422,6 +1432,7 @@
 				46462BEC264D1E6C0082EB17 /* LaunchScreen.storyboard in Resources */,
 				46462CA9264D20150082EB17 /* LICENSE in Resources */,
 				46462CAB264D20150082EB17 /* QBImagePicker.strings in Resources */,
+				5E75CD68269C40C4002E5BEA /* makeup.bundle in Resources */,
 				46462BE9264D1E6C0082EB17 /* Assets.xcassets in Resources */,
 				46462CA4264D20150082EB17 /* mv.bundle in Resources */,
 				46462D76264D23600082EB17 /* Resources.bundle in Resources */,
@@ -1436,6 +1447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD67269C40C4002E5BEA /* makeup.bundle in Resources */,
 				46462D6D264D235F0082EB17 /* Resources.bundle in Resources */,
 				4667F65926269ECD003811A0 /* LaunchScreen.storyboard in Resources */,
 				4667F65626269ECC003811A0 /* Assets.xcassets in Resources */,
@@ -1448,6 +1460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD66269C40C4002E5BEA /* makeup.bundle in Resources */,
 				46A2CD25261EEB5000C60C69 /* Resources.bundle in Resources */,
 				46A2CCC0261EE7D200C60C69 /* LaunchScreen.storyboard in Resources */,
 				46A2CCBD261EE7D200C60C69 /* Assets.xcassets in Resources */,
@@ -1460,6 +1473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD64269C40C4002E5BEA /* makeup.bundle in Resources */,
 				76160732256CADD200F9C194 /* Resources.bundle in Resources */,
 				7616066F256BA7A900F9C194 /* LaunchScreen.storyboard in Resources */,
 				7616066C256BA7A900F9C194 /* Assets.xcassets in Resources */,
@@ -1472,6 +1486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD61269C40C4002E5BEA /* makeup.bundle in Resources */,
 				7661056F24EAC21500B89BF5 /* Resources.bundle in Resources */,
 				765BFCF823B3095E0017239F /* LaunchScreen.storyboard in Resources */,
 				765BFCF523B3095E0017239F /* Assets.xcassets in Resources */,
@@ -1484,6 +1499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD65269C40C4002E5BEA /* makeup.bundle in Resources */,
 				767D49B425CAAE3300ADC8C5 /* LaunchScreen.storyboard in Resources */,
 				767D49B125CAAE3300ADC8C5 /* Assets.xcassets in Resources */,
 				767D49AF25CAAE3200ADC8C5 /* Main.storyboard in Resources */,
@@ -1496,6 +1512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD63269C40C4002E5BEA /* makeup.bundle in Resources */,
 				7616072D256CADD100F9C194 /* Resources.bundle in Resources */,
 				7680438B25498C40006B4C34 /* LaunchScreen.storyboard in Resources */,
 				7680438825498C40006B4C34 /* Assets.xcassets in Resources */,
@@ -1508,6 +1525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75CD62269C40C4002E5BEA /* makeup.bundle in Resources */,
 				7616072C256CADD100F9C194 /* Resources.bundle in Resources */,
 				76F98CBA254986D00020F4F6 /* LaunchScreen.storyboard in Resources */,
 				76F98CB7254986D00020F4F6 /* Assets.xcassets in Resources */,
@@ -2280,10 +2298,11 @@
 			baseConfigurationReference = BECB33BC45EB9BCBF634E01E /* Pods-MMBeautyKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HH8NJ4X63W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2295,7 +2314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wemomo.momotest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momo.yanbo.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2307,6 +2326,7 @@
 			baseConfigurationReference = 01230276AFBF64CFE18C85AE /* Pods-MMBeautyKitDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;

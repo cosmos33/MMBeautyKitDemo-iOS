@@ -1,0 +1,27 @@
+{
+    "name": "style04",
+    "makeup": [
+        {
+            "type": "pupil",
+            "folder": "makeup_pupil"
+        }, {
+            "type": "lip",
+            "folder": "makeup_lip"
+        }, {
+            "type": "facial",
+            "folder": "makeup_xiurong"
+        }, {
+            "type": "eyeshadow",
+            "folders": ["makeup_eyeshadow","makeup_eyeshadow2"]
+        }, {
+            "type": "eyebrow",
+            "folder": "makeup_eyebrow"
+        }, {
+            "type": "blush",
+            "folder": "makeup_cheek"
+        }, {
+            "type": "makeuplut",
+            "folder": "lookup"
+        }
+    ]
+}
